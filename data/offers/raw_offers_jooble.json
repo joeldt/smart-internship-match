@@ -1,0 +1,957 @@
+{
+  "fetched_at": "2026-11-17T10:45:12Z",
+  "source": "jooble",
+  "queries": [
+    "stage développeur",
+    "stage data",
+    "stage devops"
+  ],
+  "location": "France",
+  "per_query": {
+    "stage développeur": {
+      "total_available": 11,
+      "fetched": 11
+    },
+    "stage data": {
+      "total_available": 55,
+      "fetched": 55
+    },
+    "stage devops": {
+      "total_available": 21,
+      "fetched": 21
+    }
+  },
+  "n_raw": 87,
+  "n_excluded_apprenticeship": 0,
+  "n_duplicates_removed": 27,
+  "api_calls_used": 6,
+  "offers": [
+    {
+      "title": "Stage Ingénieur Infrastructure & DevOps H/F",
+      "location": "France",
+      "snippet": "&nbsp;...notre infrastructure technique dans un environnement industriel en pleine croissance (gigafactory de batteries). \r\n Il s'agit d'un <b>stage </b>de fin d'études pour une durée de 6 mois. \r\n Missions principales : \r\n Kubernetes : aide à la configuration, au déploiement et à la...&nbsp;",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/2581151213922723488",
+      "company": "Verkor",
+      "updated": "2026-11-05T17:44:11.5030000",
+      "id": 2581151213922723488,
+      "matched_queries": [
+        "stage développeur",
+        "stage data",
+        "stage devops"
+      ]
+    },
+    {
+      "title": "Stage - Contrôleur / Contrôleuse de Gestion (H/F)",
+      "location": "France",
+      "snippet": "Verkor is a French industrial company aiming to pioneer low-carbon battery manufacturing in France. With the backing of prominent industrial companies such as Renault Group, Plastic Omnium and Schneider Electric, Verkor intends to electrify the future of European mobility...",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/4594517779968944215",
+      "company": "Verkor",
+      "updated": "2026-10-30T08:30:58.4970000",
+      "id": 4594517779968944215,
+      "matched_queries": [
+        "stage développeur",
+        "stage data"
+      ]
+    },
+    {
+      "title": "Integrated Insights & Strategy (IIS) France - Stage 6 mois",
+      "location": "France",
+      "snippet": "<b>Stage </b>- Integrated Insights & Strategy, France\n\nNous recherchons un(e) stagiaire pour une période de 6 mois à compter de mars 2027.\n\nRÉSUMÉ DU RÔLE\n\nAu sein de la division Global Commercial Analytics & AI (GCA) de Pfizer, l'équipe Integrated Insights & Strategy (IIS) joue...&nbsp;",
+      "salary": "",
+      "source": "get.it.CPA.dynamic",
+      "type": "",
+      "link": "https://jooble.org/jdp/7296431052900840831",
+      "company": "Pfizer",
+      "updated": "2026-11-16T03:28:57.3200000",
+      "id": 7296431052900840831,
+      "matched_queries": [
+        "stage développeur",
+        "stage data"
+      ]
+    },
+    {
+      "title": "Expert Support Technique et Comptable (Télétravail Normandie / Nord)",
+      "location": "France",
+      "snippet": "&nbsp;...puis coordonner leur résolution avec les équipes Produit et Tech. Tu joueras un rôle clé entre les utilisateurs, le Support, les <b>développeurs </b>et les équipes Produit. Tes missions - Investiguer des bugs, anomalies et problématiques comptables ou fonctionnelles. -...&nbsp;",
+      "salary": "",
+      "source": "remoshift.com",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/2235144603507120723",
+      "company": "Pennylane",
+      "updated": "2026-11-03T00:00:00.0000000",
+      "id": 2235144603507120723,
+      "matched_queries": [
+        "stage développeur"
+      ]
+    },
+    {
+      "title": "Senior Quantitative Analyst",
+      "location": "France",
+      "snippet": "&nbsp;...first number that looks plausible  \r\n\r\n~ Thinks in terms of SKU-level economics: sell-through, margin, inventory position, lifecycle <b>stage </b>— and knows how to separate a true productivity problem from a data artifact  \r\n\r\n~ Treats data quality as part of the job, digging...&nbsp;",
+      "salary": "",
+      "source": "boards.greenhouse.io",
+      "type": "Temporary",
+      "link": "https://jooble.org/jdp/3212141091678734046",
+      "company": "F. Schumacher & Co.",
+      "updated": "2026-11-16T05:15:35.3230000",
+      "id": 3212141091678734046,
+      "matched_queries": [
+        "stage développeur",
+        "stage data"
+      ]
+    },
+    {
+      "title": "Aging Modelling Engineer M/F",
+      "location": "France",
+      "snippet": "&nbsp;...data analyses, run simulations, and deliver study results, providing support to Product Development Team from early days to final <b>stages </b>of production \r\n Review literature for state-of-the-art understanding of complex aging mechanisms in Li-ion cells \r\n Work closely with...&nbsp;",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/3865629636849923153",
+      "company": "Verkor",
+      "updated": "2026-10-29T10:28:54.4400000",
+      "id": 3865629636849923153,
+      "matched_queries": [
+        "stage développeur",
+        "stage data",
+        "stage devops"
+      ]
+    },
+    {
+      "title": "R&D Process Engineer M/F",
+      "location": "France",
+      "snippet": "&nbsp;...a senior role \r\n Strong experience in lithium-ion cell assembly or formation processes \r\n Proven experience in process development <b>stages:</b> concept definition, lab validation, pilot scaling, and technical transfer \r\n Strong knowledge of DoE, statistical analysis, and data...&nbsp;",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/-8749187572191017750",
+      "company": "Verkor",
+      "updated": "2026-10-26T08:51:09.6130000",
+      "id": -8749187572191017750,
+      "matched_queries": [
+        "stage développeur",
+        "stage data",
+        "stage devops"
+      ]
+    },
+    {
+      "title": "Battery Pack Architect M/F",
+      "location": "France",
+      "snippet": "&nbsp;...behavior under all operating conditions (normal and fault cases)\r\n Safety & Compliance \r\n Integrate safety constraints from early design <b>stages:</b> \r\n Define mitigation strategies (detection, isolation, protection mechanisms)\r\n Ensure compliance with relevant standards and...&nbsp;",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/-6319374647795931788",
+      "company": "Verkor",
+      "updated": "2026-10-21T09:08:54.3830000",
+      "id": -6319374647795931788,
+      "matched_queries": [
+        "stage développeur",
+        "stage data",
+        "stage devops"
+      ]
+    },
+    {
+      "title": "Sales Manager",
+      "location": "France",
+      "snippet": "&nbsp;...and building a community people are genuinely glad to be part of. \r\n\r\n~ Drive resident retention through excellent service at every <b>stage </b>of the leasing lifecycle. \r\n\r\n~ Keep investors and B2B clients informed with regular, transparent performance reporting, responding...&nbsp;",
+      "salary": "",
+      "source": "jobs.greystar.com",
+      "type": "",
+      "link": "https://jooble.org/jdp/2763232875036137792",
+      "company": "Greystar",
+      "updated": "2026-10-09T09:07:36.0630000",
+      "id": 2763232875036137792,
+      "matched_queries": [
+        "stage développeur",
+        "stage data"
+      ]
+    },
+    {
+      "title": "Team Lead, BtoC Leasing",
+      "location": "France",
+      "snippet": "&nbsp;...enquiry and a signed lease. You lead from the floor, set the pace, and hold the standard for quality and attention to detail across every <b>stage </b>of the resident journey. \r\n What You'll Drive \r\n Lead and Manage the B2C Leasing Team \r\n~ Act as the direct line manager for the B2C...&nbsp;",
+      "salary": "",
+      "source": "jobs.greystar.com",
+      "type": "",
+      "link": "https://jooble.org/jdp/-4717007747192221074",
+      "company": "Greystar",
+      "updated": "2026-10-09T19:30:48.4970000",
+      "id": -4717007747192221074,
+      "matched_queries": [
+        "stage développeur",
+        "stage data"
+      ]
+    },
+    {
+      "title": "VP of Product & Engineering - Back of House",
+      "location": "France",
+      "snippet": "&nbsp;...airlines, GDS, travel management companies), or comparable operationally critical, high-availability B2B platforms.   \r\n Founder or early-<b>stage </b>builder experience, having built products from zero to scale.   \r\n Spain \r\n€220.000—€280.000 EUR \r\n UK \r\n£140,000—£260,000 GBP...&nbsp;",
+      "salary": "£140k - £260k per year",
+      "source": "careers.speedinvest.com",
+      "type": "",
+      "link": "https://jooble.org/jdp/-6571413246189939893",
+      "company": "Product",
+      "updated": "2026-09-15T00:00:00.0000000",
+      "id": -6571413246189939893,
+      "matched_queries": [
+        "stage développeur"
+      ]
+    },
+    {
+      "title": "Senior Data Scientist — Industrial AI for Battery Production",
+      "location": "France",
+      "snippet": "Verkor is seeking a Senior <b>Data </b>Scientist to turn data into insights, predictions, and decision-support models that reduce uncertainty and improve performance. You will align KPIs with business strategy and translate complex problems into analytical questions for scalable...&nbsp;",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/6313609326526993109",
+      "company": "Verkor",
+      "updated": "2026-11-06T17:57:13.2800000",
+      "id": 6313609326526993109,
+      "matched_queries": [
+        "stage data"
+      ]
+    },
+    {
+      "title": "Senior Data Scientist",
+      "location": "France",
+      "snippet": "&nbsp;...to ramp-up mass production of low carbon lithium ion batteries to facilitate the decarbonization of European mobility. \r\n The senior <b>data </b>scientist is responsible for turning data into insights, predictions and decision-support models that help the business reduce...&nbsp;",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/6415134887285918629",
+      "company": "Verkor",
+      "updated": "2026-11-06T17:57:13.3000000",
+      "id": 6415134887285918629,
+      "matched_queries": [
+        "stage data"
+      ]
+    },
+    {
+      "title": "Senior User Acquisition Manager",
+      "location": "France",
+      "snippet": "&nbsp;...marketing, creative strategy, and product, where you'll be the connective tissue between paid acquisition, our in-house creative team, and <b>data </b>functions. You'll combine rigorous performance analysis with creative direction to build a sustainable, high-velocity testing engine...&nbsp;",
+      "salary": "",
+      "source": "fitly.work",
+      "type": "",
+      "link": "https://jooble.org/jdp/7487867986656656988",
+      "company": "NB",
+      "updated": "2026-10-18T00:00:00.0000000",
+      "id": 7487867986656656988,
+      "matched_queries": [
+        "stage data"
+      ]
+    },
+    {
+      "title": "Regional Intelligence Operations Senior Associate - EMEA",
+      "location": "France",
+      "snippet": "&nbsp;...closely with Directors of Investigations, Intelligence Leads and Global Threat Analysts to deliver actionable intelligence, manage <b>data,</b> and support strategic assessments that inform decision-making across the enterprise.\nThe role also includes supporting security-related...&nbsp;",
+      "salary": "",
+      "source": "get.it.CPA.dynamic",
+      "type": "",
+      "link": "https://jooble.org/jdp/-2000312820155241278",
+      "company": "Pfizer",
+      "updated": "2026-11-16T14:29:27.6800000",
+      "id": -2000312820155241278,
+      "matched_queries": [
+        "stage data"
+      ]
+    },
+    {
+      "title": "Edge Engineer M/F",
+      "location": "France",
+      "snippet": "&nbsp;...Maintenir l’architecture OT/Edge cible pour le site de la Gigafactory en cohérence avec les standards industriels, cybersécurité et <b>data </b>de l’entreprise \r\n Piloter l’intégration, la configuration et le support avancé des PLCs, plateformes Ignition, solutions SCADA et composants...&nbsp;",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/-3540939253976240111",
+      "company": "Verkor",
+      "updated": "2026-11-12T08:35:14.1270000",
+      "id": -3540939253976240111,
+      "matched_queries": [
+        "stage data",
+        "stage devops"
+      ]
+    },
+    {
+      "title": "Azure IoT Technical Lead H/F",
+      "location": "France",
+      "snippet": "&nbsp;...industrial edge technologies. \r\n Act as the technical reference for IIoT solutions, bridging manufacturing, automation, OT, IT, Cloud and <b>Data </b>platforms, and enabling scalable, secure and reusable solutions across ACC plants. \r\n The Main Missions For This Role Are...&nbsp;",
+      "salary": "",
+      "source": "fitly.work",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/6326175311407944114",
+      "company": "ACC - Automotive Cells Company",
+      "updated": "2026-10-13T00:00:00.0000000",
+      "id": 6326175311407944114,
+      "matched_queries": [
+        "stage data",
+        "stage devops"
+      ]
+    },
+    {
+      "title": "Mixing Senior Engineer M/F",
+      "location": "France",
+      "snippet": "&nbsp;...working with mixing process \r\n Experience in manufacturing environment \r\n Experience in battery manufacturing \r\n Strong statistical and <b>data </b>analysis skills with tools e.g. Python, Matlab, and Minitab \r\n Why join us?\r\n Strong company spirit and culture settle down around...&nbsp;",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/-662922830040897463",
+      "company": "Verkor",
+      "updated": "2026-11-12T08:35:14.1700000",
+      "id": -662922830040897463,
+      "matched_queries": [
+        "stage data",
+        "stage devops"
+      ]
+    },
+    {
+      "title": "Systems Engineer, MSSP/Telco - EMEA",
+      "location": "France",
+      "snippet": "&nbsp;...cybersecurity and redefine the intersection of networking and security. At Fortinet, our mission is to safeguard people, devices, and <b>data </b>everywhere. We are currently seeking a Systems Engineer to contribute to the success of our rapidly growing business. \r\n The Systems...&nbsp;",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/959396836609118417",
+      "company": "Fortinet",
+      "updated": "2026-10-29T19:38:53.1570000",
+      "id": 959396836609118417,
+      "matched_queries": [
+        "stage data",
+        "stage devops"
+      ]
+    },
+    {
+      "title": "Head of Website & Conversion",
+      "location": "France",
+      "snippet": "&nbsp;...Europe WHAT YOU’LL DO You will lead our Website squad and collaborate closely with Growth, Product, Engineering, Sales, Demand Gen, <b>Data,</b> Brand, and Automation teams. LEAD AND GROW THE WEBSITE SQUAD - Set clear roles, objectives, and rituals - Manage and develop multidisciplinary...&nbsp;",
+      "salary": "",
+      "source": "fitly.work",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/-721866116290330533",
+      "company": "Pennylane",
+      "updated": "2026-11-05T00:00:00.0000000",
+      "id": -721866116290330533,
+      "matched_queries": [
+        "stage data"
+      ]
+    },
+    {
+      "title": "Cell Mechanical Design Engineer",
+      "location": "France",
+      "snippet": "&nbsp;...application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your <b>data </b>is processed, please contact us.",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/-8367941984689705099",
+      "company": "Verkor",
+      "updated": "2026-10-29T10:28:55.3630000",
+      "id": -8367941984689705099,
+      "matched_queries": [
+        "stage data",
+        "stage devops"
+      ]
+    },
+    {
+      "title": "Structural Modelling Engineer M/F",
+      "location": "France",
+      "snippet": "&nbsp;...application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your <b>data </b>is processed, please contact us.",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/2871859641821392643",
+      "company": "Verkor",
+      "updated": "2026-10-26T08:51:09.5500000",
+      "id": 2871859641821392643,
+      "matched_queries": [
+        "stage data",
+        "stage devops"
+      ]
+    },
+    {
+      "title": "Supply Chain Packaging Manager H/F",
+      "location": "France",
+      "snippet": "&nbsp;...application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your <b>data </b>is processed, please contact us.",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/-6961069376481837155",
+      "company": "Verkor",
+      "updated": "2026-11-14T07:38:39.2670000",
+      "id": -6961069376481837155,
+      "matched_queries": [
+        "stage data",
+        "stage devops"
+      ]
+    },
+    {
+      "title": "Ingénieur/e qualité - Technical Cleanliness (H/F)",
+      "location": "France",
+      "snippet": "&nbsp;...application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your <b>data </b>is processed, please contact us.",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/2803726271680740203",
+      "company": "Verkor",
+      "updated": "2026-11-07T10:39:06.8900000",
+      "id": 2803726271680740203,
+      "matched_queries": [
+        "stage data"
+      ]
+    },
+    {
+      "title": "Product Domain Specialist - secteur agricole",
+      "location": "France",
+      "snippet": "&nbsp;...pouvez vous opposer à tout moment et demander la suppression de vos données en écrivant à : ****@*****.***. com. ****@*****.***. com Notre <b>data </b>policy  pennylane. com/fr/vos-donnees-personnelles-recrutement Personal Data Pennylane processes your data to manage your...&nbsp;",
+      "salary": "",
+      "source": "remoshift.com",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/-1608041960663819214",
+      "company": "Pennylane",
+      "updated": "2026-10-31T00:00:00.0000000",
+      "id": -1608041960663819214,
+      "matched_queries": [
+        "stage data"
+      ]
+    },
+    {
+      "title": "Technicien/ne de maintenance Gigafactory (H/F)",
+      "location": "France",
+      "snippet": "&nbsp;...application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your <b>data </b>is processed, please contact us.",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/-8966203955886623242",
+      "company": "Verkor",
+      "updated": "2026-10-24T13:19:59.9000000",
+      "id": -8966203955886623242,
+      "matched_queries": [
+        "stage data"
+      ]
+    },
+    {
+      "title": "Opérateur.rice Gigafactory (H/F)",
+      "location": "France",
+      "snippet": "&nbsp;...application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your <b>data </b>is processed, please contact us.",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/-8939452343901131626",
+      "company": "Verkor",
+      "updated": "2026-10-19T07:50:11.5700000",
+      "id": -8939452343901131626,
+      "matched_queries": [
+        "stage data"
+      ]
+    },
+    {
+      "title": "Technicien Développement Process H/F",
+      "location": "France",
+      "snippet": "&nbsp;...application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your <b>data </b>is processed, please contact us.",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/-3890799058437065520",
+      "company": "Verkor",
+      "updated": "2026-10-21T09:08:54.6800000",
+      "id": -3890799058437065520,
+      "matched_queries": [
+        "stage data"
+      ]
+    },
+    {
+      "title": "Debt Collection Specialist",
+      "location": "France",
+      "snippet": "&nbsp;...vous opposer à tout moment et demander la suppression de vos données en écrivant à : ****@*****.***. com.  ****@*****.***. com Notre <b>data </b>policy  pennylane. com/fr/vos-donnees-personnelles-recrutement Personal Data Pennylane processes your data to manage your application...&nbsp;",
+      "salary": "",
+      "source": "remoshift.com",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/-2858332282756507606",
+      "company": "Pennylane",
+      "updated": "2026-11-02T00:00:00.0000000",
+      "id": -2858332282756507606,
+      "matched_queries": [
+        "stage data"
+      ]
+    },
+    {
+      "title": "Technicien Utilités CVC / HVAC H/F",
+      "location": "France",
+      "snippet": "&nbsp;...application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your <b>data </b>is processed, please contact us.",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/739222300612667304",
+      "company": "Verkor",
+      "updated": "2026-10-22T10:46:17.3400000",
+      "id": 739222300612667304,
+      "matched_queries": [
+        "stage data"
+      ]
+    },
+    {
+      "title": "Manager Qualité UAP H/F",
+      "location": "France",
+      "snippet": "&nbsp;...application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your <b>data </b>is processed, please contact us.",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/8851154478692154091",
+      "company": "Verkor",
+      "updated": "2026-10-20T07:53:57.9500000",
+      "id": 8851154478692154091,
+      "matched_queries": [
+        "stage data"
+      ]
+    },
+    {
+      "title": "APG Leader Production (H/F)",
+      "location": "France",
+      "snippet": "&nbsp;...application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your <b>data </b>is processed, please contact us.",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/2237768220453911241",
+      "company": "Verkor",
+      "updated": "2026-11-03T10:58:16.8630000",
+      "id": 2237768220453911241,
+      "matched_queries": [
+        "stage data"
+      ]
+    },
+    {
+      "title": "Ingénieur Méthodes Maintenance - Module H/F",
+      "location": "France",
+      "snippet": "&nbsp;...application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your <b>data </b>is processed, please contact us.",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/6699238252775745255",
+      "company": "Verkor",
+      "updated": "2026-10-19T07:50:12.0100000",
+      "id": 6699238252775745255,
+      "matched_queries": [
+        "stage data"
+      ]
+    },
+    {
+      "title": "Technicien(ne) utilités / exploitation H/F",
+      "location": "France",
+      "snippet": "&nbsp;...application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your <b>data </b>is processed, please contact us.",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/-276028000424830446",
+      "company": "Verkor",
+      "updated": "2026-10-23T09:04:38.4070000",
+      "id": -276028000424830446,
+      "matched_queries": [
+        "stage data"
+      ]
+    },
+    {
+      "title": "Ingénieur.e Operations Readiness H/F",
+      "location": "France",
+      "snippet": "&nbsp;...application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your <b>data </b>is processed, please contact us.",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/1951510167753289493",
+      "company": "Verkor",
+      "updated": "2026-10-17T08:23:11.8430000",
+      "id": 1951510167753289493,
+      "matched_queries": [
+        "stage data"
+      ]
+    },
+    {
+      "title": "Technicien utilités / CVC H/F",
+      "location": "France",
+      "snippet": "&nbsp;...application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your <b>data </b>is processed, please contact us.",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/4543913772927596006",
+      "company": "Verkor",
+      "updated": "2026-10-27T18:07:00.9470000",
+      "id": 4543913772927596006,
+      "matched_queries": [
+        "stage data"
+      ]
+    },
+    {
+      "title": "Spécialiste Conception et Prototypage Électronique - Systèmes Batterie H/F",
+      "location": "France",
+      "snippet": "&nbsp;...application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your <b>data </b>is processed, please contact us.",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/-6361524966291752143",
+      "company": "Verkor",
+      "updated": "2026-11-13T07:38:39.7500000",
+      "id": -6361524966291752143,
+      "matched_queries": [
+        "stage data"
+      ]
+    },
+    {
+      "title": "Superviseur de production H/F",
+      "location": "France",
+      "snippet": "&nbsp;...application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your <b>data </b>is processed, please contact us.",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/-2398608789964888285",
+      "company": "Verkor",
+      "updated": "2026-10-24T13:19:59.8270000",
+      "id": -2398608789964888285,
+      "matched_queries": [
+        "stage data"
+      ]
+    },
+    {
+      "title": "Ingénieur Industrialisation Battery Packs H/F",
+      "location": "France",
+      "snippet": "&nbsp;...application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your <b>data </b>is processed, please contact us.",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/-3763100561489707422",
+      "company": "Verkor",
+      "updated": "2026-11-13T07:38:39.7570000",
+      "id": -3763100561489707422,
+      "matched_queries": [
+        "stage data"
+      ]
+    },
+    {
+      "title": "Technicien/ne en Réparation de Pièces de Rechange H/F",
+      "location": "France",
+      "snippet": "&nbsp;...application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your <b>data </b>is processed, please contact us.",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/802508019765763522",
+      "company": "Verkor",
+      "updated": "2026-11-12T08:35:14.2070000",
+      "id": 802508019765763522,
+      "matched_queries": [
+        "stage data"
+      ]
+    },
+    {
+      "title": "Security Engineer Junior - GRC",
+      "location": "France",
+      "snippet": "&nbsp;...health sector rules. You build your knowledge of health-specific frameworks (ANS, HDS) and help apply them to how we handle health <b>data.</b> - Contribute to risk management. You help build and update our risk mapping, including AI risks, and follow up on the treatment plans...&nbsp;",
+      "salary": "",
+      "source": "remoshift.com",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/-3705493030696989347",
+      "company": "Alan",
+      "updated": "2026-10-20T00:00:00.0000000",
+      "id": -3705493030696989347,
+      "matched_queries": [
+        "stage data",
+        "stage devops"
+      ]
+    },
+    {
+      "title": "Legal & Compliance Ops",
+      "location": "France",
+      "snippet": "&nbsp;...automation can remove repetitive work, improve consistency and help people make better decisions. You design workflows that combine tools, <b>data,</b> controls and human judgment appropriately. - Spot the next bottleneck before it bites. You design solutions that keep Alan...&nbsp;",
+      "salary": "",
+      "source": "remoshift.com",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/-7242696962610102360",
+      "company": "Alan",
+      "updated": "2026-10-29T00:00:00.0000000",
+      "id": -7242696962610102360,
+      "matched_queries": [
+        "stage data"
+      ]
+    },
+    {
+      "title": "Ingénieur automatisme industriel",
+      "location": "France",
+      "snippet": "&nbsp;...application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your <b>data </b>is processed, please contact us.",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/-6615310538734490683",
+      "company": "Verkor",
+      "updated": "2026-11-15T07:38:39.9670000",
+      "id": -6615310538734490683,
+      "matched_queries": [
+        "stage data"
+      ]
+    },
+    {
+      "title": "Technicien/ne Logistique (H/F)",
+      "location": "France",
+      "snippet": "&nbsp;...application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your <b>data </b>is processed, please contact us.",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/-3856282415298047241",
+      "company": "Verkor",
+      "updated": "2026-11-02T10:20:48.2230000",
+      "id": -3856282415298047241,
+      "matched_queries": [
+        "stage data"
+      ]
+    },
+    {
+      "title": "APG Leader Maintenance en Gigafactory (H/F)",
+      "location": "France",
+      "snippet": "&nbsp;...application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your <b>data </b>is processed, please contact us.",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/-6035066433056951546",
+      "company": "Verkor",
+      "updated": "2026-11-16T07:38:40.1630000",
+      "id": -6035066433056951546,
+      "matched_queries": [
+        "stage data"
+      ]
+    },
+    {
+      "title": "Growth Marketer",
+      "location": "France",
+      "snippet": "&nbsp;...to end. \r\n Coordinate the relevant stakeholders and move initiatives forward with limited direction. \r\n Use business and performance <b>data </b>to make decisions and establish a clear learning loop. \r\n Adapt your approach based on results, customer insight, and feedback....&nbsp;",
+      "salary": "",
+      "source": "joinrs.com",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/-837604434279466662",
+      "company": "Alan",
+      "updated": "2026-11-13T04:21:54.3000000",
+      "id": -837604434279466662,
+      "matched_queries": [
+        "stage data"
+      ]
+    },
+    {
+      "title": "Electric Vehicle Field Service Technician - Charlotte, NC",
+      "location": "France",
+      "snippet": "&nbsp;...Orange EV Vehicles. This individual will be able to diagnose, repair, and provide root cause analysis; evaluate Remote Monitoring System <b>data </b>to identify possible performance related concerns as well as to study vehicle utilization; accurately record all Service work and...&nbsp;",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/-1432060670520222222",
+      "company": "Orange EV",
+      "updated": "2026-11-11T01:43:52.9330000",
+      "id": -1432060670520222222,
+      "matched_queries": [
+        "stage data"
+      ]
+    },
+    {
+      "title": "BMS Developer M/F",
+      "location": "France",
+      "snippet": "&nbsp;...operation under all conditions \r\n BMS Algorithms, Calibration & Performance \r\n Define and validate BMS calibration strategy using cell <b>data </b>(SOx, OVP, UVP, OTP, etc.)\r\n Review and benchmark supplier algorithms performance \r\n Define KPIs for accuracy, robustness, and...&nbsp;",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/-105686746331704062",
+      "company": "Verkor",
+      "updated": "2026-10-21T09:08:54.4570000",
+      "id": -105686746331704062,
+      "matched_queries": [
+        "stage data",
+        "stage devops"
+      ]
+    },
+    {
+      "title": "Brand Manager (B2B)",
+      "location": "France",
+      "snippet": "&nbsp;...for every project (reach in the target, qualified leads, pipeline influenced, brand perception). Run test-and-learn with Growth and <b>Data.</b> Manage budgets, vendors and deadlines. YOU'RE A GOOD FIT IF YOU - Have 7+ years of in-house brand marketing (B2C, B2B or B2B2C). Paid...&nbsp;",
+      "salary": "",
+      "source": "remoshift.com",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/6706770488400614260",
+      "company": "Alan",
+      "updated": "2026-11-13T00:00:00.0000000",
+      "id": 6706770488400614260,
+      "matched_queries": [
+        "stage data"
+      ]
+    },
+    {
+      "title": "Gestionnaire paie confirmé.e H/F",
+      "location": "France",
+      "snippet": "&nbsp;...application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your <b>data </b>is processed, please contact us.",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/-7275014357477666556",
+      "company": "Verkor",
+      "updated": "2026-10-27T00:00:00.0000000",
+      "id": -7275014357477666556,
+      "matched_queries": [
+        "stage data"
+      ]
+    },
+    {
+      "title": "Azure Platform Engineer / Ingénieur Plateforme Azure (H/F)",
+      "location": "France",
+      "snippet": "&nbsp;...operational requirements into secure, reliable and cost-efficient cloud solutions. It contributes to multiple initiatives, including <b>Data </b>Platform, Enterprise Integration and business application hosting, while providing practical recommendations to architects,...&nbsp;",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/-761921296244487372",
+      "company": "ACC - Automotive Cells Company",
+      "updated": "2026-10-06T01:38:38.3170000",
+      "id": -761921296244487372,
+      "matched_queries": [
+        "stage data",
+        "stage devops"
+      ]
+    },
+    {
+      "title": "Senior Software Engineer - Serverless",
+      "location": "France",
+      "snippet": "&nbsp;...record of designing and delivering scalable backend systems and APIs \r\n Understanding of asynchronous workloads, queues, and streaming <b>data </b>\r\n Experience working with cloud and bare-metal infrastructure \r\n Excellent grasp of system design, performance optimisation, and...&nbsp;",
+      "salary": "",
+      "source": "jobsbylevel.com",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/-5734778940414073231",
+      "company": "Runware",
+      "updated": "2026-11-09T12:16:56.8230000",
+      "id": -5734778940414073231,
+      "matched_queries": [
+        "stage data"
+      ]
+    },
+    {
+      "title": "Coating Engineer: Battery Electrode Ramp-Up Lead",
+      "location": "France",
+      "snippet": "Verkor in Dunkirk, France is seeking a Coating Engineer to drive the coating and drying processes for electrode production at our gigafactory ramp‑up. You will own supplier interactions, test new coating tech, and push automation to reduce costs while ensuring quality. ...",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/4345602578076129693",
+      "company": "Verkor",
+      "updated": "2026-11-09T11:52:48.5730000",
+      "id": 4345602578076129693,
+      "matched_queries": [
+        "stage data",
+        "stage devops"
+      ]
+    },
+    {
+      "title": "Health and Safety Specialist",
+      "location": "France",
+      "snippet": " About the Company \r\n Founded in 1998, AVL has grown into a North American leader in turnkey engineering, manufacturing, and assembly solutions and we have just opened a new manufacturing facility in Charlotte, NC. For over 25 years, we've combined in-house mechanical, ...",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/-8542923403885206412",
+      "company": "AVL Manufacturing USA",
+      "updated": "2026-11-12T01:48:23.3730000",
+      "id": -8542923403885206412,
+      "matched_queries": [
+        "stage data",
+        "stage devops"
+      ]
+    },
+    {
+      "title": "Mechanical Manufacturing Engineer",
+      "location": "France",
+      "snippet": "\r\n About the Company \r\n\r\n\r\n Founded in 1998, AVL has grown into a North American leader in turnkey engineering, manufacturing, and assembly solutions and we have just opened a new manufacturing facility in Charlotte, NC. For over 25 years, we've combined in-house mechanical...",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/-4084343242226673974",
+      "company": "AVL Manufacturing USA",
+      "updated": "2026-11-12T01:48:23.4270000",
+      "id": -4084343242226673974,
+      "matched_queries": [
+        "stage data"
+      ]
+    },
+    {
+      "title": "Production Manager, Mechanical",
+      "location": "France",
+      "snippet": "\r\n About the Company \r\n\r\n\r\n Founded in 1998, AVL has grown into a North American leader in turnkey engineering, manufacturing, and assembly solutions and we have just opened a new manufacturing facility in Charlotte, NC. For over 25 years, we've combined in-house mechanical...",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/-124853487834565887",
+      "company": "AVL Manufacturing USA",
+      "updated": "2026-11-12T01:48:23.6330000",
+      "id": -124853487834565887,
+      "matched_queries": [
+        "stage data",
+        "stage devops"
+      ]
+    },
+    {
+      "title": "Chemical Production Technician",
+      "location": "France",
+      "snippet": " Chemical Production Technician \r\n \r\n JOB-10047219\r\n \r\n Anticipated Start Date \r\n August 10, 2026\r\n \r\n Location \r\n Mount Bethel, PA \r\n \r\n Type of Employment \r\n Contract \r\n \r\n Employer Info \r\n Our client is a world leader in gases, technologies and services used in many ...",
+      "salary": "$22 per hour",
+      "source": "hppstaffing.com",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/-2100003250901416265",
+      "company": "Dynamics ATS",
+      "updated": "2026-11-09T00:00:00.0000000",
+      "id": -2100003250901416265,
+      "matched_queries": [
+        "stage data",
+        "stage devops"
+      ]
+    },
+    {
+      "title": "Senior Application Security Engineer",
+      "location": "France",
+      "snippet": "&nbsp;...releases per day). - Detect vulnerability and propose associated patches - Raise the security level of our CI/CD configuration - With the <b>DevOps </b>team, secure our AWS infrastructure, including its Kubernetes environment (AWS EKS) Vulnerability Management - Conduct and perform...&nbsp;",
+      "salary": "",
+      "source": "remoshift.com",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/-2077951447912253953",
+      "company": "Pennylane",
+      "updated": "2026-11-06T00:00:00.0000000",
+      "id": -2077951447912253953,
+      "matched_queries": [
+        "stage devops"
+      ]
+    },
+    {
+      "title": "Senior Software Engineer",
+      "location": "France",
+      "snippet": " We’re looking for a Senior Software Engineer who thrives on turning ambitious ideas into production systems that delight developers and deliver real business impact.  You’ll work across the stack, from backend APIs and orchestration to SDKs, dashboards, and developer tools...",
+      "salary": "",
+      "source": "jobsbylevel.com",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/2554724183611359288",
+      "company": "Runware",
+      "updated": "2026-11-09T12:15:29.7730000",
+      "id": 2554724183611359288,
+      "matched_queries": [
+        "stage devops"
+      ]
+    },
+    {
+      "title": "Electrical Manufacturing Engineer",
+      "location": "France",
+      "snippet": "\r\n About the Company \r\n\r\n\r\n Founded in 1998, AVL has grown into a North American leader in turnkey engineering, manufacturing, and assembly solutions and we have just opened a new manufacturing facility in Charlotte, NC. For over 25 years, we've combined in-house mechanical...",
+      "salary": "",
+      "source": "ev.careers",
+      "type": "Full-time",
+      "link": "https://jooble.org/jdp/6606310516692731297",
+      "company": "AVL Manufacturing USA",
+      "updated": "2026-11-12T01:48:23.4870000",
+      "id": 6606310516692731297,
+      "matched_queries": [
+        "stage devops"
+      ]
+    }
+  ]
+}
