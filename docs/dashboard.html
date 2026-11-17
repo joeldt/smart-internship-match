@@ -24,11 +24,15 @@
   .kpi.alerte .valeur { color: var(--orange); }
   .kpi.bon .valeur { color: var(--vert); }
   .kpi.info .valeur { color: var(--bleu); }
-  .grille { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; }
+  .grille { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr)); gap: 16px; }
   .panneau { background: var(--carte); border: 1px solid var(--bord); border-radius: 10px; padding: 16px; }
   .panneau h3 { margin: 0 0 8px; font-size: 1rem; }
   .pourquoi { font-size: 0.8rem; color: var(--doux); border-left: 3px solid var(--bord); padding-left: 10px; margin-top: 10px; }
   .graph { position: relative; height: 260px; }
+  .graph.haut { height: 380px; }
+  .large { grid-column: 1 / -1; }
+  .barre { width: 80px; height: 6px; margin-top: 6px; background: var(--bord); border-radius: 3px; }
+  .barre span { display: block; height: 100%; background: var(--bleu); border-radius: 3px; }
   .table-scroll { overflow-x: auto; }
   table { width: 100%; border-collapse: collapse; font-size: 0.88rem; background: var(--carte); }
   th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--bord); vertical-align: top; }
@@ -67,7 +71,7 @@
       </table>
     </div>
     <p class="attribution"><a href="https://www.adzuna.fr" target="_blank" rel="noopener">Jobs</a> by <a href="https://www.adzuna.fr" target="_blank" rel="noopener">Adzuna</a> · offres également issues de <a href="https://fr.jooble.org" target="_blank" rel="noopener">Jooble</a>. Les liens mènent à l'annonce d'origine.</p>
-    <p class="pourquoi">Pourquoi un tableau : pour postuler, j'ai besoin du lien exact et du détail des compétences de chaque offre, pas d'une estimation visuelle. Score = somme des (niveau / 5) de mes compétences trouvées, divisée par (compétences détectées + 1), le « + 1 » représentant ce que l'extrait tronqué ne montre pas.</p>
+    <p class="pourquoi">Pourquoi un tableau plutôt qu'un graphique : pour postuler, j'ai besoin du lien, du nom de l'entreprise et du détail des compétences de chaque offre, ce qu'un graphique ne peut pas afficher lisiblement. La petite barre sous chaque score garde l'avantage visuel : on voit d'un coup d'œil l'écart entre les offres. Score = somme des (niveau / 5) de mes compétences trouvées, divisée par (compétences détectées + 1), le « + 1 » représentant ce que l'extrait tronqué ne montre pas.</p>
   </div>
 
   <!-- 3. Efficacite de la recherche -->
@@ -84,15 +88,10 @@
       <div class="graph"><canvas id="gDomaines"></canvas></div>
       <p class="pourquoi">Barres groupées : la comparaison « toutes les offres » / « offres avec données » montre que l'écart entre domaines vient surtout du manque d'information dans les extraits, pas de mon profil.</p>
     </div>
-    <div class="panneau">
-      <h3>Mes compétences les plus demandées</h3>
-      <div class="graph"><canvas id="gForces"></canvas></div>
-      <p class="pourquoi">Barres horizontales triées : on lit directement quelles compétences mettre en avant sur le CV. La couleur indique mon niveau (1 à 5).</p>
-    </div>
-    <div class="panneau">
-      <h3>Compétences demandées qui me manquent</h3>
-      <div class="graph"><canvas id="gLacunes"></canvas></div>
-      <p class="pourquoi">Même format que le graphique précédent, pour comparer directement mes forces et mes lacunes : la première barre est la compétence à travailler en priorité.</p>
+    <div class="panneau large">
+      <h3>Mes forces et mes lacunes face aux offres</h3>
+      <div class="graph haut"><canvas id="gForcesLacunes"></canvas></div>
+      <p class="pourquoi">Barres divergentes : à droite (vert/bleu) les compétences que j'ai et que les offres demandent, à mettre en avant sur le CV ; à gauche (orange) celles qui me manquent, à travailler. Une seule échelle pour les deux côtés permet de comparer directement. La couleur à droite indique mon niveau (vert = 4-5, bleu = 3, gris = 1-2).</p>
     </div>
   </div>
 
@@ -107,14 +106,20 @@
       <p class="pourquoi">KPI choisi pour ne pas mesurer seulement le volume : il compare l'efficacité des canaux (site de l'entreprise, école, email) pour savoir où concentrer mes candidatures.</p>
     </div>
     <div class="panneau">
+      <h3>Où en sont mes candidatures ?</h3>
+      <div class="graph"><canvas id="gStatuts"></canvas></div>
+      <p class="pourquoi">Anneau : il montre une répartition d'un tout (mes candidatures) en peu de catégories. On voit tout de suite la part encore sans réponse, donc à relancer.</p>
+    </div>
+    <div class="panneau large">
       <h3>Historique du monitoring</h3>
-      <div class="table-scroll">
+      <div class="graph"><canvas id="gHistorique"></canvas></div>
+      <div class="table-scroll" style="margin-top:12px">
         <table>
           <thead><tr><th>Date</th><th>Candidatures</th><th>Relances dues</th><th>Offres bien notées non postulées</th><th>Alertes</th></tr></thead>
           <tbody id="monitoring"></tbody>
         </table>
       </div>
-      <p class="pourquoi">Tableau daté : chaque ligne est une exécution du script de monitoring ; on voit si les alertes d'une semaine ont été traitées la suivante.</p>
+      <p class="pourquoi">Courbes : l'évolution dans le temps est ce qui compte ici. Si les relances dues baissent d'une exécution à l'autre, la boucle « contrôler → agir → re-mesurer » fonctionne. Le tableau garde le détail des alertes de chaque exécution.</p>
     </div>
   </div>
 
@@ -130,7 +135,7 @@
     <div class="panneau">
       <h3>Pertinence par source</h3>
       <div class="graph"><canvas id="gSources"></canvas></div>
-      <p class="pourquoi">Part des offres collectées qui sont réellement des stages : elle justifie le poids donné à chaque source.</p>
+      <p class="pourquoi">Barres empilées à 100 % : pour chaque source, la part de vrais stages et la part hors sujet (CDI, alternance…). Elle justifie le poids donné à chaque source.</p>
     </div>
   </div>
   <div class="kpis" id="kpisSante" style="margin-top:16px"></div>
@@ -202,12 +207,13 @@ Promise.all([
 
   // 2. Ou postuler
   const meilleures = matches.offers.filter(o => !o.insufficient_data).slice(0, 12);
+  const scoreMax = Math.max(...meilleures.map(o => o.score), 0.01);
   document.getElementById('offres').innerHTML = meilleures.map(o => `
     <tr>
-      <td class="score">${o.score.toFixed(2)}</td>
+      <td class="score">${o.score.toFixed(2)}<div class="barre"><span style="width:${Math.round(100 * o.score / scoreMax)}%"></span></div></td>
       <td>${o.url ? `<a href="${echapper(o.url)}" target="_blank" rel="noopener">${echapper(o.title)}</a>` : echapper(o.title)}</td>
       <td>${echapper(o.company || '-')}</td>
-      <td>${echapper((o.matched_queries || []).map(q => DOMAINES[q] || q).join(', '))}</td>
+      <td>${echapper([...new Set((o.matched_queries || []).map(q => DOMAINES[q] || q))].join(', '))}</td>
       <td>${o.matched.map(s => `<span class="puce ok">${echapper(s)}</span>`).join('') || '-'}</td>
       <td>${o.gaps.map(s => `<span class="puce manque">${echapper(s)}</span>`).join('') || '-'}</td>
     </tr>`).join('');
@@ -233,18 +239,23 @@ Promise.all([
     { label: 'Offres avec compétences détectées', data: requetes.map(q => (matches.avg_score_by_query_known || {})[q]), backgroundColor: COULEURS.bleu },
   ], { scales: { y: { beginAtZero: true, title: { display: true, text: 'score moyen' } } } });
 
-  // 3c. Forces
-  const forces = matches.top_matched_skills || [];
-  graphiqueBarres('gForces', forces.map(s => `${s.skill} (niv. ${s.level})`), [{
-    label: 'offres qui la demandent', data: forces.map(s => s.count),
-    backgroundColor: forces.map(s => (s.level >= 4 ? COULEURS.vert : s.level >= 3 ? COULEURS.bleu : COULEURS.gris)),
-  }], { indexAxis: 'y' });
-
-  // 3d. Lacunes
-  const lacunes = matches.top_skill_gaps || [];
-  graphiqueBarres('gLacunes', lacunes.map(s => s.skill), [{
-    label: 'offres qui la demandent', data: lacunes.map(s => s.count), backgroundColor: COULEURS.orange,
-  }], { indexAxis: 'y' });
+  // 3c. Forces et lacunes (barres divergentes)
+  const forces = (matches.top_matched_skills || []).slice(0, 8);
+  const lacunes = (matches.top_skill_gaps || []).slice(0, 8);
+  const lignes = forces.map(s => ({ nom: `${s.skill} (niv. ${s.level})`, force: s.count, lacune: 0, niveau: s.level }))
+    .concat(lacunes.map(s => ({ nom: s.skill, force: 0, lacune: -s.count, niveau: 0 })));
+  graphiqueBarres('gForcesLacunes', lignes.map(l => l.nom), [
+    { label: 'Je l\'ai : offres qui la demandent', data: lignes.map(l => l.force),
+      backgroundColor: lignes.map(l => (l.niveau >= 4 ? COULEURS.vert : l.niveau >= 3 ? COULEURS.bleu : COULEURS.gris)) },
+    { label: 'Il me manque : offres qui la demandent', data: lignes.map(l => l.lacune), backgroundColor: COULEURS.orange },
+  ], {
+    indexAxis: 'y',
+    scales: {
+      x: { stacked: true, ticks: { precision: 0, callback: v => Math.abs(v) }, title: { display: true, text: '← me manque      nombre d\'offres      j\'ai →' } },
+      y: { stacked: true },
+    },
+    plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => `${c.dataset.label} : ${Math.abs(c.raw)}` } } },
+  });
 
   // 4. Resultats
   if (suivi) {
@@ -258,8 +269,36 @@ Promise.all([
       { label: 'Envoyées', data: canaux.map(c => suivi.by_channel[c].envoyees), backgroundColor: COULEURS.gris },
       { label: 'Réponses', data: canaux.map(c => suivi.by_channel[c].reponses), backgroundColor: COULEURS.bleu },
     ], { scales: { y: { beginAtZero: true, ticks: { precision: 0 } } } });
+
+    const STATUTS = {
+      envoyee: ['Envoyée, sans réponse', COULEURS.gris], relancee: ['Relancée', COULEURS.bleu],
+      entretien: ['Entretien', COULEURS.vert], refus: ['Refus', COULEURS.orange],
+    };
+    const statuts = Object.keys(suivi.by_status || {});
+    new Chart(document.getElementById('gStatuts'), {
+      type: 'doughnut',
+      data: {
+        labels: statuts.map(s => (STATUTS[s] ? STATUTS[s][0] : s)),
+        datasets: [{ data: statuts.map(s => suivi.by_status[s]),
+          backgroundColor: statuts.map((s, i) => (STATUTS[s] ? STATUTS[s][1] : ['#6b5bd2', '#b8860b', '#4a6fa5'][i % 3])) }],
+      },
+      options: { responsive: true, maintainAspectRatio: false, cutout: '55%', plugins: { legend: { position: 'bottom' } } },
+    });
   }
   if (monitoring) {
+    new Chart(document.getElementById('gHistorique'), {
+      type: 'line',
+      data: {
+        labels: monitoring.runs.map(r => r.run_date),
+        datasets: [
+          { label: 'Candidatures envoyées', data: monitoring.runs.map(r => r.n_applications), borderColor: COULEURS.bleu, backgroundColor: COULEURS.bleu },
+          { label: 'Relances dues', data: monitoring.runs.map(r => r.n_follow_ups_due), borderColor: COULEURS.orange, backgroundColor: COULEURS.orange },
+          { label: 'Offres bien notées non postulées', data: monitoring.runs.map(r => r.n_high_match_not_applied), borderColor: COULEURS.vert, backgroundColor: COULEURS.vert },
+        ],
+      },
+      options: { responsive: true, maintainAspectRatio: false, elements: { point: { radius: 5 } },
+        scales: { y: { beginAtZero: true, ticks: { precision: 0 } } } },
+    });
     document.getElementById('monitoring').innerHTML = monitoring.runs.map(r => `
       <tr><td>${echapper(r.run_date)}</td><td>${r.n_applications}</td><td>${r.n_follow_ups_due}</td>
       <td>${r.n_high_match_not_applied}</td><td>${echapper(r.alerts.join(' · ') || 'aucune')}</td></tr>`).join('');
@@ -278,11 +317,15 @@ Promise.all([
       { indexAxis: 'y' });
 
     const noms = Object.keys(sources);
-    graphiqueBarres('gSources', noms.map(n => n.charAt(0).toUpperCase() + n.slice(1)), [{
-      label: '% de vrais stages',
-      data: noms.map(n => (sources[n].n_offers ? Math.round(100 * sources[n].n_internship / sources[n].n_offers) : 0)),
-      backgroundColor: [COULEURS.vert, COULEURS.orange],
-    }], { scales: { y: { min: 0, max: 100, title: { display: true, text: '%' } } } });
+    const partStages = noms.map(n => (sources[n].n_offers ? Math.round(100 * sources[n].n_internship / sources[n].n_offers) : 0));
+    graphiqueBarres('gSources', noms.map(n => `${n.charAt(0).toUpperCase() + n.slice(1)} (${sources[n].n_offers} offres)`), [
+      { label: 'Vrais stages', data: partStages, backgroundColor: COULEURS.vert },
+      { label: 'Hors sujet (CDI, alternance...)', data: partStages.map(p => 100 - p), backgroundColor: COULEURS.gris },
+    ], {
+      indexAxis: 'y',
+      scales: { x: { stacked: true, min: 0, max: 100, title: { display: true, text: '% des offres collectées' } }, y: { stacked: true } },
+      plugins: { tooltip: { callbacks: { label: c => `${c.dataset.label} : ${c.raw} %` } } },
+    });
 
     const ex = sante.extraction;
     document.getElementById('kpisSante').innerHTML =
