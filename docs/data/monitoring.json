@@ -1,0 +1,17 @@
+{
+  "runs": [
+    {
+      "run_date": "2026-11-17",
+      "n_applications": 11,
+      "n_follow_ups_due": 8,
+      "data_age_days": {
+        "adzuna": 0,
+        "jooble": 0
+      },
+      "n_high_match_not_applied": 12,
+      "alerts": [
+        "8 relance(s) a faire"
+      ]
+    }
+  ]
+}

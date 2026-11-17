@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="utf-8"><title>Pipeline sanity check</title></head>
+<body style="font-family: system-ui, sans-serif; max-width: 900px; margin: 2rem auto; padding: 0 1rem;">
+  <h1>Pipeline sanity check — pas le dashboard</h1>
+  <p>Cette page vérifie seulement que le pipeline produit des données bien formées.
+     Le vrai tableau de bord est ici : <a href="dashboard.html"><strong>dashboard.html</strong></a></p>
+  <pre id="out" style="font-size: 0.8rem; white-space: pre-wrap;">Chargement...</pre>
+<script>
+fetch('data/matches.json')
+  .then(r => r.json())
+  .then(data => { document.getElementById('out').textContent = JSON.stringify(data, null, 2); })
+  .catch(err => { document.getElementById('out').textContent = 'Impossible de charger les données : ' + err; });
+</script>
+</body>
+</html>

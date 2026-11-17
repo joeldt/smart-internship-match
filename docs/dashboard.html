@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ma recherche de stage - tableau de bord</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bleu: #0d7c9e; --vert: #2e8b46; --orange: #c46e0a; --gris: #9aa5b1;
+    --texte: #1f2933; --doux: #5f6b7a; --fond: #f6f8fa; --carte: #ffffff; --bord: #e1e5ea;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--texte); background: var(--fond); line-height: 1.5; }
+  main { max-width: 1100px; margin: 0 auto; padding: 24px 16px 48px; }
+  header h1 { margin: 0 0 4px; font-size: 1.7rem; }
+  header p { margin: 4px 0; color: var(--doux); }
+  h2 { margin: 36px 0 4px; font-size: 1.25rem; }
+  .question { margin: 0 0 14px; color: var(--doux); }
+  .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+  .kpi { background: var(--carte); border: 1px solid var(--bord); border-radius: 10px; padding: 14px 16px; }
+  .kpi .valeur { font-size: 1.9rem; font-weight: 700; }
+  .kpi .label { font-size: 0.85rem; color: var(--doux); }
+  .kpi.alerte .valeur { color: var(--orange); }
+  .kpi.bon .valeur { color: var(--vert); }
+  .kpi.info .valeur { color: var(--bleu); }
+  .grille { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; }
+  .panneau { background: var(--carte); border: 1px solid var(--bord); border-radius: 10px; padding: 16px; }
+  .panneau h3 { margin: 0 0 8px; font-size: 1rem; }
+  .pourquoi { font-size: 0.8rem; color: var(--doux); border-left: 3px solid var(--bord); padding-left: 10px; margin-top: 10px; }
+  .graph { position: relative; height: 260px; }
+  .table-scroll { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.88rem; background: var(--carte); }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--bord); vertical-align: top; }
+  th { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.03em; color: var(--doux); }
+  td.score { font-weight: 700; color: var(--bleu); white-space: nowrap; }
+  .puce { display: inline-block; padding: 1px 8px; margin: 2px 3px 2px 0; border-radius: 999px; font-size: 0.78rem; }
+  .puce.ok { background: #e3f3e8; color: #1e6b35; }
+  .puce.manque { background: #fbeedd; color: #8a4b05; }
+  a { color: var(--bleu); }
+  .attribution { font-size: 0.8rem; color: var(--doux); margin-top: 8px; }
+  footer { margin-top: 40px; font-size: 0.85rem; color: var(--doux); }
+  footer li { margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Ma recherche de stage de fin d'études</h1>
+    <p>Pour moi, chaque semaine : <strong>à quelles offres postuler, qui relancer, et quelle compétence travailler</strong>.</p>
+    <p id="maj">Chargement des données...</p>
+  </header>
+
+  <!-- 1. Cette semaine -->
+  <h2>Cette semaine</h2>
+  <p class="question">Les trois actions à faire maintenant, issues du monitoring.</p>
+  <div class="kpis" id="kpis"></div>
+
+  <!-- 2. Ou postuler -->
+  <h2>Où postuler en priorité</h2>
+  <p class="question">Les offres de stage qui correspondent le mieux à mon profil, d'après mon KPI de matching.</p>
+  <div class="panneau">
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Score</th><th>Offre</th><th>Entreprise</th><th>Domaine</th><th>Mes compétences demandées</th><th>Compétences qui me manquent</th></tr></thead>
+        <tbody id="offres"></tbody>
+      </table>
+    </div>
+    <p class="attribution"><a href="https://www.adzuna.fr" target="_blank" rel="noopener">Jobs</a> by <a href="https://www.adzuna.fr" target="_blank" rel="noopener">Adzuna</a> · offres également issues de <a href="https://fr.jooble.org" target="_blank" rel="noopener">Jooble</a>. Les liens mènent à l'annonce d'origine.</p>
+    <p class="pourquoi">Pourquoi un tableau : pour postuler, j'ai besoin du lien exact et du détail des compétences de chaque offre, pas d'une estimation visuelle. Score = somme des (niveau / 5) de mes compétences trouvées, divisée par (compétences détectées + 1), le « + 1 » représentant ce que l'extrait tronqué ne montre pas.</p>
+  </div>
+
+  <!-- 3. Efficacite de la recherche -->
+  <h2>Efficacité de ma recherche</h2>
+  <p class="question">Mon profil correspond-il aux offres, dans quel domaine, et que dois-je apprendre ?</p>
+  <div class="grille">
+    <div class="panneau">
+      <h3>Répartition des scores de matching</h3>
+      <div class="graph"><canvas id="gScores"></canvas></div>
+      <p class="pourquoi">Histogramme : il montre d'un coup la forme de la distribution. La barre grise isole les offres « inconnues » (aucune compétence détectée dans l'extrait) pour ne pas les confondre avec des offres peu adaptées.</p>
+    </div>
+    <div class="panneau">
+      <h3>Score moyen par domaine</h3>
+      <div class="graph"><canvas id="gDomaines"></canvas></div>
+      <p class="pourquoi">Barres groupées : la comparaison « toutes les offres » / « offres avec données » montre que l'écart entre domaines vient surtout du manque d'information dans les extraits, pas de mon profil.</p>
+    </div>
+    <div class="panneau">
+      <h3>Mes compétences les plus demandées</h3>
+      <div class="graph"><canvas id="gForces"></canvas></div>
+      <p class="pourquoi">Barres horizontales triées : on lit directement quelles compétences mettre en avant sur le CV. La couleur indique mon niveau (1 à 5).</p>
+    </div>
+    <div class="panneau">
+      <h3>Compétences demandées qui me manquent</h3>
+      <div class="graph"><canvas id="gLacunes"></canvas></div>
+      <p class="pourquoi">Même format que le graphique précédent, pour comparer directement mes forces et mes lacunes : la première barre est la compétence à travailler en priorité.</p>
+    </div>
+  </div>
+
+  <!-- 4. Resultats -->
+  <h2>Résultats de mes candidatures</h2>
+  <p class="question">Où mon effort donne-t-il des réponses ? (chiffres agrégés, le suivi détaillé reste privé)</p>
+  <div class="kpis" id="kpisResultats"></div>
+  <div class="grille" style="margin-top:16px">
+    <div class="panneau">
+      <h3>Taux de réponse par canal de candidature</h3>
+      <div class="graph"><canvas id="gCanaux"></canvas></div>
+      <p class="pourquoi">KPI choisi pour ne pas mesurer seulement le volume : il compare l'efficacité des canaux (site de l'entreprise, école, email) pour savoir où concentrer mes candidatures.</p>
+    </div>
+    <div class="panneau">
+      <h3>Historique du monitoring</h3>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Date</th><th>Candidatures</th><th>Relances dues</th><th>Offres bien notées non postulées</th><th>Alertes</th></tr></thead>
+          <tbody id="monitoring"></tbody>
+        </table>
+      </div>
+      <p class="pourquoi">Tableau daté : chaque ligne est une exécution du script de monitoring ; on voit si les alertes d'une semaine ont été traitées la suivante.</p>
+    </div>
+  </div>
+
+  <!-- 5. Sante du pipeline -->
+  <h2>Santé du pipeline de données</h2>
+  <p class="question">Puis-je faire confiance aux chiffres ci-dessus ?</p>
+  <div class="grille">
+    <div class="panneau">
+      <h3>Entonnoir : des offres collectées aux offres exploitables</h3>
+      <div class="graph"><canvas id="gEntonnoir"></canvas></div>
+      <p class="pourquoi">Entonnoir en barres horizontales : il montre à quelle étape on perd des offres (doublons, hors sujet, extraits sans compétence).</p>
+    </div>
+    <div class="panneau">
+      <h3>Pertinence par source</h3>
+      <div class="graph"><canvas id="gSources"></canvas></div>
+      <p class="pourquoi">Part des offres collectées qui sont réellement des stages : elle justifie le poids donné à chaque source.</p>
+    </div>
+  </div>
+  <div class="kpis" id="kpisSante" style="margin-top:16px"></div>
+
+  <footer>
+    <strong>Méthode et limites</strong>
+    <ul>
+      <li>Sources : API Adzuna et Jooble (collecte manuelle, au plus une fois par semaine, quotas gratuits limités).</li>
+      <li>Les deux API ne fournissent que des extraits d'offres : beaucoup d'offres n'affichent aucune compétence et sont classées « inconnues ».</li>
+      <li>Compétences extraites par un modèle local (Ollama, qwen3:8b), complétées par une détection par motifs de mes propres compétences.</li>
+      <li>Mon profil de compétences est une auto-évaluation ; les salaires estimés par Adzuna sont ignorés.</li>
+    </ul>
+  </footer>
+</main>
+
+<script>
+const COULEURS = { bleu: '#0d7c9e', vert: '#2e8b46', orange: '#c46e0a', gris: '#9aa5b1' };
+const DOMAINES = { 'stage développeur': 'Développement', 'stage data': 'Data', 'stage devops': 'DevOps' };
+
+function charger(chemin) {
+  return fetch(chemin).then(r => (r.ok ? r.json() : null)).catch(() => null);
+}
+
+function echapper(texte) {
+  const div = document.createElement('div');
+  div.textContent = texte == null ? '' : String(texte);
+  return div.innerHTML;
+}
+
+function pourcent(x) {
+  return x == null ? '-' : Math.round(x * 100) + ' %';
+}
+
+function carte(valeur, label, style) {
+  return `<div class="kpi ${style}"><div class="valeur">${valeur}</div><div class="label">${label}</div></div>`;
+}
+
+function graphiqueBarres(id, labels, jeux, options = {}) {
+  new Chart(document.getElementById(id), {
+    type: 'bar',
+    data: { labels, datasets: jeux },
+    options: Object.assign({
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: jeux.length > 1 } },
+    }, options),
+  });
+}
+
+Promise.all([
+  charger('data/matches.json'),
+  charger('data/monitoring.json'),
+  charger('data/tracking_summary.json'),
+  charger('data/pipeline_health.json'),
+]).then(([matches, monitoring, suivi, sante]) => {
+  if (!matches) {
+    document.getElementById('maj').textContent = 'Données introuvables : lancer les scripts puis publier docs/data/.';
+    return;
+  }
+  const dernier = monitoring && monitoring.runs.length ? monitoring.runs[monitoring.runs.length - 1] : null;
+  document.getElementById('maj').textContent =
+    `Matching calculé le ${matches.generated_at.slice(0, 10)}` +
+    (dernier ? ` · dernier monitoring le ${dernier.run_date}` : '');
+
+  // 1. Cette semaine
+  document.getElementById('kpis').innerHTML =
+    carte(dernier ? dernier.n_follow_ups_due : '-', 'candidatures à relancer (sans réponse depuis plus de 10 jours)', 'alerte') +
+    carte(dernier ? dernier.n_high_match_not_applied : '-', 'offres bien notées (score ≥ 0,3) auxquelles je n\'ai pas postulé', 'info') +
+    carte(suivi ? pourcent(suivi.response_rate) : '-', `taux de réponse à mes candidatures (${suivi ? suivi.n_responses + ' sur ' + suivi.n_applications : '-'})`, 'bon');
+
+  // 2. Ou postuler
+  const meilleures = matches.offers.filter(o => !o.insufficient_data).slice(0, 12);
+  document.getElementById('offres').innerHTML = meilleures.map(o => `
+    <tr>
+      <td class="score">${o.score.toFixed(2)}</td>
+      <td>${o.url ? `<a href="${echapper(o.url)}" target="_blank" rel="noopener">${echapper(o.title)}</a>` : echapper(o.title)}</td>
+      <td>${echapper(o.company || '-')}</td>
+      <td>${echapper((o.matched_queries || []).map(q => DOMAINES[q] || q).join(', '))}</td>
+      <td>${o.matched.map(s => `<span class="puce ok">${echapper(s)}</span>`).join('') || '-'}</td>
+      <td>${o.gaps.map(s => `<span class="puce manque">${echapper(s)}</span>`).join('') || '-'}</td>
+    </tr>`).join('');
+
+  // 3a. Repartition des scores
+  const classes = { 'Inconnue': 0, '< 0,15': 0, '0,15 - 0,29': 0, '0,30 - 0,39': 0, '≥ 0,40': 0 };
+  matches.offers.forEach(o => {
+    if (o.insufficient_data) classes['Inconnue']++;
+    else if (o.score < 0.15) classes['< 0,15']++;
+    else if (o.score < 0.3) classes['0,15 - 0,29']++;
+    else if (o.score < 0.4) classes['0,30 - 0,39']++;
+    else classes['≥ 0,40']++;
+  });
+  graphiqueBarres('gScores', Object.keys(classes), [{
+    label: 'Nombre d\'offres', data: Object.values(classes),
+    backgroundColor: [COULEURS.gris, COULEURS.bleu, COULEURS.bleu, COULEURS.vert, COULEURS.vert],
+  }], { scales: { y: { title: { display: true, text: 'offres' } } } });
+
+  // 3b. Score moyen par domaine
+  const requetes = Object.keys(matches.avg_score_by_query || {});
+  graphiqueBarres('gDomaines', requetes.map(q => DOMAINES[q] || q), [
+    { label: 'Toutes les offres', data: requetes.map(q => matches.avg_score_by_query[q]), backgroundColor: COULEURS.gris },
+    { label: 'Offres avec compétences détectées', data: requetes.map(q => (matches.avg_score_by_query_known || {})[q]), backgroundColor: COULEURS.bleu },
+  ], { scales: { y: { beginAtZero: true, title: { display: true, text: 'score moyen' } } } });
+
+  // 3c. Forces
+  const forces = matches.top_matched_skills || [];
+  graphiqueBarres('gForces', forces.map(s => `${s.skill} (niv. ${s.level})`), [{
+    label: 'offres qui la demandent', data: forces.map(s => s.count),
+    backgroundColor: forces.map(s => (s.level >= 4 ? COULEURS.vert : s.level >= 3 ? COULEURS.bleu : COULEURS.gris)),
+  }], { indexAxis: 'y' });
+
+  // 3d. Lacunes
+  const lacunes = matches.top_skill_gaps || [];
+  graphiqueBarres('gLacunes', lacunes.map(s => s.skill), [{
+    label: 'offres qui la demandent', data: lacunes.map(s => s.count), backgroundColor: COULEURS.orange,
+  }], { indexAxis: 'y' });
+
+  // 4. Resultats
+  if (suivi) {
+    document.getElementById('kpisResultats').innerHTML =
+      carte(suivi.n_applications, 'candidatures envoyées', 'info') +
+      carte(suivi.n_responses, 'réponses reçues', 'info') +
+      carte(suivi.n_interviews, 'entretiens obtenus', 'bon') +
+      carte(suivi.median_response_days == null ? '-' : suivi.median_response_days + ' j', 'délai médian de réponse', 'info');
+    const canaux = Object.keys(suivi.by_channel || {});
+    graphiqueBarres('gCanaux', canaux, [
+      { label: 'Envoyées', data: canaux.map(c => suivi.by_channel[c].envoyees), backgroundColor: COULEURS.gris },
+      { label: 'Réponses', data: canaux.map(c => suivi.by_channel[c].reponses), backgroundColor: COULEURS.bleu },
+    ], { scales: { y: { beginAtZero: true, ticks: { precision: 0 } } } });
+  }
+  if (monitoring) {
+    document.getElementById('monitoring').innerHTML = monitoring.runs.map(r => `
+      <tr><td>${echapper(r.run_date)}</td><td>${r.n_applications}</td><td>${r.n_follow_ups_due}</td>
+      <td>${r.n_high_match_not_applied}</td><td>${echapper(r.alerts.join(' · ') || 'aucune')}</td></tr>`).join('');
+  }
+
+  // 5. Sante du pipeline
+  if (sante) {
+    const sources = sante.sources || {};
+    const brutes = Object.values(sources).reduce((s, x) => s + (x.n_raw || 0), 0);
+    const parSource = Object.values(sources).reduce((s, x) => s + (x.n_offers || 0), 0);
+    const exploitables = (sante.matching.n_offers || 0) - (sante.matching.n_insufficient_data || 0);
+    graphiqueBarres('gEntonnoir',
+      ['Collectées', 'Sans doublon interne', 'Uniques (2 sources)', 'Vrais stages', 'Avec compétences détectées', 'Score ≥ 0,3'],
+      [{ label: 'offres', data: [brutes, parSource, sante.merge.n_unique_offers, sante.merge.n_internships, exploitables, sante.matching.n_score_at_least_0_3],
+         backgroundColor: [COULEURS.gris, COULEURS.gris, COULEURS.bleu, COULEURS.bleu, COULEURS.vert, COULEURS.vert] }],
+      { indexAxis: 'y' });
+
+    const noms = Object.keys(sources);
+    graphiqueBarres('gSources', noms.map(n => n.charAt(0).toUpperCase() + n.slice(1)), [{
+      label: '% de vrais stages',
+      data: noms.map(n => (sources[n].n_offers ? Math.round(100 * sources[n].n_internship / sources[n].n_offers) : 0)),
+      backgroundColor: [COULEURS.vert, COULEURS.orange],
+    }], { scales: { y: { min: 0, max: 100, title: { display: true, text: '%' } } } });
+
+    const ex = sante.extraction;
+    document.getElementById('kpisSante').innerHTML =
+      carte(ex.n_offers ? pourcent(ex.n_with_at_least_one_skill / ex.n_offers) : '-', 'offres où l\'IA a extrait au moins une compétence', 'alerte') +
+      carte(pourcent(sante.matching.share_matches_found_only_by_text), 'correspondances trouvées uniquement par la recherche dans le texte', 'info') +
+      carte(ex.n_errors == null ? '-' : ex.n_errors, `erreurs d'extraction (${ex.avg_seconds_per_offer || '-'} s par offre)`, 'bon') +
+      carte(sante.merge.n_same_source_duplicates + sante.merge.n_cross_source_duplicates, 'republications et doublons retirés à la fusion', 'info') +
+      carte(noms.map(n => `${sources[n].api_calls_last_run ?? '-'}`).join(' + '), 'appels API lors de la dernière collecte (Adzuna + Jooble)', 'info');
+  }
+});
+</script>
+</body>
+</html>

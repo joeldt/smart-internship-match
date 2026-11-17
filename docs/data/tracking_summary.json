@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-11-17T13:33:17Z",
+  "n_applications": 11,
+  "n_responses": 3,
+  "response_rate": 0.273,
+  "n_interviews": 0,
+  "median_response_days": null,
+  "by_status": {
+    "refus": 3,
+    "envoyee": 8
+  },
+  "by_channel": {
+    "email": {
+      "envoyees": 2,
+      "reponses": 1
+    },
+    "ecole": {
+      "envoyees": 2,
+      "reponses": 0
+    },
+    "site entreprise": {
+      "envoyees": 7,
+      "reponses": 2
+    }
+  },
+  "by_domain": {
+    "developpement": {
+      "envoyees": 7,
+      "reponses": 2
+    },
+    "data": {
+      "envoyees": 3,
+      "reponses": 0
+    },
+    "ia": {
+      "envoyees": 1,
+      "reponses": 1
+    }
+  }
+}
