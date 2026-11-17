@@ -1,0 +1,27 @@
+name: Fetch internship offers (Jooble)
+
+"on":
+  workflow_dispatch: {}   # manuel uniquement 
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - run: python scripts/fetch_offers_jooble.py
+        env:
+          JOOBLE_API_KEY: ${{ secrets.JOOBLE_API_KEY }}
+      - name: Commit updated offers
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/offers/raw_offers_jooble.json
+          git commit -m "Fetch latest Jooble offers [automated]" || echo "Nothing to commit"
+          git push
