@@ -1,0 +1,4330 @@
+{
+  "generated_at": "2026-11-17T12:36:07Z",
+  "n_offers": 125,
+  "n_insufficient_data": 76,
+  "share_matches_found_only_by_text": 0.3,
+  "avg_score_by_query": {
+    "stage data": 0.051,
+    "stage développeur": 0.064,
+    "stage devops": 0.043
+  },
+  "avg_score_by_query_known": {
+    "stage data": 0.137,
+    "stage développeur": 0.147,
+    "stage devops": 0.14
+  },
+  "offers": [
+    {
+      "id": "adz_5968741188",
+      "source": "adzuna",
+      "title": "STAGE - DATA ANALYST PAIEMENT FRACTIONNE F/H",
+      "company": "CDISCOUNT",
+      "location": "Gironde, Nouvelle-Aquitaine",
+      "url": "https://www.adzuna.fr/details/5968741188",
+      "date_posted": "2026-11-17T07:59:16Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "SQL",
+        "Python"
+      ],
+      "responsibilities": [
+        "contribuer directement au pilotage du système d’octroi du paiement fractionné en production",
+        "analyser la donnée et les comportements clients pour créer de la valeur",
+        "extraire et exploiter les données via SQL, Python pour alimenter tes analyses",
+        "identifier des comportements clients atypiques et des irritants dans le parcours du paiement en 4 fois (par exemple les refus répétés)",
+        "approfondir …"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.467,
+      "coverage": 1.0,
+      "matched": [
+        "Python",
+        "SQL"
+      ],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 2,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5965601491",
+      "source": "adzuna",
+      "title": "Stage : Stage - Développeur(se) portail Web full stack Java / Angular - Energie & Telecom – Toulouse",
+      "company": "Sopra-Steria",
+      "location": "Toulouse 13e Canton, Toulouse",
+      "url": "https://www.adzuna.fr/details/5965601491",
+      "date_posted": "2026-11-14T11:09:12Z",
+      "matched_queries": [
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "Java",
+        "Angular"
+      ],
+      "responsibilities": [
+        "Développer un portail Web full stack"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.4,
+      "coverage": 1.0,
+      "matched": [
+        "Java",
+        "Angular"
+      ],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 2,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5964208357",
+      "source": "adzuna",
+      "title": "Stage de fin d'études - Développeur back-end F/H",
+      "company": "TEAM Y",
+      "location": "Talmont-Saint-Hilaire, Les Sables-d'Olonne",
+      "url": "https://www.adzuna.fr/details/5964208357",
+      "date_posted": "2026-11-13T08:11:45Z",
+      "matched_queries": [
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": "22404 EUR/an",
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "Python"
+      ],
+      "responsibilities": [
+        "Concevoir et développer de nouvelles fonctionnalités back-end en Python",
+        "Concevoir et faire évoluer des API",
+        "Participer au développement et à l'utilisation de bases de données",
+        "Réaliser des tests et corriger les anomalies",
+        "Documenter les développement réalisés",
+        "Collaborer avec les développeurs front-end sur les projets"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.4,
+      "coverage": 1.0,
+      "matched": [
+        "Python"
+      ],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 1,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5968885487",
+      "source": "adzuna",
+      "title": "Stage : Développeur java (F/H) - stage",
+      "company": "AXA",
+      "location": "Roubaix-Ouest, Lille",
+      "url": "https://www.adzuna.fr/details/5968885487",
+      "date_posted": "2026-11-17T11:09:38Z",
+      "matched_queries": [
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "Java"
+      ],
+      "responsibilities": [
+        "intégrer une équipe qui travaille sur la gestion des services utiles pour notre CRM Saleforce",
+        "participer à l’élaboration et à la construction d’un produit qui se veut erg"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.3,
+      "coverage": 1.0,
+      "matched": [
+        "Java"
+      ],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 1,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5968534557",
+      "source": "adzuna",
+      "title": "Stage - Développeur(se) Full Stack Java - Aeroline - Toulouse",
+      "company": "Sopra Steria",
+      "location": "Blagnac, Toulouse",
+      "url": "https://www.adzuna.fr/land/ad/5968534557",
+      "date_posted": "2026-11-17T05:04:43Z",
+      "matched_queries": [
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "Java"
+      ],
+      "responsibilities": [
+        "Développer des applications full stack"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.3,
+      "coverage": 1.0,
+      "matched": [
+        "Java"
+      ],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 1,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5967389525",
+      "source": "adzuna",
+      "title": "Stage - Développeur/se java augmenté/e par l'IA - Energy & Telecom - Lyon",
+      "company": "Direct Emploi",
+      "location": "Collonges, Gex",
+      "url": "https://www.adzuna.fr/land/ad/5967389525",
+      "date_posted": "2026-11-16T05:50:07Z",
+      "matched_queries": [
+        "stage développeur",
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Participant actuellement à l'un de nos forums."
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.3,
+      "coverage": 1.0,
+      "matched": [
+        "Java"
+      ],
+      "gaps": [],
+      "matched_only_by_text": [
+        "Java"
+      ],
+      "n_skills_detected": 1,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5965601502",
+      "source": "adzuna",
+      "title": "Stage : Stage - Développeur/euse Java - Services Publics - Grenoble",
+      "company": "Sopra-Steria",
+      "location": "Isère, Auvergne-Rhône-Alpes",
+      "url": "https://www.adzuna.fr/details/5965601502",
+      "date_posted": "2026-11-14T11:09:13Z",
+      "matched_queries": [
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "Java"
+      ],
+      "responsibilities": [
+        "Développer des solutions numériques"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.3,
+      "coverage": 1.0,
+      "matched": [
+        "Java"
+      ],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 1,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5965160197",
+      "source": "adzuna",
+      "title": "Stage - Développeur(se) Java R&D pour un Centre de Mission - Spatial - Toulouse",
+      "company": "Forums Talents Handicap",
+      "location": "Haute-Garonne, Occitanie",
+      "url": "https://www.adzuna.fr/details/5965160197",
+      "date_posted": "2026-11-14T04:17:32Z",
+      "matched_queries": [
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "Java"
+      ],
+      "responsibilities": [
+        "Développer des systèmes critiques"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.3,
+      "coverage": 1.0,
+      "matched": [
+        "Java"
+      ],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 1,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5968885904",
+      "source": "adzuna",
+      "title": "Stage : Stage - Data Analyste Projet RH - diversité & inclusion F/H",
+      "company": "Orange",
+      "location": "Issy-les-Moulineaux, Boulogne-Billancourt",
+      "url": "https://www.adzuna.fr/details/5968885904",
+      "date_posted": "2026-11-17T11:10:25Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "tableau de bord automatisé"
+      ],
+      "responsibilities": [
+        "contribuer à la conception et à l’optimisation de solutions de pilotage RH",
+        "participer à un projet Data RH visant à suivre les engagements des accords Égalité professionnelle et Handicap",
+        "participer à la conception d’un tableau de bord automatisé pour piloter les engagements des accords Égalité"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.3,
+      "coverage": 1.0,
+      "matched": [
+        "Data visualisation"
+      ],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 1,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5968885488",
+      "source": "adzuna",
+      "title": "Stage : STAGE - Business Data Analyst H/F",
+      "company": "AXA",
+      "location": "Malakoff, Antony",
+      "url": "https://www.adzuna.fr/details/5968885488",
+      "date_posted": "2026-11-17T11:09:38Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "SQL"
+      ],
+      "responsibilities": [
+        "soutenir la croissance de notre offre d’Assurance Voyage (B2C et B2B2C) grâce à l’analyse de données",
+        "transformer des données complexes en insights actionnables pour identifier des leviers de croissance",
+        "optim…"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.3,
+      "coverage": 1.0,
+      "matched": [
+        "SQL"
+      ],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 1,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5968328419",
+      "source": "adzuna",
+      "title": "STAGE - Data Engineer Power BI – H/F",
+      "company": "THALES",
+      "location": "Vélizy-Villacoublay, Versailles",
+      "url": "https://www.adzuna.fr/land/ad/5968328419",
+      "date_posted": "2026-11-17T00:34:34Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "Power BI"
+      ],
+      "responsibilities": [
+        "Construisons ensemble un avenir de confiance"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.3,
+      "coverage": 1.0,
+      "matched": [
+        "Power BI"
+      ],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 1,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5965468168",
+      "source": "adzuna",
+      "title": "STAGE - Ingénieur DevOPS & IA - Migration de chaines CI/CD - F/H",
+      "company": "THALES",
+      "location": "Gennevilliers, Nanterre",
+      "url": "https://www.adzuna.fr/land/ad/5965468168",
+      "date_posted": "2026-11-14T08:33:21Z",
+      "matched_queries": [
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Migration de chaines CI/CD"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.3,
+      "coverage": 1.0,
+      "matched": [
+        "GitHub Actions"
+      ],
+      "gaps": [],
+      "matched_only_by_text": [
+        "GitHub Actions"
+      ],
+      "n_skills_detected": 1,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5968729606",
+      "source": "adzuna",
+      "title": "Stage : Développeuse / Développeur IA - Stage H/F (Stage)",
+      "company": "Stage",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "url": "https://www.adzuna.fr/details/5968729606",
+      "date_posted": "2026-11-17T07:53:52Z",
+      "matched_queries": [
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "IA générative",
+        "développement de solutions"
+      ],
+      "responsibilities": [
+        "explorer les opportunités offertes par l'IA générative afin de créer des applications, assistants et agents intelligents capables d'automatiser des tâches",
+        "faciliter la prise de décision et améliorer l'expérience utilisateur",
+        "participer à toutes les étapes, de l'expérimentation à la mise en production de prototypes innovants",
+        "contribuer aux activités suivantes : développement de solutions"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.2,
+      "coverage": 1.0,
+      "matched": [
+        "LLM"
+      ],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 1,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5968885907",
+      "source": "adzuna",
+      "title": "Stage : Stage - Data et IA : Deviens Ambassadeur - Ambassadrice des cas d'usage d'IA Générative et Agentique F/H",
+      "company": "Orange",
+      "location": "Saint-Aubin-du-Cormier, Fougères",
+      "url": "https://www.adzuna.fr/details/5968885907",
+      "date_posted": "2026-11-17T11:10:25Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "Data",
+        "IA"
+      ],
+      "responsibilities": [
+        "Identifier et collecter les cas d'usage d'IA générative innovants développés au sein des différentes entités d’Orange",
+        "Participer à la mise à jour d’un site web destinée à valoriser ces cas d’usage auprès de tous les collaborateurs d’Orange",
+        "Aider à qualifier les nouveaux cas"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.2,
+      "coverage": 1.0,
+      "matched": [
+        "LLM"
+      ],
+      "gaps": [],
+      "matched_only_by_text": [
+        "LLM"
+      ],
+      "n_skills_detected": 1,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5968872136",
+      "source": "adzuna",
+      "title": "STAGE - Assistant Performance Data Achats (H/F)",
+      "company": "Hermes",
+      "location": "Pantin, Bobigny",
+      "url": "https://www.adzuna.fr/details/5968872136",
+      "date_posted": "2026-11-17T10:49:09Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "Excel",
+        "Power BI",
+        "traitement de données"
+      ],
+      "responsibilities": [
+        "traduire des enjeux métier en solutions data",
+        "vous épanouir au cœur de la fonction Achats"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.2,
+      "coverage": 0.5,
+      "matched": [
+        "Power BI"
+      ],
+      "gaps": [
+        "Excel"
+      ],
+      "matched_only_by_text": [],
+      "n_skills_detected": 2,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5966437499",
+      "source": "adzuna",
+      "title": "Consultant.e.s - Stage de fin d'études - Nantes - CIO - Intelligence artificielle : comment choisir son architecture RAG ?",
+      "company": "Forums Talents Handicap",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "url": "https://www.adzuna.fr/details/5966437499",
+      "date_posted": "2026-11-15T04:15:23Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Choisir son architecture RAG"
+      ],
+      "experience_required": "enrolled in a Master's program",
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.2,
+      "coverage": 1.0,
+      "matched": [
+        "LLM"
+      ],
+      "gaps": [],
+      "matched_only_by_text": [
+        "LLM"
+      ],
+      "n_skills_detected": 1,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5966437474",
+      "source": "adzuna",
+      "title": "Consultant·e - Stage de fin d'études - Nantes – CYB – Comment augmenter le pentest et le red teaming à l'ère de l'IA générative ? Infrastructure, usages et doctrine offensive assistée par IA",
+      "company": "Forums Talents Handicap",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "url": "https://www.adzuna.fr/details/5966437474",
+      "date_posted": "2026-11-15T04:15:23Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Comment augmenter le pentest et le red teaming à l'ère de l'IA générative",
+        "Infrastructure, usages et doctrine offensive assistée par IA"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.2,
+      "coverage": 1.0,
+      "matched": [
+        "LLM"
+      ],
+      "gaps": [],
+      "matched_only_by_text": [
+        "LLM"
+      ],
+      "n_skills_detected": 1,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5966030380",
+      "source": "adzuna",
+      "title": "AI Engineer / Data & Agentic Systems - Stage H/F (Stage)",
+      "company": "CAPGEMINI FRANCE",
+      "location": "Issy-les-Moulineaux, Boulogne-Billancourt",
+      "url": "https://www.adzuna.fr/land/ad/5966030380",
+      "date_posted": "2026-11-14T15:54:29Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "En collaboration avec votre…"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.2,
+      "coverage": 1.0,
+      "matched": [
+        "LLM"
+      ],
+      "gaps": [],
+      "matched_only_by_text": [
+        "LLM"
+      ],
+      "n_skills_detected": 1,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5965481883",
+      "source": "adzuna",
+      "title": "STAGE DevOps Chaîne CI/CD – F/H",
+      "company": "THALES",
+      "location": "Vélizy-Villacoublay, Versailles",
+      "url": "https://www.adzuna.fr/land/ad/5965481883",
+      "date_posted": "2026-11-14T08:36:18Z",
+      "matched_queries": [
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "DevOps",
+        "CI/CD"
+      ],
+      "responsibilities": [
+        "Construisons ensemble un avenir de confiance"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.2,
+      "coverage": 0.5,
+      "matched": [
+        "GitHub Actions"
+      ],
+      "gaps": [
+        "DevOps"
+      ],
+      "matched_only_by_text": [],
+      "n_skills_detected": 2,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5965481742",
+      "source": "adzuna",
+      "title": "STAGE - Ingénieur Cloud DevOps & IA Agentique F/H",
+      "company": "THALES",
+      "location": "Carquefou, Nantes",
+      "url": "https://www.adzuna.fr/land/ad/5965481742",
+      "date_posted": "2026-11-14T08:36:18Z",
+      "matched_queries": [
+        "stage devops",
+        "stage devops",
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Construisons ensemble un avenir de confiance"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.2,
+      "coverage": 1.0,
+      "matched": [
+        "LLM"
+      ],
+      "gaps": [],
+      "matched_only_by_text": [
+        "LLM"
+      ],
+      "n_skills_detected": 1,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5965458711",
+      "source": "adzuna",
+      "title": "STAGE - Ingénieur DevOps - Conteneurisation, automatisation des tests Docker et CI-CD - F/H",
+      "company": "Thales",
+      "location": "Cholet, Maine-et-Loire",
+      "url": "https://www.adzuna.fr/land/ad/5965458711",
+      "date_posted": "2026-11-14T08:28:32Z",
+      "matched_queries": [
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "Docker",
+        "CI-CD"
+      ],
+      "responsibilities": [
+        "Conteneurisation",
+        "automatisation des tests"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.2,
+      "coverage": 0.5,
+      "matched": [
+        "GitHub Actions"
+      ],
+      "gaps": [
+        "Docker"
+      ],
+      "matched_only_by_text": [],
+      "n_skills_detected": 2,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5965402600",
+      "source": "adzuna",
+      "title": "Stage - Ingénieur CI/DEVOPS (H/F)",
+      "company": "Bassetti",
+      "location": "Isère, Auvergne-Rhône-Alpes",
+      "url": "https://www.adzuna.fr/details/5965402600",
+      "date_posted": "2026-11-14T08:11:26Z",
+      "matched_queries": [
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "CI/CD",
+        "DevOps"
+      ],
+      "responsibilities": [
+        "Maintenir et faire évoluer notre infrastructure CI/CD",
+        "Explorer et proposer des solutions alternatives (outils, architectures) pour améliorer nos performances de déploiement"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.2,
+      "coverage": 0.5,
+      "matched": [
+        "GitHub Actions"
+      ],
+      "gaps": [
+        "DevOps"
+      ],
+      "matched_only_by_text": [],
+      "n_skills_detected": 2,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5964773787",
+      "source": "adzuna",
+      "title": "STAGE - DevOps : Modernisation d’un environnement CI/CD - F/H",
+      "company": "Thales",
+      "location": "Gennevilliers, Nanterre",
+      "url": "https://www.adzuna.fr/details/5964773787",
+      "date_posted": "2026-11-13T17:49:34Z",
+      "matched_queries": [
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "DevOps"
+      ],
+      "responsibilities": [
+        "Modernisation d’un environnement CI/CD"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.2,
+      "coverage": 0.5,
+      "matched": [
+        "GitHub Actions"
+      ],
+      "gaps": [
+        "DevOps"
+      ],
+      "matched_only_by_text": [
+        "GitHub Actions"
+      ],
+      "n_skills_detected": 2,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5960182404",
+      "source": "adzuna",
+      "title": "Stage: DevOps et processus CI/CD (F/H)",
+      "company": "HEMERIA",
+      "location": "Charente, Nouvelle-Aquitaine",
+      "url": "https://www.adzuna.fr/details/5960182404",
+      "date_posted": "2026-11-10T10:00:28Z",
+      "matched_queries": [
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "DevOps",
+        "CI/CD"
+      ],
+      "responsibilities": [
+        "Travailler sur le référentiel qualité des projets logiciels et les outils associés",
+        "Participer à la démarche DevOps",
+        "Evaluer et réaliser les changements d"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.2,
+      "coverage": 0.5,
+      "matched": [
+        "GitHub Actions"
+      ],
+      "gaps": [
+        "DevOps"
+      ],
+      "matched_only_by_text": [],
+      "n_skills_detected": 2,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5936839153",
+      "source": "adzuna",
+      "title": "STAGE – Ingénieur DevOps : mise à hauteur chaine CI/CD Logiciel Radar F/H",
+      "company": "Thales",
+      "location": "France",
+      "url": "https://www.adzuna.fr/details/5936839153",
+      "date_posted": "2026-10-21T17:55:06Z",
+      "matched_queries": [
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "CI/CD",
+        "Logiciel Radar"
+      ],
+      "responsibilities": [
+        "Construisons ensemble un avenir de confiance"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.2,
+      "coverage": 0.5,
+      "matched": [
+        "GitHub Actions"
+      ],
+      "gaps": [
+        "Logiciel Radar"
+      ],
+      "matched_only_by_text": [],
+      "n_skills_detected": 2,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5967020695",
+      "source": "adzuna",
+      "title": "Stage Chargé(e) de Marketing Data Analyst & Performance Digitale (F/H) – Vincennes (F/H)",
+      "company": "Nepsen",
+      "location": "Vincennes, Nogent-sur-Marne",
+      "url": "https://www.adzuna.fr/details/5967020695",
+      "date_posted": "2026-11-15T18:00:49Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": "650 EUR/an",
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "Google Analytics",
+        "HubSpot"
+      ],
+      "responsibilities": [
+        "Participer à la structuration de notre approche data",
+        "Concevoir nos premiers tableaux de bord",
+        "Reportings et suivis de performance"
+      ],
+      "experience_required": "Stage fin d’études ou césure",
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.15,
+      "coverage": 0.333,
+      "matched": [
+        "Data visualisation"
+      ],
+      "gaps": [
+        "Google Analytics",
+        "HubSpot"
+      ],
+      "matched_only_by_text": [
+        "Data visualisation"
+      ],
+      "n_skills_detected": 3,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5965160367",
+      "source": "adzuna",
+      "title": "Stage - Développeur(se) Intégrateur(se) .NET / C# / C++ - Transport - Aix-en-Provence",
+      "company": "Forums Talents Handicap",
+      "location": "Bouches-du-Rhône, Provence-Alpes-Côte d'Azur",
+      "url": "https://www.adzuna.fr/details/5965160367",
+      "date_posted": "2026-11-14T04:17:33Z",
+      "matched_queries": [
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "Développeur(se)",
+        "Intégrateur(se)",
+        ".NET",
+        "C#",
+        "C++"
+      ],
+      "responsibilities": [
+        "Intégration de systèmes critiques"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.133,
+      "coverage": 0.5,
+      "matched": [
+        "C#"
+      ],
+      "gaps": [
+        "C++"
+      ],
+      "matched_only_by_text": [],
+      "n_skills_detected": 2,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5966437498",
+      "source": "adzuna",
+      "title": "Consultant.e.s - Stage de fin d'études - Nantes – CIO – IA × RSE – Comment maîtriser coûts et empreinte environnementale d’un système d’IA générative ? FinOps & GreenOps des SIA",
+      "company": "Forums Talents Handicap",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "url": "https://www.adzuna.fr/details/5966437498",
+      "date_posted": "2026-11-15T04:15:23Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "IA générative",
+        "FinOps",
+        "GreenOps",
+        "SIA"
+      ],
+      "responsibilities": [
+        "maîtriser coûts et empreinte environnementale d’un système d’IA générative"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.08,
+      "coverage": 0.25,
+      "matched": [
+        "LLM"
+      ],
+      "gaps": [
+        "FinOps",
+        "GreenOps",
+        "SIA"
+      ],
+      "matched_only_by_text": [],
+      "n_skills_detected": 4,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5968885429",
+      "source": "adzuna",
+      "title": "Stage : Stage 2027 Développeur Cybersécurité - Étude et mise en œuvre sécurisée de Wayland sous FreeBSD (h/f)",
+      "company": "Airbus",
+      "location": "Paris, Ile-de-France",
+      "url": "https://www.adzuna.fr/details/5968885429",
+      "date_posted": "2026-11-17T11:09:34Z",
+      "matched_queries": [
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "Wayland",
+        "FreeBSD",
+        "Cybersécurité"
+      ],
+      "responsibilities": [
+        "Étude et mise en œuvre sécurisée de Wayland sous FreeBSD"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "Wayland",
+        "FreeBSD",
+        "Cybersécurité"
+      ],
+      "matched_only_by_text": [],
+      "n_skills_detected": 3,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5968533080",
+      "source": "adzuna",
+      "title": "Stage - Concepteur développeur Projet informatique F/H",
+      "company": "EDF",
+      "location": "Indre-et-Loire, Centre",
+      "url": "https://www.adzuna.fr/details/5968533080",
+      "date_posted": "2026-11-17T05:04:15Z",
+      "matched_queries": [
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "mettre ses compétences au service des enjeux énergétiques d'aujourd'hui et de demain",
+        "acquérir une véritable expérience professionnelle"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5967979486",
+      "source": "adzuna",
+      "title": "Stage - transformation numérique et innovation pour la direction des investissements F/H",
+      "company": "Dgafp",
+      "location": "Paris, Ile-de-France",
+      "url": "https://www.adzuna.fr/details/5967979486",
+      "date_posted": "2026-11-16T17:50:06Z",
+      "matched_queries": [
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "participera à l'amélioration des méthodes de travail"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5967508308",
+      "source": "adzuna",
+      "title": "Développeuse / Développeur logiciel PLM - Stage H/F (Stage)",
+      "company": "CAPGEMINI FRANCE",
+      "location": "Issy-les-Moulineaux, Boulogne-Billancourt",
+      "url": "https://www.adzuna.fr/land/ad/5967508308",
+      "date_posted": "2026-11-16T08:02:31Z",
+      "matched_queries": [
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "3DEXPERIENCE",
+        "Teamcenter",
+        "Windchill"
+      ],
+      "responsibilities": [
+        "La découverte et la prise en main des environnements 3DEXPERIENCE, Teamcenter ou Windchill",
+        "Le développement de modules et wid…"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "3DEXPERIENCE",
+        "Teamcenter",
+        "Windchill"
+      ],
+      "matched_only_by_text": [],
+      "n_skills_detected": 3,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5967021926",
+      "source": "adzuna",
+      "title": "STAGE 2027- Stage Développeur Logiciel & IA (H/F)",
+      "company": "Airbus",
+      "location": "Paris, Ile-de-France",
+      "url": "https://www.adzuna.fr/details/5967021926",
+      "date_posted": "2026-11-15T18:04:09Z",
+      "matched_queries": [
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Déployer vos ailes",
+        "Commencer une aventure professionnelle",
+        "Valider votre diplôme",
+        "Faire décoller votre carrière",
+        "Travailler au cœur d’une entreprise reconnue à l’international",
+        "Travailler dans une entreprise implantée sur tous les continents du monde",
+        "S’impliquer dans une diversité de parcours, d’expertise et de c…”2027- Stage Développeur Logiciel & IA (H/F)"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5966192423",
+      "source": "adzuna",
+      "title": "STAGE - ASSISTANT INGÉNIEUR DÉVELOPPEUR INTEGRATEUR (H/F)",
+      "company": "Bassetti",
+      "location": "Haute-Garonne, Occitanie",
+      "url": "https://www.adzuna.fr/details/5966192423",
+      "date_posted": "2026-11-14T20:15:10Z",
+      "matched_queries": [
+        "stage développeur",
+        "stage développeur",
+        "stage développeur",
+        "stage développeur",
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "Ingénieur en Développement et Intégration"
+      ],
+      "responsibilities": [
+        "Travailler sur des projets techniques dans leur globalité",
+        "Se plonger dans le métier et usages de nos clients pour les comprendre",
+        "Proposer des solutions techniques qui répondent à leurs besoins spécifiques",
+        "Rédiger avec le client un cahier des charges"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5966082976",
+      "source": "adzuna",
+      "title": "Stage de fin d'étude développeur fullstack F/H",
+      "company": "Onepoint",
+      "location": "Nantes, Loire-Atlantique",
+      "url": "https://www.adzuna.fr/details/5966082976",
+      "date_posted": "2026-11-14T17:47:55Z",
+      "matched_queries": [
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Contribuez aux grandes transformations des entreprises et des acteurs publics en alliant innovation technologique et expertise métier",
+        "Au-delà de la RSE, nous avons développé notre propre approche, RESET, qui englobe l’ensemble de nos engagements en matière de responsabilité économique, sociale, environnementale et technologique, tant au sein de notre collectif que chez nos clients"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5965601489",
+      "source": "adzuna",
+      "title": "Stage : Stage - Concepteur(trice) / Développeur(se) GMAO Carl - Business Line Solutions & Expertises - Toulouse",
+      "company": "Sopra-Steria",
+      "location": "Toulouse 13e Canton, Toulouse",
+      "url": "https://www.adzuna.fr/details/5965601489",
+      "date_posted": "2026-11-14T11:09:12Z",
+      "matched_queries": [
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5965601192",
+      "source": "adzuna",
+      "title": "Stage : Stage - Développeur assistant IA F/H",
+      "company": "Orange",
+      "location": "Rhône, Auvergne-Rhône-Alpes",
+      "url": "https://www.adzuna.fr/details/5965601192",
+      "date_posted": "2026-11-14T11:08:56Z",
+      "matched_queries": [
+        "stage développeur",
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "collaborer avec une équipe dédiée à la livraison de solutions globales cohérentes et durables"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5965600811",
+      "source": "adzuna",
+      "title": "Stage : Stage - R&I Développeur Produits First Diet - Mars 2027 - (H/F)",
+      "company": "Danone",
+      "location": "France",
+      "url": "https://www.adzuna.fr/details/5965600811",
+      "date_posted": "2026-11-14T11:08:21Z",
+      "matched_queries": [
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Travailler en collaboration avec les équipes pour développer des produits"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5965600503",
+      "source": "adzuna",
+      "title": "Stage : Développeur Outils et Data (F/H) - stage",
+      "company": "AXA",
+      "location": "Hauts-de-Seine, Ile-de-France",
+      "url": "https://www.adzuna.fr/details/5965600503",
+      "date_posted": "2026-11-14T11:08:05Z",
+      "matched_queries": [
+        "stage développeur",
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "applications web internes",
+        "outils métier"
+      ],
+      "responsibilities": [
+        "Écouter les utilisateurs et comprendre leurs besoins opérationnels",
+        "Proposer des solutions adaptées et en définir l’architecture",
+        "Développer des applications web internes et des outils métier",
+        "Automatiser les tâches manuelles et fluidifier les processus",
+        "Exploiter les d…"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5965503168",
+      "source": "adzuna",
+      "title": "Stage – Technicien Développeur Web – (H/F)",
+      "company": "THALES",
+      "location": "Cannes, Grasse",
+      "url": "https://www.adzuna.fr/land/ad/5965503168",
+      "date_posted": "2026-11-14T08:41:30Z",
+      "matched_queries": [
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Construisons ensemble un avenir de confiance"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5965499347",
+      "source": "adzuna",
+      "title": "Stage – Ingénieur Développeur de Solutions Numériques Web Full Stack pour la digitalisation des activités industrielles – (H/F)",
+      "company": "THALES",
+      "location": "Cannes, Grasse",
+      "url": "https://www.adzuna.fr/land/ad/5965499347",
+      "date_posted": "2026-11-14T08:40:15Z",
+      "matched_queries": [
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Construisons ensemble un avenir de confiance"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5965491263",
+      "source": "adzuna",
+      "title": "Stage - Développeur de solutions numériques (App WEB & IA)- F/H",
+      "company": "THALES",
+      "location": "Cannes, Grasse",
+      "url": "https://www.adzuna.fr/land/ad/5965491263",
+      "date_posted": "2026-11-14T08:38:09Z",
+      "matched_queries": [
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "App WEB",
+        "IA"
+      ],
+      "responsibilities": [
+        "Construisons ensemble un avenir de confiance"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "App WEB"
+      ],
+      "matched_only_by_text": [],
+      "n_skills_detected": 1,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5965484111",
+      "source": "adzuna",
+      "title": "STAGE - Développeur VBA F/H",
+      "company": "THALES",
+      "location": "Laval, Mayenne",
+      "url": "https://www.adzuna.fr/land/ad/5965484111",
+      "date_posted": "2026-11-14T08:36:33Z",
+      "matched_queries": [
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "VBA"
+      ],
+      "responsibilities": [
+        "Construisons ensemble un avenir de confiance"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "VBA"
+      ],
+      "matched_only_by_text": [],
+      "n_skills_detected": 1,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5965469680",
+      "source": "adzuna",
+      "title": "STAGE - Développeur Front-End - F/H",
+      "company": "THALES",
+      "location": "Pont-Audemer, Bernay",
+      "url": "https://www.adzuna.fr/land/ad/5965469680",
+      "date_posted": "2026-11-14T08:33:40Z",
+      "matched_queries": [
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Construisons ensemble un avenir de confiance"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5965468262",
+      "source": "adzuna",
+      "title": "STAGE – Ingénieur IA & optimisation des processus de développement – F/H",
+      "company": "THALES",
+      "location": "Toulouse, Haute-Garonne",
+      "url": "https://www.adzuna.fr/land/ad/5965468262",
+      "date_posted": "2026-11-14T08:33:22Z",
+      "matched_queries": [
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Construisons ensemble un avenir de confiance",
+        "Développer des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5965467172",
+      "source": "adzuna",
+      "title": "STAGE - Développeur Automatisation Robotique des Processus – H/F",
+      "company": "Thales",
+      "location": "Meudon, Boulogne-Billancourt",
+      "url": "https://www.adzuna.fr/land/ad/5965467172",
+      "date_posted": "2026-11-14T08:33:09Z",
+      "matched_queries": [
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Construisons ensemble un avenir de confiance"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5965458241",
+      "source": "adzuna",
+      "title": "STAGE – Développeur solution Web / IA (Solution offres et projets) – F/H",
+      "company": "Thales",
+      "location": "Massy, Palaiseau",
+      "url": "https://www.adzuna.fr/land/ad/5965458241",
+      "date_posted": "2026-11-14T08:28:29Z",
+      "matched_queries": [
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5965458197",
+      "source": "adzuna",
+      "title": "STAGE - Ingénieur IVVQ Tests Automatisés (F/H)",
+      "company": "Thales",
+      "location": "Vélizy-Villacoublay, Versailles",
+      "url": "https://www.adzuna.fr/land/ad/5965458197",
+      "date_posted": "2026-11-14T08:28:29Z",
+      "matched_queries": [
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Construisons ensemble un avenir de confiance"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5965458195",
+      "source": "adzuna",
+      "title": "STAGE - Développeur Fullstack H/F",
+      "company": "Thales",
+      "location": "Lambersart, Lille",
+      "url": "https://www.adzuna.fr/land/ad/5965458195",
+      "date_posted": "2026-11-14T08:28:29Z",
+      "matched_queries": [
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Construisons ensemble un avenir de confiance"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5965160246",
+      "source": "adzuna",
+      "title": "Stage - Ingénieur(e) d'étude développeur - Liaison de données tactiques - Logiciel de conception de Réseau L16 - Défense & Sécurité - Aix en Provence",
+      "company": "Forums Talents Handicap",
+      "location": "Bouches-du-Rhône, Provence-Alpes-Côte d'Azur",
+      "url": "https://www.adzuna.fr/details/5965160246",
+      "date_posted": "2026-11-14T04:17:33Z",
+      "matched_queries": [
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5965160260",
+      "source": "adzuna",
+      "title": "Stage - Développeur/ se C++ Qt - Mise en place de fonctionnalités dans le produit BOREADES - Défense & Sécurité - Toulon",
+      "company": "Forums Talents Handicap",
+      "location": "Var, Provence-Alpes-Côte d'Azur",
+      "url": "https://www.adzuna.fr/details/5965160260",
+      "date_posted": "2026-11-14T04:17:33Z",
+      "matched_queries": [
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "C++ Qt"
+      ],
+      "responsibilities": [
+        "Mise en place de fonctionnalités dans le produit BOREADES"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "C++ Qt"
+      ],
+      "matched_only_by_text": [],
+      "n_skills_detected": 1,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5965160348",
+      "source": "adzuna",
+      "title": "Stage - Ingénieur(e) d'étude développeur - Liaison de données tactiques - Logiciel d’extraction de trames LDT - Défense & Sécurité - Aix en Provence",
+      "company": "Forums Talents Handicap",
+      "location": "Bouches-du-Rhône, Provence-Alpes-Côte d'Azur",
+      "url": "https://www.adzuna.fr/details/5965160348",
+      "date_posted": "2026-11-14T04:17:33Z",
+      "matched_queries": [
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5965160187",
+      "source": "adzuna",
+      "title": "Stage - Ingénieur(e) d'étude développeur - Liaison de données tactiques - Passerelle d'interconnexion de simulateurs - Défense & Sécurité - Aix en Provence",
+      "company": "Forums Talents Handicap",
+      "location": "Bouches-du-Rhône, Provence-Alpes-Côte d'Azur",
+      "url": "https://www.adzuna.fr/details/5965160187",
+      "date_posted": "2026-11-14T04:17:32Z",
+      "matched_queries": [
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5965160240",
+      "source": "adzuna",
+      "title": "Stage - Développeur / se C++/QT - IA - Implémentation d'un chatbot dans le produit BOREADES - Défense & Sécurité - Toulon",
+      "company": "Forums Talents Handicap",
+      "location": "Var, Provence-Alpes-Côte d'Azur",
+      "url": "https://www.adzuna.fr/details/5965160240",
+      "date_posted": "2026-11-14T04:17:32Z",
+      "matched_queries": [
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "C++",
+        "QT"
+      ],
+      "responsibilities": [
+        "Implémentation d'un chatbot dans le produit BOREADES"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "C++",
+        "QT"
+      ],
+      "matched_only_by_text": [],
+      "n_skills_detected": 2,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5964770236",
+      "source": "adzuna",
+      "title": "Stage - Développeur RPA UI Path H/F",
+      "company": "Amundi",
+      "location": "15ème Arrondissement, Paris",
+      "url": "https://www.adzuna.fr/details/5964770236",
+      "date_posted": "2026-11-13T17:46:46Z",
+      "matched_queries": [
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "RPA",
+        "UI Path"
+      ],
+      "responsibilities": [
+        "Développer des solutions RPA"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "RPA",
+        "UI Path"
+      ],
+      "matched_only_by_text": [],
+      "n_skills_detected": 2,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5964297989",
+      "source": "adzuna",
+      "title": "Stage: Développeur Logiciel (F/H)",
+      "company": "HEMERIA",
+      "location": "Charente, Nouvelle-Aquitaine",
+      "url": "https://www.adzuna.fr/details/5964297989",
+      "date_posted": "2026-11-13T10:04:55Z",
+      "matched_queries": [
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "C++",
+        "Qt"
+      ],
+      "responsibilities": [
+        "développer un logiciel superviseur",
+        "automatiser et accélérer la création de nouvelles fonctionnalités",
+        "concevoir et dével…"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "C++",
+        "QT"
+      ],
+      "matched_only_by_text": [],
+      "n_skills_detected": 2,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5964208475",
+      "source": "adzuna",
+      "title": "Stage de fin d'études - Développeur front-end F/H",
+      "company": "TEAM Y",
+      "location": "Talmont-Saint-Hilaire, Les Sables-d'Olonne",
+      "url": "https://www.adzuna.fr/details/5964208475",
+      "date_posted": "2026-11-13T08:11:46Z",
+      "matched_queries": [
+        "stage développeur"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": "22404 EUR/an",
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "Flutter"
+      ],
+      "responsibilities": [
+        "Développer de nouvelles fonctionnalités front-end en Flutter",
+        "Participer à l'amélioration de l'expérience utilisateur",
+        "Réaliser des tests et corriger les anomalies",
+        "Documenter les développement réalisés",
+        "Collaborer avec les développeurs back-end sur les projets"
+      ],
+      "experience_required": "enrolled in a Master's program",
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "Flutter"
+      ],
+      "matched_only_by_text": [],
+      "n_skills_detected": 1,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5968885961",
+      "source": "adzuna",
+      "title": "Stage : STAGE - Data Science et UI/UX pour le diagnostic augmenté des moteurs d'hélicoptères F/H",
+      "company": "SAFRAN",
+      "location": "Saint-Martin-de-Seignanx, Dax",
+      "url": "https://www.adzuna.fr/details/5968885961",
+      "date_posted": "2026-11-17T11:10:35Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5968885493",
+      "source": "adzuna",
+      "title": "Stage : Stage - Finance Data Analyst H/F",
+      "company": "BNP PARIBAS",
+      "location": "Rueil-Malmaison, Nanterre",
+      "url": "https://www.adzuna.fr/details/5968885493",
+      "date_posted": "2026-11-17T11:09:39Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "Data",
+        "modèles de prévision"
+      ],
+      "responsibilities": [
+        "Produire, contrôler et analyser les données et modèles de prévision d’activité de l’entreprise",
+        "Participer aux travaux d’amélio…"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "modèles de prévision"
+      ],
+      "matched_only_by_text": [],
+      "n_skills_detected": 1,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5968549352",
+      "source": "adzuna",
+      "title": "Stage data engineer : extration automatisée de données appliquée à l'écologie industrielle F/H",
+      "company": "EDF",
+      "location": "Moret-sur-Loing, Fontainebleau",
+      "url": "https://www.adzuna.fr/details/5968549352",
+      "date_posted": "2026-11-17T05:12:06Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": "14760 EUR/an",
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "extration automatisée de données appliquée à l'écologie industrielle"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5968533076",
+      "source": "adzuna",
+      "title": "INGENIEUR(E) ETUDES D'OUVRAGES ELEC F/H",
+      "company": "EDF",
+      "location": "Noisy-le-Grand, Le Raincy",
+      "url": "https://www.adzuna.fr/details/5968533076",
+      "date_posted": "2026-11-17T05:04:15Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "HTA"
+      ],
+      "responsibilities": [
+        "réaliser des études de modernisation des réseaux",
+        "réaliser des études d'insensi"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "HTA"
+      ],
+      "matched_only_by_text": [],
+      "n_skills_detected": 1,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5968476085",
+      "source": "adzuna",
+      "title": "Stage de fin d’études — Data Platform : construire, comprendre et gouverner la plateforme data & IA moderne (H/F)",
+      "company": "Forums Talents Handicap",
+      "location": "Hauts-de-Seine, Ile-de-France",
+      "url": "https://www.adzuna.fr/details/5968476085",
+      "date_posted": "2026-11-17T04:16:07Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "construire, comprendre et gouverner la plateforme data & IA moderne"
+      ],
+      "experience_required": "Stage de fin d’études",
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5967960675",
+      "source": "adzuna",
+      "title": "Stage de fin d'études - Data Engineer H/F",
+      "company": "Sagemcom",
+      "location": "France",
+      "url": "https://www.adzuna.fr/details/5967960675",
+      "date_posted": "2026-11-16T17:32:21Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [],
+      "experience_required": "Stage de fin d'études",
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5967020415",
+      "source": "adzuna",
+      "title": "Stage : Data Analyst - H/F",
+      "company": "Valeco",
+      "location": "Hérault, Occitanie",
+      "url": "https://www.adzuna.fr/details/5967020415",
+      "date_posted": "2026-11-15T18:00:07Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": "800 EUR/an",
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "intégrer le Pôle Data & Projets du Service Innovation Numérique",
+        "accompagner les équipes dans la compréhension de leurs besoins",
+        "définir leurs indicateurs",
+        "concevoir des solutions"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5966437453",
+      "source": "adzuna",
+      "title": "Consultant.e – Stage de fin d’études – Nantes – CYB – Détection et Réaction par l’IA",
+      "company": "Forums Talents Handicap",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "url": "https://www.adzuna.fr/details/5966437453",
+      "date_posted": "2026-11-15T04:15:23Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [],
+      "experience_required": "enrolled in a Master's program",
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5966437517",
+      "source": "adzuna",
+      "title": "Consultant.e.s en transformation IT – Nantes - Stage de fin d'études",
+      "company": "Forums Talents Handicap",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "url": "https://www.adzuna.fr/details/5966437517",
+      "date_posted": "2026-11-15T04:15:23Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Rejoignez un cabinet de conseil international qui accompagne les grandes transformations stratégiques",
+        "Nous sommes Wavestone : des expert·es passionné·es et orienté·es solutions, qui placent l’humain au cœur de la performance et de la croissance",
+        "Ambitieux·ses et en pleine expansion, nous développons sans cesse notre portefeuille de clients et de projets, avec une portée internationale et une réelle volonté de générer un impact positif"
+      ],
+      "experience_required": "Stage de fin d'études",
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5966437477",
+      "source": "adzuna",
+      "title": "Consultant.e.s - Stage de fin d'études - Nantes - CYB - Identity & Access Management : Role mining & Intelligence Artificielle",
+      "company": "Forums Talents Handicap",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "url": "https://www.adzuna.fr/details/5966437477",
+      "date_posted": "2026-11-15T04:15:23Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [],
+      "experience_required": "enrolled in a Master's program",
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5966437404",
+      "source": "adzuna",
+      "title": "Annonce générique - STAGE – Data Scientist (H/F)",
+      "company": "Forums Talents Handicap",
+      "location": "Yvelines, Ile-de-France",
+      "url": "https://www.adzuna.fr/details/5966437404",
+      "date_posted": "2026-11-15T04:15:23Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": true,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "Machine Learning",
+        "Data Scientist",
+        "probabilistes non supervisées",
+        "extraction de bases"
+      ],
+      "responsibilities": [
+        "Travailler sur des sujets d’apprentissage au sein des équipes R&D",
+        "Optimisation d’un parc de serveurs",
+        "Méthodes probabilistes non supervisées pour l’extraction de bases"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "Machine Learning",
+        "probabilistes non supervisées",
+        "extraction de bases"
+      ],
+      "matched_only_by_text": [],
+      "n_skills_detected": 3,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5966437456",
+      "source": "adzuna",
+      "title": "Consultant.e.s - Stage de fin d'études - Nantes - CYB - Quelles nouvelles méthodologies et modèles de gouvernance pour la sécurité ?",
+      "company": "Forums Talents Handicap",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "url": "https://www.adzuna.fr/details/5966437456",
+      "date_posted": "2026-11-15T04:15:23Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Rejoignez un cabinet de conseil international qui accompagne les grandes transformations stratégiques",
+        "Nous sommes Wavestone : des expert·es passionné·es et orienté·es solutions, qui placent l’humain au cœur de la performance et de la croissance",
+        "Ambitieux·ses et en pleine expansion, nous développons sans cesse notre portefeuille de clients et de projets, avec une portée internationale et une réelle volonté de générer un impact positif"
+      ],
+      "experience_required": "enrolled in a Master's program",
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5966437464",
+      "source": "adzuna",
+      "title": "Consultant.e.s - Stage de fin d'études - Nantes - CIO - IA responsable : quels KPI et outils pour suivre et implémenter explicabilité, biais, censure ?",
+      "company": "Forums Talents Handicap",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "url": "https://www.adzuna.fr/details/5966437464",
+      "date_posted": "2026-11-15T04:15:23Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Suivre et implémenter explicabilité, biais, censure"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5966437449",
+      "source": "adzuna",
+      "title": "Stage de fin d'études - Consultant·e Artificial Intelligence for Business Transformation (H/F)",
+      "company": "Forums Talents Handicap",
+      "location": "Hauts-de-Seine, Ile-de-France",
+      "url": "https://www.adzuna.fr/details/5966437449",
+      "date_posted": "2026-11-15T04:15:23Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Rejoignez un cabinet de conseil international qui accompagne les grandes transformations stratégiques.",
+        "Nous sommes Wavestone : des expert·es passionné·es et orienté·es solutions, qui placent l’humain au cœur de la performance et de la croissance.",
+        "Ambitieux·ses et en pleine expansion, nous développons sans cesse notre portefeuille de clients et de projets, avec une portée internationale et une réelle volonté de générer un impact positif."
+      ],
+      "experience_required": "Stage de fin d'études",
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5966437458",
+      "source": "adzuna",
+      "title": "Consultant.e – Stage de fin d’études – Nantes – CYB – Proof of concept de l'usage de l'IA pour automatiser la réalisation d'analyses de risques",
+      "company": "Forums Talents Handicap",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "url": "https://www.adzuna.fr/details/5966437458",
+      "date_posted": "2026-11-15T04:15:23Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "IA"
+      ],
+      "responsibilities": [
+        "automatiser la réalisation d'analyses de risques"
+      ],
+      "experience_required": "enrolled in a Master's program",
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5966437454",
+      "source": "adzuna",
+      "title": "Consultant.e – Stage de fin d’études – Nantes – CYB – Détection des menaces dans le SI Industriel",
+      "company": "Forums Talents Handicap",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "url": "https://www.adzuna.fr/details/5966437454",
+      "date_posted": "2026-11-15T04:15:23Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Détection des menaces dans le SI Industriel"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5966437492",
+      "source": "adzuna",
+      "title": "Consultant.e.s - Stage de fin d'études - Nantes – CIO – Comment déployer un dispositif GenBI à l’échelle ? Architecture, gouvernance sémantique et conduite du changement",
+      "company": "Forums Talents Handicap",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "url": "https://www.adzuna.fr/details/5966437492",
+      "date_posted": "2026-11-15T04:15:23Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Déployer un dispositif GenBI à l’échelle",
+        "Architecture",
+        "Gouvernance sémantique",
+        "Conduite du changement"
+      ],
+      "experience_required": "enrolled in a Master's program",
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5966437509",
+      "source": "adzuna",
+      "title": "Consultant.e.s - Stage de fin d'études - Nantes – CIO – Architecture IT : Quelle est la place de l'architecte aujourd'hui dans les organisations en transformation Agile et Agile@Scale ?",
+      "company": "Forums Talents Handicap",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "url": "https://www.adzuna.fr/details/5966437509",
+      "date_posted": "2026-11-15T04:15:23Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Quelle est la place de l'architecte aujourd'hui dans les organisations en transformation Agile et Agile@Scale ?"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5966437511",
+      "source": "adzuna",
+      "title": "Consultant.e.s - Stage de fin d'études - Nantes – CYB – DevSecOps et agilité",
+      "company": "Forums Talents Handicap",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "url": "https://www.adzuna.fr/details/5966437511",
+      "date_posted": "2026-11-15T04:15:23Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Rejoignez un cabinet de conseil international qui accompagne les grandes transformations stratégiques.",
+        "Nous sommes Wavestone : des expert·es passionné·es et orienté·es solutions, qui placent l’humain au cœur de la performance et de la croissance.",
+        "Ambitieux·ses et en pleine expansion, nous développons sans cesse notre portefeuille de clients et de projets, avec une portée internationale et une réelle volonté de générer un impact positif."
+      ],
+      "experience_required": "enrolled in a Master's program",
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5966437513",
+      "source": "adzuna",
+      "title": "Consultant.e.s en transformation IA / Data – Nantes - Stage de fin d'études",
+      "company": "Forums Talents Handicap",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "url": "https://www.adzuna.fr/details/5966437513",
+      "date_posted": "2026-11-15T04:15:23Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Rejoignez un cabinet de conseil international qui accompagne les grandes transformations stratégiques."
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5966437463",
+      "source": "adzuna",
+      "title": "Consultant.e.s - Stage de fin d'études - Nantes - CYB - Cloud et sécurité : vers une association gagnante ?",
+      "company": "Forums Talents Handicap",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "url": "https://www.adzuna.fr/details/5966437463",
+      "date_posted": "2026-11-15T04:15:23Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [],
+      "experience_required": "enrolled in a Master's program",
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5966437467",
+      "source": "adzuna",
+      "title": "Consultant.e.s - Stage de fin d'études - Nantes - CIO - Comment garantir la maîtrise et la cohérence des pratiques d’architecture dans un contexte multi-cloud ?",
+      "company": "Forums Talents Handicap",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "url": "https://www.adzuna.fr/details/5966437467",
+      "date_posted": "2026-11-15T04:15:23Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "garantir la maîtrise et la cohérence des pratiques d’architecture dans un contexte multi-cloud"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5966437496",
+      "source": "adzuna",
+      "title": "Consultant.e.s - Stage de fin d'études - Nantes - CYB - Quel framework et socle de sécurité à l'ère des nouvelles réglementations Européennes (NIS 2, REC, CRA, DORA) ?",
+      "company": "Forums Talents Handicap",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "url": "https://www.adzuna.fr/details/5966437496",
+      "date_posted": "2026-11-15T04:15:23Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "framework",
+        "socle de sécurité",
+        "NIS 2",
+        "REC",
+        "CRA",
+        "DORA"
+      ],
+      "responsibilities": [
+        "Analyser les réglementations Européennes en matière de sécurité",
+        "Contribuer à la mise en place de solutions de sécurité adaptées aux nouvelles réglementations"
+      ],
+      "experience_required": "enrolled in a Master's program",
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "socle de sécurité",
+        "NIS 2",
+        "REC",
+        "CRA",
+        "DORA"
+      ],
+      "matched_only_by_text": [],
+      "n_skills_detected": 5,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5966437484",
+      "source": "adzuna",
+      "title": "Consultant.e.s - Stage de fin d'études – Nantes – CIO / Citizen IT : quels leviers pour répondre aux besoins métiers au plus vite et au plus près des utilisateurs ?",
+      "company": "Forums Talents Handicap",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "url": "https://www.adzuna.fr/details/5966437484",
+      "date_posted": "2026-11-15T04:15:23Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Répondre aux besoins métiers au plus vite et au plus près des utilisateurs",
+        "Travailler sur des leviers pour améliorer la réponse aux besoins métiers"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5966437486",
+      "source": "adzuna",
+      "title": "Consultant.e.s - Stage de fin d'études - Nantes – CYB – Les agents IA pour le développement informatique augmentent-ils le niveau de sécurité du code ?",
+      "company": "Forums Talents Handicap",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "url": "https://www.adzuna.fr/details/5966437486",
+      "date_posted": "2026-11-15T04:15:23Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Les agents IA pour le développement informatique augmentent-ils le niveau de sécurité du code ?"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5966112424",
+      "source": "adzuna",
+      "title": "Stage : Ethics & Compliance Data & AI Analyst",
+      "company": "Stellantis",
+      "location": "France",
+      "url": "https://www.adzuna.fr/details/5966112424",
+      "date_posted": "2026-11-14T18:07:48Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5966108227",
+      "source": "adzuna",
+      "title": "Data Analyst - Bac5- Stage (H/F)",
+      "company": "Renault Group",
+      "location": "France",
+      "url": "https://www.adzuna.fr/details/5966108227",
+      "date_posted": "2026-11-14T18:04:27Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": "850 EUR/an",
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "En route vers Mobilize ! A l’écoute de tous nos clients, nous créons des services financiers innovants pour construire une mobilité durable pour tous.",
+        "Rejoindre Mobilize Financial Services, c’est d’abord choisir d’intégrer un groupe international , filiale de Renault Group, une banque de financement solide, partenaire du constructeur Renault et d’autres marques du secteur automobile.",
+        "Nos 4 000 collaborateurs présents dans 35 pays, agissent ensemble au service de…"
+      ],
+      "experience_required": "Bac5-",
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5966099011",
+      "source": "adzuna",
+      "title": "Ingénieur Travaux Bâtiment F/H - Stage PFE",
+      "company": "GSE group",
+      "location": "Saint-Priest, Lyon",
+      "url": "https://www.adzuna.fr/details/5966099011",
+      "date_posted": "2026-11-14T17:59:08Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": "1400 EUR/an",
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5966095055",
+      "source": "adzuna",
+      "title": "Stage PPI – Juriste Data H/F",
+      "company": "Crédit Agricole",
+      "location": "France",
+      "url": "https://www.adzuna.fr/details/5966095055",
+      "date_posted": "2026-11-14T17:56:43Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5966092351",
+      "source": "adzuna",
+      "title": "STAGE – Ingénieur Data Management & Gouvernance des données – F/H",
+      "company": "Thales",
+      "location": "Limours, Palaiseau",
+      "url": "https://www.adzuna.fr/details/5966092351",
+      "date_posted": "2026-11-14T17:54:51Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Construisons ensemble un avenir de confiance"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5966085669",
+      "source": "adzuna",
+      "title": "Stage - Data Scientist (F/H)",
+      "company": "Michelin",
+      "location": "Lyon, Rhône",
+      "url": "https://www.adzuna.fr/details/5966085669",
+      "date_posted": "2026-11-14T17:50:27Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "Intelligence Artificielle",
+        "Machine Learning"
+      ],
+      "responsibilities": [
+        "contribution à la conception et au développement de solutions d'Intelligence Artificielle et de Machine Learning appliquées aux marchés automobile et pneumatique",
+        "travail sur des données liées aux véhicules, aux pneumatiques, aux ventes, au sell-in, au sell-out, aux stock"
+      ],
+      "experience_required": "Bac 3 à Bac 5",
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "Machine Learning"
+      ],
+      "matched_only_by_text": [],
+      "n_skills_detected": 1,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5966081906",
+      "source": "adzuna",
+      "title": "Stage - Développement de méthodes de contrôle non destructif pour renforts métalliques (F/H)",
+      "company": "Michelin",
+      "location": "Clermont-Ferrand, Puy-de-Dôme",
+      "url": "https://www.adzuna.fr/details/5966081906",
+      "date_posted": "2026-11-14T17:46:57Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "traitement du signal",
+        "systèmes embarqués",
+        "innovation industrielle"
+      ],
+      "responsibilities": [
+        "Développement de méthodes de contrôle non destructif (CND) en ligne pour renforts métalliques"
+      ],
+      "experience_required": "Bac5",
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "traitement du signal",
+        "systèmes embarqués"
+      ],
+      "matched_only_by_text": [],
+      "n_skills_detected": 2,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5965887112",
+      "source": "adzuna",
+      "title": "Chargé de Mission Supply Approvisionnements (F/H) en Stage",
+      "company": "Carrefour France",
+      "location": "Essonne, Ile-de-France",
+      "url": "https://www.adzuna.fr/details/5965887112",
+      "date_posted": "2026-11-14T14:03:32Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": "1100 EUR/an",
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "analyse de données",
+        "outils de visualisation"
+      ],
+      "responsibilities": [
+        "Coordination et Pilotage de l'écrêtage estival : Assurer la coordination des actions avec l'ensemble des parties prenantes (organisa"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "outils de visualisation"
+      ],
+      "matched_only_by_text": [],
+      "n_skills_detected": 1,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5965484714",
+      "source": "adzuna",
+      "title": "STAGE - Ingénieur analyste Data Science - H/F",
+      "company": "THALES",
+      "location": "Bordeaux, Gironde",
+      "url": "https://www.adzuna.fr/land/ad/5965484714",
+      "date_posted": "2026-11-14T08:36:36Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5965483384",
+      "source": "adzuna",
+      "title": "STAGE - Ingénieur Data Analytics et déploiement - F/H",
+      "company": "THALES",
+      "location": "Gennevilliers, Nanterre",
+      "url": "https://www.adzuna.fr/land/ad/5965483384",
+      "date_posted": "2026-11-14T08:36:29Z",
+      "matched_queries": [
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Construisons ensemble un avenir de confiance"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5967984175",
+      "source": "adzuna",
+      "title": "STAGE – Ingénieur DevOps Réseaux d’infrastructure - F/H",
+      "company": "Thales",
+      "location": "Gennevilliers, Nanterre",
+      "url": "https://www.adzuna.fr/details/5967984175",
+      "date_posted": "2026-11-16T17:52:55Z",
+      "matched_queries": [
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5966948367",
+      "source": "adzuna",
+      "title": "Ingénieure DevOps / Ingénieur DevOps - Stage H/F (Stage)",
+      "company": "CAPGEMINI FRANCE",
+      "location": "1er Arrondissement, Paris",
+      "url": "https://www.adzuna.fr/land/ad/5966948367",
+      "date_posted": "2026-11-15T16:00:12Z",
+      "matched_queries": [
+        "stage devops",
+        "stage devops",
+        "stage devops",
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "rejoindre une équipe e…” (truncated, no clear responsibilities extracted from provided text)"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5965471369",
+      "source": "adzuna",
+      "title": "STAGE - S3NS - Ingénieur DEVOPS - Parcours d'onboarding sur SI Administration (H/F)",
+      "company": "THALES",
+      "location": "Paris, Ile-de-France",
+      "url": "https://www.adzuna.fr/land/ad/5965471369",
+      "date_posted": "2026-11-14T08:33:52Z",
+      "matched_queries": [
+        "stage devops",
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Parcours d'onboarding sur SI Administration"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5965469660",
+      "source": "adzuna",
+      "title": "Stage - Ingénieur DevOps/Cloud - F/H",
+      "company": "THALES",
+      "location": "Grasse, Alpes-Maritimes",
+      "url": "https://www.adzuna.fr/land/ad/5965469660",
+      "date_posted": "2026-11-14T08:33:39Z",
+      "matched_queries": [
+        "stage devops",
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Construisons ensemble un avenir de confiance"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5965469065",
+      "source": "adzuna",
+      "title": "STAGE - Ingénieur DEVOPS Infrastructure et Système - F/H",
+      "company": "THALES",
+      "location": "Gennevilliers, Nanterre",
+      "url": "https://www.adzuna.fr/land/ad/5965469065",
+      "date_posted": "2026-11-14T08:33:30Z",
+      "matched_queries": [
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Construisons ensemble un avenir de confiance"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5965468296",
+      "source": "adzuna",
+      "title": "Stage - Ingénieur Informatique, Conception et Développement Web des Interfaces web de contrôle de satellites – (H/F)",
+      "company": "THALES",
+      "location": "Cannes, Grasse",
+      "url": "https://www.adzuna.fr/land/ad/5965468296",
+      "date_posted": "2026-11-14T08:33:22Z",
+      "matched_queries": [
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "Ingénieur Informatique",
+        "Conception et Développement Web",
+        "Interfaces web de contrôle de satellites"
+      ],
+      "responsibilities": [
+        "Construisons ensemble un avenir de confiance",
+        "Développer des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif",
+        "Investir dans des domaines clés de l'innovation"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "Conception et Développement Web",
+        "Interfaces web de contrôle de satellites"
+      ],
+      "matched_only_by_text": [],
+      "n_skills_detected": 2,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5965468300",
+      "source": "adzuna",
+      "title": "STAGE - Ingénieur Cloud DevOps & Résilience des Systèmes F/H",
+      "company": "THALES",
+      "location": "Rennes, Ille-et-Vilaine",
+      "url": "https://www.adzuna.fr/land/ad/5965468300",
+      "date_posted": "2026-11-14T08:33:22Z",
+      "matched_queries": [
+        "stage devops",
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Construisons ensemble un avenir de confiance"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5965466450",
+      "source": "adzuna",
+      "title": "STAGE – Ingénieur DevOps - Architecture microservice pour l’observabilité F/H",
+      "company": "THALES",
+      "location": "Brest, Finistère",
+      "url": "https://www.adzuna.fr/land/ad/5965466450",
+      "date_posted": "2026-11-14T08:32:58Z",
+      "matched_queries": [
+        "stage devops",
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Construisons ensemble un avenir de confiance"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5965458795",
+      "source": "adzuna",
+      "title": "STAGE – Ingénieur Cloud DevOps F/H",
+      "company": "Thales",
+      "location": "Rennes, Ille-et-Vilaine",
+      "url": "https://www.adzuna.fr/land/ad/5965458795",
+      "date_posted": "2026-11-14T08:28:33Z",
+      "matched_queries": [
+        "stage devops",
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Construisons ensemble un avenir de confiance"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5965458684",
+      "source": "adzuna",
+      "title": "STAGE - IA et DevOps : automatisation de l'intégration logicielle - F/H",
+      "company": "Thales",
+      "location": "Gennevilliers, Nanterre",
+      "url": "https://www.adzuna.fr/land/ad/5965458684",
+      "date_posted": "2026-11-14T08:28:32Z",
+      "matched_queries": [
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Construisons ensemble un avenir de confiance",
+        "Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d'activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital.",
+        "Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif.",
+        "Le Groupe investit près de 4,5 milliards d'euros par an en Recherche & Développement, notamment dans des domaines clés de l'innovation…"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5965457912",
+      "source": "adzuna",
+      "title": "STAGE- Ingénieur DevOps/ IA - Conception d'une plateforme de gestion projets logiciels - F/H",
+      "company": "Thales",
+      "location": "Toulouse, Haute-Garonne",
+      "url": "https://www.adzuna.fr/land/ad/5965457912",
+      "date_posted": "2026-11-14T08:28:27Z",
+      "matched_queries": [
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Conception d'une plateforme de gestion projets logiciels"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5965457648",
+      "source": "adzuna",
+      "title": "STAGE - Ingénieur DevOps/ Cloud - Étude et intégration d’un socle d’échange de données aéronautiques SWIM - F/H",
+      "company": "Thales",
+      "location": "Toulouse, Haute-Garonne",
+      "url": "https://www.adzuna.fr/land/ad/5965457648",
+      "date_posted": "2026-11-14T08:28:26Z",
+      "matched_queries": [
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "DevOps",
+        "Cloud"
+      ],
+      "responsibilities": [
+        "Étude et intégration d’un socle d’échange de données aéronautiques SWIM"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "DevOps"
+      ],
+      "matched_only_by_text": [],
+      "n_skills_detected": 1,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5964791472",
+      "source": "adzuna",
+      "title": "Stage de fin d'études DevOps / DevSecOps H/F",
+      "company": "Onepoint",
+      "location": "Nantes, Loire-Atlantique",
+      "url": "https://www.adzuna.fr/details/5964791472",
+      "date_posted": "2026-11-13T18:07:31Z",
+      "matched_queries": [
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Contribuez aux grandes transformations des entreprises et des acteurs publics en alliant innovation technologique et expertise métier",
+        "Au-delà de la RSE, nous avons développé notre propre approche, RESET, qui englobe l’ensemble de nos engagements en matière de responsabilité économique, sociale, environnementale et technologique, tant au sein de notre collectif que chez nos clients"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5964789181",
+      "source": "adzuna",
+      "title": "STAGE - Assistant(e) Practice Leader – Transformation DevOps & Qualité H/F",
+      "company": "Naval Group",
+      "location": "France",
+      "url": "https://www.adzuna.fr/details/5964789181",
+      "date_posted": "2026-11-13T18:05:28Z",
+      "matched_queries": [
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Travaillez dans un environnement de travail positif"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5964348325",
+      "source": "adzuna",
+      "title": "Stage : Stage - Adaptation d'une infrastructure DevOps/MLOps pour une infrastructure Edge low-SWAP F/H",
+      "company": "Safran",
+      "location": "Massy, Palaiseau",
+      "url": "https://www.adzuna.fr/details/5964348325",
+      "date_posted": "2026-11-13T11:08:55Z",
+      "matched_queries": [
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Adaptation d'une infrastructure DevOps/MLOps pour une infrastructure Edge low-SWAP"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5963448234",
+      "source": "adzuna",
+      "title": "STAGE - Ingénieur DevOps & Conteneurisation de Systèmes de Communications - F/H",
+      "company": "Thales",
+      "location": "Gennevilliers, Nanterre",
+      "url": "https://www.adzuna.fr/details/5963448234",
+      "date_posted": "2026-11-12T17:41:40Z",
+      "matched_queries": [
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5960906105",
+      "source": "adzuna",
+      "title": "STAGE - Ingénieur DevOps - Conteneurisation, autom H/F (Intérim)",
+      "company": "THALES SA",
+      "location": "Cholet 1er Canton, Cholet",
+      "url": "https://www.adzuna.fr/land/ad/5960906105",
+      "date_posted": "2026-11-11T03:48:49Z",
+      "matched_queries": [
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5960906094",
+      "source": "adzuna",
+      "title": "STAGE - Ingénieur DevOps : mise à hauteur chaine C H/F (Stage)",
+      "company": "THALES SA",
+      "location": "Gironde, Nouvelle-Aquitaine",
+      "url": "https://www.adzuna.fr/land/ad/5960906094",
+      "date_posted": "2026-11-11T03:48:49Z",
+      "matched_queries": [
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5960905985",
+      "source": "adzuna",
+      "title": "Stage - s3ns - ingénieur devops - parcours d' h/f (Stage)",
+      "company": "THALES SA",
+      "location": "9ème Arrondissement, Paris",
+      "url": "https://www.adzuna.fr/land/ad/5960905985",
+      "date_posted": "2026-11-11T03:48:48Z",
+      "matched_queries": [
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5960906006",
+      "source": "adzuna",
+      "title": "Stage - s3ns - ingenieur devops (h/f) (Stage)",
+      "company": "THALES SA",
+      "location": "9ème Arrondissement, Paris",
+      "url": "https://www.adzuna.fr/land/ad/5960906006",
+      "date_posted": "2026-11-11T03:48:48Z",
+      "matched_queries": [
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5958907969",
+      "source": "adzuna",
+      "title": "Ingénieure / Ingénieur DevOps - Stage H/F (Stage)",
+      "company": "CAPGEMINI FRANCE",
+      "location": "Danjoutin, Belfort",
+      "url": "https://www.adzuna.fr/land/ad/5958907969",
+      "date_posted": "2026-11-09T08:24:44Z",
+      "matched_queries": [
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "accompagner nos leads développeurs",
+        "contribuer à la :…"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5953950290",
+      "source": "adzuna",
+      "title": "Stage : Stage Développeur / euse DevOps d'un agent d'IA pour la configuration de solution de réseau optiques F/H",
+      "company": "Orange",
+      "location": "Tréguier, Lannion",
+      "url": "https://www.adzuna.fr/details/5953950290",
+      "date_posted": "2026-11-05T08:33:05Z",
+      "matched_queries": [
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "logiciel interne"
+      ],
+      "responsibilities": [
+        "Au contact des experts des solutions de transmission optiques, vous formaliserez le besoin utilisateur",
+        "Vous prendrez en main le logiciel interne permettant d'instancier des agents"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5953950264",
+      "source": "adzuna",
+      "title": "Stage : Stage Développeur / euse DevOps pour l'automatisation des tests de synchronisation des réseaux F/H",
+      "company": "Orange",
+      "location": "Tréguier, Lannion",
+      "url": "https://www.adzuna.fr/details/5953950264",
+      "date_posted": "2026-11-05T08:33:03Z",
+      "matched_queries": [
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "DevOps"
+      ],
+      "responsibilities": [
+        "Vous vous approprierez les éléments faisant l'objet des…"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "DevOps"
+      ],
+      "matched_only_by_text": [],
+      "n_skills_detected": 1,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5947079140",
+      "source": "adzuna",
+      "title": "Stage - S3Ns - Ingenieur Devops (H/F)",
+      "company": "Thales",
+      "location": "9ème Arrondissement, Paris",
+      "url": "https://www.adzuna.fr/details/5947079140",
+      "date_posted": "2026-10-30T16:53:29Z",
+      "matched_queries": [
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5946321094",
+      "source": "adzuna",
+      "title": "Stage - Software Crafter 3.0 (DevOps AI)",
+      "company": "MaiaSpace",
+      "location": "Aubigny-sur-Nère, Vierzon",
+      "url": "https://www.adzuna.fr/details/5946321094",
+      "date_posted": "2026-10-30T03:38:32Z",
+      "matched_queries": [
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": "45000 EUR/an",
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5945385821",
+      "source": "adzuna",
+      "title": "Stage : Stage Développeur / euse DevOps pour l'automatisation des tests de réseaux de transmission optique F/H",
+      "company": "Orange",
+      "location": "Tréguier, Lannion",
+      "url": "https://www.adzuna.fr/details/5945385821",
+      "date_posted": "2026-10-29T07:15:44Z",
+      "matched_queries": [
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "DevOps"
+      ],
+      "responsibilities": [
+        "Vous vous approprierez les éléments faisant l'objet des tests avec l'aide des experts en solutions de transmission o"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "DevOps"
+      ],
+      "matched_only_by_text": [],
+      "n_skills_detected": 1,
+      "insufficient_data": false
+    },
+    {
+      "id": "adz_5944685414",
+      "source": "adzuna",
+      "title": "STAGE - Ingénieur DevOps Réseaux d’infrastructure MTBA - F/H",
+      "company": "Thales",
+      "location": "Gennevilliers, Nanterre",
+      "url": "https://www.adzuna.fr/details/5944685414",
+      "date_posted": "2026-10-28T16:57:41Z",
+      "matched_queries": [
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5941576330",
+      "source": "adzuna",
+      "title": "STAGE – Ingénieur DevOps F/H",
+      "company": "Thales",
+      "location": "France",
+      "url": "https://www.adzuna.fr/details/5941576330",
+      "date_posted": "2026-10-25T17:01:43Z",
+      "matched_queries": [
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Construisons ensemble un avenir de confiance"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5940066735",
+      "source": "adzuna",
+      "title": "Stage Ingénieur DevOps - Métriques DORA H/F",
+      "company": "Adis",
+      "location": "Bas-Rhin, Grand-Est",
+      "url": "https://www.adzuna.fr/details/5940066735",
+      "date_posted": "2026-10-24T07:04:42Z",
+      "matched_queries": [
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "contribuer à protéger ce qui compte vraiment"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "adz_5936318655",
+      "source": "adzuna",
+      "title": "Stage : Stage - Ingénieur(e) DevOps - Toulon",
+      "company": "Sopra-Steria",
+      "location": "Six-Fours-les-Plages, Toulon",
+      "url": "https://www.adzuna.fr/details/5936318655",
+      "date_posted": "2026-10-21T08:04:37Z",
+      "matched_queries": [
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "jbl_2581151213922723488",
+      "source": "jooble",
+      "title": "Stage Ingénieur Infrastructure & DevOps H/F",
+      "company": "Verkor",
+      "location": "France",
+      "url": "https://jooble.org/jdp/2581151213922723488",
+      "date_posted": "2026-11-05T17:44:11",
+      "matched_queries": [
+        "stage développeur",
+        "stage data",
+        "stage devops"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [
+        "Kubernetes"
+      ],
+      "responsibilities": [
+        "aide à la configuration",
+        "au déploiement et à la"
+      ],
+      "experience_required": "stage de fin d'études",
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [
+        "Kubernetes"
+      ],
+      "matched_only_by_text": [],
+      "n_skills_detected": 1,
+      "insufficient_data": false
+    },
+    {
+      "id": "jbl_4594517779968944215",
+      "source": "jooble",
+      "title": "Stage - Contrôleur / Contrôleuse de Gestion (H/F)",
+      "company": "Verkor",
+      "location": "France",
+      "url": "https://jooble.org/jdp/4594517779968944215",
+      "date_posted": "2026-10-30T08:30:58",
+      "matched_queries": [
+        "stage développeur",
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    },
+    {
+      "id": "jbl_7296431052900840831",
+      "source": "jooble",
+      "title": "Integrated Insights & Strategy (IIS) France - Stage 6 mois",
+      "company": "Pfizer",
+      "location": "France",
+      "url": "https://jooble.org/jdp/7296431052900840831",
+      "date_posted": "2026-11-16T03:28:57",
+      "matched_queries": [
+        "stage développeur",
+        "stage data"
+      ],
+      "is_internship": true,
+      "is_apprenticeship": false,
+      "salary_text": null,
+      "publishable": true,
+      "also_on": [],
+      "required_skills": [],
+      "responsibilities": [
+        "Rechercher un(e) stagiaire pour une période de 6 mois à compter de mars 2027"
+      ],
+      "experience_required": null,
+      "compensation_mentioned": null,
+      "extraction_error": null,
+      "score": 0.0,
+      "coverage": 0.0,
+      "matched": [],
+      "gaps": [],
+      "matched_only_by_text": [],
+      "n_skills_detected": 0,
+      "insufficient_data": true
+    }
+  ],
+  "top_skill_gaps": [
+    {
+      "skill": "DevOps",
+      "count": 7
+    },
+    {
+      "skill": "C++",
+      "count": 3
+    },
+    {
+      "skill": "QT",
+      "count": 2
+    },
+    {
+      "skill": "Machine Learning",
+      "count": 2
+    },
+    {
+      "skill": "Excel",
+      "count": 1
+    },
+    {
+      "skill": "Docker",
+      "count": 1
+    },
+    {
+      "skill": "Logiciel Radar",
+      "count": 1
+    },
+    {
+      "skill": "Google Analytics",
+      "count": 1
+    },
+    {
+      "skill": "HubSpot",
+      "count": 1
+    },
+    {
+      "skill": "FinOps",
+      "count": 1
+    }
+  ],
+  "top_matched_skills": [
+    {
+      "skill": "GitHub Actions",
+      "count": 7,
+      "level": 3
+    },
+    {
+      "skill": "LLM",
+      "count": 7,
+      "level": 2
+    },
+    {
+      "skill": "Java",
+      "count": 6,
+      "level": 3
+    },
+    {
+      "skill": "Python",
+      "count": 2,
+      "level": 4
+    },
+    {
+      "skill": "SQL",
+      "count": 2,
+      "level": 3
+    },
+    {
+      "skill": "Data visualisation",
+      "count": 2,
+      "level": 3
+    },
+    {
+      "skill": "Power BI",
+      "count": 2,
+      "level": 3
+    },
+    {
+      "skill": "Angular",
+      "count": 1,
+      "level": 3
+    },
+    {
+      "skill": "C#",
+      "count": 1,
+      "level": 2
+    }
+  ],
+  "n_offers_with_compensation": 9
+}
