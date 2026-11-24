@@ -1,69 +1,69 @@
 {
-  "generated_at": "2026-11-24T13:58:02Z",
+  "generated_at": "2026-11-24T15:06:29Z",
   "sources": {
     "adzuna": {
-      "fetched_at": "2026-11-17T10:53:35Z",
+      "fetched_at": "2026-11-24T14:44:05Z",
       "api_calls_last_run": 3,
       "per_query": {
         "stage développeur": {
-          "total_available": 422,
+          "total_available": 415,
           "fetched": 50
         },
         "stage data": {
-          "total_available": 793,
+          "total_available": 753,
           "fetched": 50
         },
         "stage devops": {
-          "total_available": 75,
+          "total_available": 63,
           "fetched": 50
         }
       },
       "n_raw": 150,
-      "n_duplicates_removed_in_source": 18,
-      "n_offers": 132,
-      "n_internship": 130
+      "n_duplicates_removed_in_source": 21,
+      "n_offers": 129,
+      "n_internship": 125
     },
     "jooble": {
-      "fetched_at": "2026-11-17T10:45:12Z",
+      "fetched_at": "2026-11-24T14:44:36Z",
       "api_calls_last_run": 6,
       "per_query": {
         "stage développeur": {
-          "total_available": 11,
-          "fetched": 11
+          "total_available": 12,
+          "fetched": 12
         },
         "stage data": {
-          "total_available": 55,
-          "fetched": 55
+          "total_available": 59,
+          "fetched": 59
         },
         "stage devops": {
-          "total_available": 21,
-          "fetched": 21
+          "total_available": 36,
+          "fetched": 36
         }
       },
-      "n_raw": 87,
-      "n_duplicates_removed_in_source": 27,
-      "n_offers": 60,
-      "n_internship": 3
+      "n_raw": 107,
+      "n_duplicates_removed_in_source": 30,
+      "n_offers": 77,
+      "n_internship": 4
     }
   },
   "merge": {
     "n_cross_source_duplicates": 0,
-    "n_same_source_duplicates": 8,
-    "n_unique_offers": 184,
-    "n_out_of_scope": 59,
-    "n_internships": 125
+    "n_same_source_duplicates": 10,
+    "n_unique_offers": 196,
+    "n_out_of_scope": 77,
+    "n_internships": 119
   },
   "extraction": {
     "model": "qwen3:8b",
-    "n_offers": 132,
+    "n_offers": 119,
     "n_errors": 0,
-    "avg_seconds_per_offer": 6.2,
-    "n_with_at_least_one_skill": 52
+    "avg_seconds_per_offer": 7.2,
+    "n_with_at_least_one_skill": 58
   },
   "matching": {
-    "n_offers": 125,
-    "n_insufficient_data": 76,
-    "share_matches_found_only_by_text": 0.3,
-    "n_score_at_least_0_3": 12
+    "n_offers": 119,
+    "n_insufficient_data": 64,
+    "share_matches_found_only_by_text": 0.275,
+    "n_score_at_least_0_3": 15
   }
 }
