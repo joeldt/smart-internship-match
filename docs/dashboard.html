@@ -7,409 +7,699 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <style>
   :root {
-    --bleu: #0d7c9e; --vert: #2e8b46; --orange: #c46e0a; --gris: #9aa5b1;
-    --texte: #1f2933; --doux: #5f6b7a; --fond: #f6f8fa; --carte: #ffffff; --bord: #e1e5ea;
+    --fond: #f4f6f8; --carte: #ffffff; --bord: #e3e7ec; --bord-fort: #cfd6de;
+    --texte: #14181d; --texte-2: #4b5563; --texte-3: #6b7280;
+    --accent: #2a78d6; --accent-doux: #e8f1fc;
+    --bon: #1f8a4c; --bon-doux: #e6f4ec; --attention: #b45309; --attention-doux: #fdf1e3; --critique: #c2362b;
+    --ombre: 0 1px 2px rgba(16, 24, 40, .05), 0 1px 3px rgba(16, 24, 40, .06);
+    --rayon: 12px;
   }
   * { box-sizing: border-box; }
-  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--texte); background: var(--fond); line-height: 1.5; }
-  main { max-width: 1100px; margin: 0 auto; padding: 24px 16px 48px; }
-  header h1 { margin: 0 0 4px; font-size: 1.7rem; }
-  header p { margin: 4px 0; color: var(--doux); }
-  h2 { margin: 36px 0 4px; font-size: 1.25rem; }
-  .question { margin: 0 0 14px; color: var(--doux); }
-  .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
-  .kpi { background: var(--carte); border: 1px solid var(--bord); border-radius: 10px; padding: 14px 16px; }
-  .kpi .valeur { font-size: 1.9rem; font-weight: 700; }
-  .kpi .label { font-size: 0.85rem; color: var(--doux); }
-  .kpi.alerte .valeur { color: var(--orange); }
-  .kpi.bon .valeur { color: var(--vert); }
-  .kpi.info .valeur { color: var(--bleu); }
-  .grille { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr)); gap: 16px; }
-  .panneau { background: var(--carte); border: 1px solid var(--bord); border-radius: 10px; padding: 16px; }
-  .panneau h3 { margin: 0 0 8px; font-size: 1rem; }
-  .pourquoi { font-size: 0.8rem; color: var(--doux); border-left: 3px solid var(--bord); padding-left: 10px; margin-top: 10px; }
-  .graph { position: relative; height: 260px; }
-  .graph.haut { height: 380px; }
+  html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+  body { margin: 0; font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--texte); background: var(--fond); line-height: 1.5; font-size: 15px; }
+  a { color: var(--accent); }
+
+  /* En-tete et navigation */
+  .entete { background: linear-gradient(135deg, #0f3d6e 0%, #2a78d6 100%); color: #fff; padding: 32px 0 28px; }
+  .entete .contenu, main, .nav .contenu { max-width: 1180px; margin: 0 auto; padding: 0 20px; }
+  .entete h1 { margin: 0 0 6px; font-size: 1.75rem; letter-spacing: -.01em; }
+  .entete p { margin: 0; opacity: .9; }
+  .entete .maj { margin-top: 10px; font-size: .85rem; opacity: .8; }
+  .cycle { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; font-size: .85rem; }
+  .cycle span { background: rgba(255, 255, 255, .14); border-radius: 999px; padding: 3px 10px; }
+  .nav { position: sticky; top: 0; z-index: 10; background: rgba(255, 255, 255, .92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--bord); }
+  .nav .contenu { display: flex; gap: 4px; overflow-x: auto; }
+  .nav a { display: flex; align-items: center; gap: 8px; padding: 14px 12px; color: var(--texte-2); text-decoration: none; font-weight: 600; font-size: .9rem; border-bottom: 2px solid transparent; white-space: nowrap; }
+  .nav a .num { display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: var(--bord); font-size: .75rem; color: var(--texte-2); }
+  .nav a.actif { color: var(--accent); border-bottom-color: var(--accent); }
+  .nav a.actif .num { background: var(--accent); color: #fff; }
+
+  /* Sections */
+  main { padding-top: 8px; padding-bottom: 56px; }
+  section { padding-top: 28px; }
+  .titre-section { display: flex; align-items: baseline; gap: 12px; margin-bottom: 4px; }
+  .titre-section .num { font-size: .8rem; font-weight: 700; color: var(--accent); background: var(--accent-doux); border-radius: 6px; padding: 2px 8px; }
+  .titre-section h2 { margin: 0; font-size: 1.35rem; letter-spacing: -.01em; }
+  .sous-titre { margin: 0 0 16px; color: var(--texte-2); }
+
+  .grille { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(360px, 100%), 1fr)); gap: 16px; }
   .large { grid-column: 1 / -1; }
-  .graph.haut { height: 420px; }
-  .poids { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 10px 20px; }
-  .poids label { display: flex; justify-content: space-between; font-size: .85rem; }
-  .poids input { width: 100%; }
-  .poids button { justify-self: start; padding: 4px 10px; border: 1px solid var(--bord); border-radius: 6px; background: var(--fond); cursor: pointer; }
-  .inconnu { font-size: .75rem; color: var(--doux); font-style: italic; }
-  .barre { width: 80px; height: 6px; margin-top: 6px; background: var(--bord); border-radius: 3px; }
-  .barre span { display: block; height: 100%; background: var(--bleu); border-radius: 3px; }
+  .panneau { background: var(--carte); border: 1px solid var(--bord); border-radius: var(--rayon); padding: 18px 20px; box-shadow: var(--ombre); }
+  .panneau h3 { margin: 0 0 4px; font-size: 1.02rem; }
+  .decision { margin: 0 0 12px; font-size: .88rem; color: var(--texte-2); }
+  .decision strong { color: var(--texte); }
+  details.pourquoi { margin-top: 12px; font-size: .82rem; color: var(--texte-3); }
+  details.pourquoi summary { cursor: pointer; color: var(--texte-2); font-weight: 600; }
+  details.pourquoi p { margin: 6px 0 0; }
+  .graph { position: relative; height: 280px; }
+  .graph.haut { height: 440px; }
+  .graph.bas { height: 220px; }
+  .vide { display: grid; place-items: center; height: 100%; text-align: center; color: var(--texte-3); font-size: .9rem; padding: 0 24px; border: 1px dashed var(--bord-fort); border-radius: 10px; }
+
+  /* Cartes KPI */
+  .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; }
+  .kpi { background: var(--carte); border: 1px solid var(--bord); border-radius: var(--rayon); padding: 16px 18px; box-shadow: var(--ombre); position: relative; overflow: hidden; }
+  .kpi::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--bord-fort); }
+  .kpi.alerte::before { background: var(--attention); } .kpi.bon::before { background: var(--bon); } .kpi.info::before { background: var(--accent); }
+  .kpi .etiquette { font-size: .78rem; font-weight: 600; color: var(--texte-3); text-transform: uppercase; letter-spacing: .04em; }
+  .kpi .valeur { font-size: 2rem; font-weight: 700; letter-spacing: -.02em; margin: 2px 0; }
+  .kpi.alerte .valeur { color: var(--attention); } .kpi.bon .valeur { color: var(--bon); }
+  .kpi .detail { font-size: .85rem; color: var(--texte-2); }
+  .kpi a.action { display: inline-block; margin-top: 8px; font-size: .82rem; font-weight: 600; text-decoration: none; }
+  .alertes { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .alertes span { background: var(--attention-doux); color: var(--attention); border-radius: 999px; padding: 4px 12px; font-size: .82rem; font-weight: 600; }
+  .alertes span.ok { background: var(--bon-doux); color: var(--bon); }
+
+  /* Reglages (poids + filtres) */
+  .reglages { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 20px; }
+  .reglages h4 { margin: 0 0 10px; font-size: .82rem; text-transform: uppercase; letter-spacing: .04em; color: var(--texte-3); }
+  .poids { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px 18px; }
+  .poids label { display: flex; align-items: center; justify-content: space-between; font-size: .85rem; font-weight: 600; }
+  .poids label i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; }
+  .poids input[type=range] { width: 100%; accent-color: var(--accent); }
+  .filtres { display: flex; flex-direction: column; gap: 12px; }
+  .ligne-filtre { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: .85rem; }
+  .ligne-filtre > span { min-width: 90px; color: var(--texte-2); font-weight: 600; }
+  .puce-filtre { border: 1px solid var(--bord-fort); background: var(--carte); border-radius: 999px; padding: 4px 12px; cursor: pointer; font-size: .82rem; color: var(--texte-2); }
+  .puce-filtre.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+  select, input[type=search] { border: 1px solid var(--bord-fort); border-radius: 8px; padding: 6px 10px; font: inherit; font-size: .85rem; background: var(--carte); }
+  input[type=search] { min-width: 220px; }
+  .bouton { border: 1px solid var(--bord-fort); background: var(--carte); border-radius: 8px; padding: 6px 12px; cursor: pointer; font: inherit; font-size: .82rem; font-weight: 600; color: var(--texte-2); }
+  .bouton:hover, .puce-filtre:hover { border-color: var(--accent); }
+  .compteur { font-size: .85rem; color: var(--texte-2); margin: 12px 0 0; }
+  .segment { display: inline-flex; border: 1px solid var(--bord-fort); border-radius: 8px; overflow: hidden; margin-bottom: 10px; }
+  .segment button { border: 0; background: var(--carte); padding: 5px 12px; font: inherit; font-size: .82rem; cursor: pointer; color: var(--texte-2); }
+  .segment button.on { background: var(--accent); color: #fff; }
+
+  /* Tableau des offres */
   .table-scroll { overflow-x: auto; }
-  table { width: 100%; border-collapse: collapse; font-size: 0.88rem; background: var(--carte); }
-  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--bord); vertical-align: top; }
-  th { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.03em; color: var(--doux); }
-  td.score { font-weight: 700; color: var(--bleu); white-space: nowrap; }
-  .puce { display: inline-block; padding: 1px 8px; margin: 2px 3px 2px 0; border-radius: 999px; font-size: 0.78rem; }
-  .puce.ok { background: #e3f3e8; color: #1e6b35; }
-  .puce.manque { background: #fbeedd; color: #8a4b05; }
-  a { color: var(--bleu); }
-  .attribution { font-size: 0.8rem; color: var(--doux); margin-top: 8px; }
-  footer { margin-top: 40px; font-size: 0.85rem; color: var(--doux); }
+  table { width: 100%; border-collapse: collapse; font-size: .88rem; }
+  th, td { text-align: left; padding: 10px 10px; border-bottom: 1px solid var(--bord); vertical-align: top; }
+  th { font-size: .74rem; text-transform: uppercase; letter-spacing: .04em; color: var(--texte-3); background: #fafbfc; position: sticky; top: 0; }
+  tr.offre { cursor: pointer; }
+  tr.offre:hover td { background: #f7faff; }
+  tr.offre td.rang { font-weight: 700; color: var(--texte-3); }
+  td.note { font-weight: 700; white-space: nowrap; }
+  .barre { width: 70px; height: 6px; margin-top: 6px; background: var(--bord); border-radius: 3px; }
+  .barre span { display: block; height: 100%; background: var(--accent); border-radius: 3px; }
+  .chip { display: inline-block; padding: 1px 8px; margin: 2px 3px 2px 0; border-radius: 999px; font-size: .76rem; font-weight: 600; }
+  .chip.ok { background: var(--bon-doux); color: var(--bon); }
+  .chip.manque { background: var(--attention-doux); color: var(--attention); }
+  .chip.neutre { background: #eef1f4; color: var(--texte-2); }
+  small { color: var(--texte-3); }
+  tr.detail td { background: #fafbfc; padding: 14px 18px; }
+  .detail-grille { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; font-size: .85rem; }
+  .critere { display: grid; grid-template-columns: 95px 1fr 44px; align-items: center; gap: 8px; margin-bottom: 4px; }
+  .critere .piste { height: 8px; background: var(--bord); border-radius: 4px; overflow: hidden; }
+  .critere .piste span { display: block; height: 100%; border-radius: 4px; }
+  .attribution { font-size: .8rem; color: var(--texte-3); margin-top: 10px; }
+
+  footer { margin-top: 44px; font-size: .85rem; color: var(--texte-2); }
   footer li { margin-bottom: 4px; }
 </style>
 </head>
 <body>
-<main>
-  <header>
+<div class="entete">
+  <div class="contenu">
     <h1>Ma recherche de stage de fin d'études</h1>
-    <p>Pour moi, chaque semaine : <strong>à quelles offres postuler, qui relancer, et quelle compétence travailler</strong>.</p>
-    <p id="maj">Chargement des données...</p>
-  </header>
-
-  <!-- 1. Cette semaine -->
-  <h2>Cette semaine</h2>
-  <p class="question">Les trois actions à faire maintenant, issues du monitoring.</p>
-  <div class="kpis" id="kpis"></div>
-
-  <!-- 2. Ou postuler : decision multicritere -->
-  <h2>Où postuler en priorité</h2>
-  <p class="question">Une décision multicritère : les compétences ne suffisent pas, le lieu, l'entreprise, la fraîcheur de l'offre, le domaine et le salaire comptent aussi.</p>
-  <div class="panneau">
-    <h3>Mes priorités (poids de chaque critère)</h3>
-    <div class="poids" id="poids"></div>
-    <p class="pourquoi" id="noteCriteres"></p>
+    <p>Un tableau de bord pour décider chaque semaine : à quelles offres postuler, qui relancer, et comment mieux cibler ma recherche.</p>
+    <div class="cycle"><span>1. Agir cette semaine</span><span>2. Choisir les offres</span><span>3. Suivre mes candidatures</span><span>4. Ajuster ma recherche</span><span>5. Vérifier les données</span></div>
+    <div class="maj" id="maj">Chargement des données...</div>
   </div>
-  <div class="panneau" style="margin-top:16px">
-    <h3>Les 12 offres les mieux classées, et ce qui fait leur note</h3>
-    <div class="graph haut"><canvas id="gClassement"></canvas></div>
-    <p class="pourquoi">Barres empilées : chaque couleur est la contribution d'un critère (poids × note du critère), la longueur totale est la note globale sur 1. On voit d'un coup d'œil pourquoi une offre est en haut : par ses compétences, par son lieu ou par son entreprise. Bouger un curseur au-dessus recalcule le classement : c'est la preuve que le classement dépend de mes priorités, pas seulement des données.</p>
+</div>
+<nav class="nav">
+  <div class="contenu">
+    <a href="#agir"><span class="num">1</span>Cette semaine</a>
+    <a href="#choisir"><span class="num">2</span>Choisir</a>
+    <a href="#suivre"><span class="num">3</span>Suivre</a>
+    <a href="#ajuster"><span class="num">4</span>Ajuster</a>
+    <a href="#confiance"><span class="num">5</span>Confiance</a>
   </div>
-  <div class="panneau" style="margin-top:16px">
-    <div class="table-scroll">
-      <table>
-        <thead><tr><th>Rang</th><th>Note</th><th>Offre</th><th>Entreprise</th><th>Lieu</th><th>Mes compétences demandées</th><th>Compétences qui me manquent</th></tr></thead>
-        <tbody id="offres"></tbody>
-      </table>
-    </div>
-    <p class="attribution"><a href="https://www.adzuna.fr" target="_blank" rel="noopener">Jobs</a> by <a href="https://www.adzuna.fr" target="_blank" rel="noopener">Adzuna</a> · offres également issues de <a href="https://fr.jooble.org" target="_blank" rel="noopener">Jooble</a>. Les liens mènent à l'annonce d'origine.</p>
-    <p class="pourquoi">Le tableau donne ce qu'il faut pour agir : le lien, l'entreprise, le lieu et les compétences. « Compétences inconnues » signale une offre dont l'extrait ne cite aucune compétence : elle reçoit une note prudente sur ce critère.</p>
-  </div>
+</nav>
 
-  <!-- 3. Efficacite de la recherche -->
-  <h2>Efficacité de ma recherche</h2>
-  <p class="question">Mon profil correspond-il aux offres, dans quel domaine, et que dois-je apprendre ?</p>
-  <div class="grille">
-    <div class="panneau">
-      <h3>Répartition des scores de matching</h3>
-      <div class="graph"><canvas id="gScores"></canvas></div>
-      <p class="pourquoi">Histogramme : il montre d'un coup la forme de la distribution. La barre grise isole les offres « inconnues » (aucune compétence détectée dans l'extrait) pour ne pas les confondre avec des offres peu adaptées.</p>
-    </div>
-    <div class="panneau">
-      <h3>Score moyen par domaine</h3>
-      <div class="graph"><canvas id="gDomaines"></canvas></div>
-      <p class="pourquoi">Barres groupées : la comparaison « toutes les offres » / « offres avec données » montre que l'écart entre domaines vient surtout du manque d'information dans les extraits, pas de mon profil.</p>
-    </div>
-    <div class="panneau large">
-      <h3>Mes forces et mes lacunes face aux offres</h3>
-      <div class="graph haut"><canvas id="gForcesLacunes"></canvas></div>
-      <p class="pourquoi">Barres divergentes : à droite (vert/bleu) les compétences que j'ai et que les offres demandent, à mettre en avant sur le CV ; à gauche (orange) celles qui me manquent, à travailler. Une seule échelle pour les deux côtés permet de comparer directement. La couleur à droite indique mon niveau (vert = 4-5, bleu = 3, gris = 1-2).</p>
-    </div>
-  </div>
+<main>
+  <!-- 1. AGIR -->
+  <section id="agir">
+    <div class="titre-section"><span class="num">Étape 1</span><h2>Cette semaine</h2></div>
+    <p class="sous-titre">Les actions à faire maintenant, calculées par le dernier monitoring.</p>
+    <div class="kpis" id="kpisAgir"></div>
+    <div class="alertes" id="alertes"></div>
+  </section>
 
-  <!-- 4. Resultats -->
-  <h2>Résultats de mes candidatures</h2>
-  <p class="question">Où mon effort donne-t-il des réponses ? (chiffres agrégés, le suivi détaillé reste privé)</p>
-  <div class="kpis" id="kpisResultats"></div>
-  <div class="grille" style="margin-top:16px">
+  <!-- 2. CHOISIR -->
+  <section id="choisir">
+    <div class="titre-section"><span class="num">Étape 2</span><h2>Choisir où postuler</h2></div>
+    <p class="sous-titre">Une décision multicritère : les compétences comptent, mais aussi le lieu, l'entreprise, la fraîcheur de l'offre, le domaine et le salaire.</p>
+
     <div class="panneau">
-      <h3>Taux de réponse par canal de candidature</h3>
-      <div class="graph"><canvas id="gCanaux"></canvas></div>
-      <p class="pourquoi">KPI choisi pour ne pas mesurer seulement le volume : il compare l'efficacité des canaux (site de l'entreprise, école, email) pour savoir où concentrer mes candidatures.</p>
-    </div>
-    <div class="panneau">
-      <h3>Où en sont mes candidatures ?</h3>
-      <div class="graph"><canvas id="gStatuts"></canvas></div>
-      <p class="pourquoi">Anneau : il montre une répartition d'un tout (mes candidatures) en peu de catégories. On voit tout de suite la part encore sans réponse, donc à relancer.</p>
-    </div>
-    <div class="panneau large">
-      <h3>Historique du monitoring</h3>
-      <div class="graph"><canvas id="gHistorique"></canvas></div>
-      <div class="table-scroll" style="margin-top:12px">
-        <table>
-          <thead><tr><th>Date</th><th>Candidatures</th><th>Relances dues</th><th>Offres bien notées non postulées</th><th>Alertes</th></tr></thead>
-          <tbody id="monitoring"></tbody>
-        </table>
+      <div class="reglages">
+        <div>
+          <h4>Mes priorités (poids des critères)</h4>
+          <div class="poids" id="poids"></div>
+          <button class="bouton" type="button" id="reinit" style="margin-top:12px">Revenir aux poids par défaut</button>
+        </div>
+        <div>
+          <h4>Filtres</h4>
+          <div class="filtres">
+            <div class="ligne-filtre"><span>Domaine</span><div id="filtreDomaines"></div></div>
+            <div class="ligne-filtre"><span>Distance</span>
+              <select id="filtreDistance">
+                <option value="">Toutes distances</option>
+                <option value="0">Moins de 30 km</option>
+                <option value="1">30 à 150 km</option>
+                <option value="2">150 à 400 km</option>
+                <option value="3">Plus de 400 km</option>
+                <option value="4">Lieu inconnu</option>
+              </select>
+            </div>
+            <div class="ligne-filtre"><span>Recherche</span><input type="search" id="filtreTexte" placeholder="entreprise, poste, ville..."></div>
+            <div class="ligne-filtre"><span>Données</span><label><input type="checkbox" id="filtreConnues"> seulement les offres avec compétences détectées</label></div>
+          </div>
+        </div>
       </div>
-      <p class="pourquoi">Courbes : l'évolution dans le temps est ce qui compte ici. Si les relances dues baissent d'une exécution à l'autre, la boucle « contrôler → agir → re-mesurer » fonctionne. Le tableau garde le détail des alertes de chaque exécution.</p>
+      <p class="compteur" id="compteur"></p>
+      <details class="pourquoi"><summary>Comment chaque critère est noté</summary><p id="noteCriteres"></p></details>
     </div>
-  </div>
 
-  <!-- 5. Sante du pipeline -->
-  <h2>Santé du pipeline de données</h2>
-  <p class="question">Puis-je faire confiance aux chiffres ci-dessus ?</p>
-  <div class="grille">
-    <div class="panneau">
-      <h3>Entonnoir : des offres collectées aux offres exploitables</h3>
-      <div class="graph"><canvas id="gEntonnoir"></canvas></div>
-      <p class="pourquoi">Entonnoir en barres horizontales : il montre à quelle étape on perd des offres (doublons, hors sujet, extraits sans compétence).</p>
+    <div class="grille" style="margin-top:16px">
+      <div class="panneau large">
+        <h3>Pourquoi ces offres sont en tête</h3>
+        <p class="decision"><strong>Je décide :</strong> je postule d'abord aux offres du haut ; si une offre n'est en tête que grâce à un seul critère (par exemple la réputation), je la vérifie avant d'y passer du temps.</p>
+        <div class="graph haut"><canvas id="gClassement"></canvas></div>
+        <details class="pourquoi"><summary>Pourquoi ce graphique</summary><p>Barres empilées horizontales : chaque couleur est la contribution d'un critère (poids × note), la longueur totale est la note globale sur 1. On lit d'un coup d'œil ce qui porte chaque offre. Les curseurs recalculent le classement en direct : il dépend de mes priorités, pas seulement des données.</p></details>
+      </div>
+      <div class="panneau large">
+        <h3>Les offres à traiter, avec leurs détails</h3>
+        <p class="decision"><strong>Je décide :</strong> j'ouvre l'annonce, je vérifie les points faibles signalés (compétences manquantes, distance, données inconnues), puis je postule et je note l'identifiant de l'offre dans mon tracker. Cliquer sur une ligne affiche la note de chaque critère.</p>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>#</th><th>Note</th><th>Offre</th><th>Entreprise</th><th>Lieu</th><th>Mes compétences demandées</th><th>Me manquent</th></tr></thead>
+            <tbody id="offres"></tbody>
+          </table>
+        </div>
+        <p class="attribution"><a href="https://www.adzuna.fr" target="_blank" rel="noopener">Jobs</a> by <a href="https://www.adzuna.fr" target="_blank" rel="noopener">Adzuna</a> · offres également issues de <a href="https://fr.jooble.org" target="_blank" rel="noopener">Jooble</a>. Les liens mènent à l'annonce d'origine.</p>
+      </div>
     </div>
-    <div class="panneau">
-      <h3>Pertinence par source</h3>
-      <div class="graph"><canvas id="gSources"></canvas></div>
-      <p class="pourquoi">Barres empilées à 100 % : pour chaque source, la part de vrais stages et la part hors sujet (CDI, alternance…). Elle justifie le poids donné à chaque source.</p>
+  </section>
+
+  <!-- 3. SUIVRE -->
+  <section id="suivre">
+    <div class="titre-section"><span class="num">Étape 3</span><h2>Suivre mes candidatures</h2></div>
+    <p class="sous-titre">Où en sont mes candidatures, où ça bloque, et est-ce que je garde le rythme ? (chiffres agrégés, le suivi détaillé reste privé)</p>
+    <div class="kpis" id="kpisSuivi"></div>
+    <div class="grille" style="margin-top:16px">
+      <div class="panneau">
+        <h3>Où mes candidatures s'arrêtent</h3>
+        <p class="decision"><strong>Je décide :</strong> si peu de candidatures obtiennent une réponse, je retravaille mon CV ou mon ciblage ; si j'ai des entretiens mais pas d'offre, je prépare mieux mes entretiens.</p>
+        <div class="graph bas"><canvas id="gEntonnoirCandidatures"></canvas></div>
+        <details class="pourquoi"><summary>Pourquoi ce graphique</summary><p>Entonnoir : chaque étape est une partie de la précédente, et le pourcentage indique le taux de passage. Il remplace l'anneau des statuts, qui répétait les cartes sans montrer à quelle étape ça bloque.</p></details>
+      </div>
+      <div class="panneau">
+        <h3>Mon rythme, semaine par semaine</h3>
+        <p class="decision"><strong>Je décide :</strong> une semaine sous l'objectif, je bloque un créneau pour postuler aux offres de l'étape 2 ; les relances comptent aussi comme de l'effort.</p>
+        <div class="graph bas"><canvas id="gRythme"></canvas></div>
+        <details class="pourquoi"><summary>Pourquoi ce graphique</summary><p>Barres par semaine avec une ligne d'objectif : la régularité compte plus que le total. Un gros envoi isolé suivi de semaines vides se voit tout de suite, ce qu'un seul chiffre cumulé cache.</p></details>
+      </div>
+      <div class="panneau large">
+        <h3>Historique du monitoring</h3>
+        <p class="decision"><strong>Je décide :</strong> si les relances dues ne baissent pas d'une exécution à l'autre, c'est que je n'agis pas sur les alertes : je les traite avant de chercher de nouvelles offres.</p>
+        <div class="graph bas"><canvas id="gHistorique"></canvas></div>
+        <details class="pourquoi"><summary>Détail des exécutions</summary>
+          <div class="table-scroll"><table><thead><tr><th>Date</th><th>Candidatures</th><th>Relances dues</th><th>Offres en tête non postulées</th><th>Alertes</th></tr></thead><tbody id="monitoring"></tbody></table></div>
+        </details>
+      </div>
     </div>
-  </div>
-  <div class="kpis" id="kpisSante" style="margin-top:16px"></div>
+  </section>
+
+  <!-- 4. AJUSTER -->
+  <section id="ajuster">
+    <div class="titre-section"><span class="num">Étape 4</span><h2>Ajuster ma recherche</h2></div>
+    <p class="sous-titre">Ma recherche vise-t-elle les bons endroits, les bons domaines et les bons canaux ? Mon KPI choisit-il les bonnes offres ?</p>
+    <div class="grille">
+      <div class="panneau">
+        <h3>Où sont les offres</h3>
+        <p class="decision"><strong>Je décide :</strong> si peu d'offres sont proches du Mans ou de Paris, j'élargis ma zone ou j'ajoute une recherche ciblée sur ces villes. Cliquer sur une barre filtre la liste de l'étape 2.</p>
+        <div class="graph"><canvas id="gZones"></canvas></div>
+        <details class="pourquoi"><summary>Pourquoi ce graphique</summary><p>Barres empilées par tranche de distance à la ville la plus proche (Le Mans ou Paris), découpées par domaine. Une offre qui relève de plusieurs domaines est rangée dans le plus spécifique (IA, puis data, puis développement, puis DevOps).</p></details>
+      </div>
+      <div class="panneau">
+        <h3>Mon KPI choisit-il les bonnes offres ?</h3>
+        <p class="decision"><strong>Je décide :</strong> si les offres bien notées ne répondent pas plus que les autres, mes critères ou mes poids ne prédisent pas le succès et je les revois.</p>
+        <div class="graph"><canvas id="gValidation"></canvas></div>
+        <details class="pourquoi"><summary>Pourquoi ce graphique</summary><p>Taux de réponse par tranche de note globale, avec le nombre de candidatures sous chaque barre. C'est la seule façon de vérifier le KPI avec des résultats réels, pas seulement avec ma logique. Il ne compte que les candidatures dont l'identifiant d'offre est noté dans le tracker.</p></details>
+      </div>
+      <div class="panneau">
+        <h3>Qui me répond le plus ?</h3>
+        <p class="decision"><strong>Je décide :</strong> je concentre mes candidatures sur le domaine et le canal qui répondent le mieux, en gardant en tête les petits effectifs affichés à côté de chaque barre.</p>
+        <div class="segment" id="segmentReponse"><button type="button" class="on" data-vue="by_domain">Par domaine</button><button type="button" data-vue="by_channel">Par canal</button></div>
+        <div class="graph bas"><canvas id="gReponses"></canvas></div>
+        <details class="pourquoi"><summary>Pourquoi ce graphique</summary><p>Taux de réponse plutôt que nombre de candidatures : c'est un indicateur d'efficacité, pas de volume. L'effectif « réponses / envoyées » est affiché pour ne pas tirer de conclusion sur deux candidatures.</p></details>
+      </div>
+      <div class="panneau">
+        <h3>Dans quel domaine mon profil correspond le mieux</h3>
+        <p class="decision"><strong>Je décide :</strong> je garde les recherches des domaines où mon score est bon ; un écart entre les deux barres signale un manque d'information dans les offres, pas un mauvais profil.</p>
+        <div class="graph bas"><canvas id="gDomaines"></canvas></div>
+        <details class="pourquoi"><summary>Pourquoi ce graphique</summary><p>Barres groupées : score de compétences moyen sur toutes les offres et sur les seules offres où des compétences sont détectées. L'écart a montré que la faiblesse apparente en DevOps venait des extraits, pas de mon profil.</p></details>
+      </div>
+      <div class="panneau large">
+        <h3>Mes forces et mes lacunes face aux offres</h3>
+        <p class="decision"><strong>Je décide :</strong> je mets en avant sur mon CV les compétences de droite les plus demandées ; je me forme en priorité à la première compétence de gauche.</p>
+        <div class="graph haut"><canvas id="gForcesLacunes"></canvas></div>
+        <details class="pourquoi"><summary>Pourquoi ce graphique</summary><p>Barres divergentes sur une seule échelle : à droite ce que j'ai (couleur = mon niveau), à gauche ce qui me manque. Comparer les deux côtés directement est le but.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. CONFIANCE -->
+  <section id="confiance">
+    <div class="titre-section"><span class="num">Étape 5</span><h2>Puis-je faire confiance à ces chiffres ?</h2></div>
+    <p class="sous-titre">La santé du pipeline de données : si elle se dégrade, les décisions des étapes précédentes reposent sur de mauvaises bases.</p>
+    <div class="kpis" id="kpisSante"></div>
+    <div class="grille" style="margin-top:16px">
+      <div class="panneau">
+        <h3>Des offres collectées aux offres exploitables</h3>
+        <p class="decision"><strong>Je décide :</strong> si une étape perd trop d'offres, je corrige l'étape concernée (mots-clés, filtre des stages, extraction).</p>
+        <div class="graph"><canvas id="gPipeline"></canvas></div>
+      </div>
+      <div class="panneau">
+        <h3>Pertinence de chaque source</h3>
+        <p class="decision"><strong>Je décide :</strong> une source qui renvoie surtout du hors sujet doit changer de mots-clés ou être abandonnée.</p>
+        <div class="graph"><canvas id="gSources"></canvas></div>
+      </div>
+    </div>
+  </section>
 
   <footer>
     <strong>Méthode et limites</strong>
     <ul>
-      <li>Sources : API Adzuna et Jooble (collecte manuelle, au plus une fois par semaine, quotas gratuits limités).</li>
-      <li>Les deux API ne fournissent que des extraits d'offres : beaucoup d'offres n'affichent aucune compétence et sont classées « inconnues ».</li>
-      <li>Compétences extraites par un modèle local (Ollama, qwen3:8b), complétées par une détection par motifs de mes propres compétences.</li>
-      <li>Mon profil de compétences est une auto-évaluation ; les salaires estimés par Adzuna sont ignorés.</li>
+      <li>Sources : API Adzuna et Jooble, collecte manuelle au plus une fois par semaine (quotas gratuits limités). Les deux API ne donnent qu'un extrait de chaque offre.</li>
+      <li>Compétences extraites par un modèle local (Ollama, qwen3:8b), complétées par une détection par motifs de mes propres compétences ; profil auto-évalué.</li>
+      <li>Réputation : ma propre liste d'entreprises, sinon un indicateur automatique. Les poids des critères sont mes choix, modifiables ci-dessus.</li>
+      <li>Suivi des candidatures : tableau tenu à la main, gardé en local ; seuls des chiffres agrégés sont publiés ici.</li>
     </ul>
   </footer>
 </main>
 
 <script>
-const COULEURS = { bleu: '#0d7c9e', vert: '#2e8b46', orange: '#c46e0a', gris: '#9aa5b1' };
-const DOMAINES = { 'stage développeur': 'Développement', 'stage data': 'Data', 'stage devops': 'DevOps' };
-
-function charger(chemin) {
-  return fetch(chemin).then(r => (r.ok ? r.json() : null)).catch(() => null);
-}
-
-function echapper(texte) {
-  const div = document.createElement('div');
-  div.textContent = texte == null ? '' : String(texte);
-  return div.innerHTML;
-}
-
-function pourcent(x) {
-  return x == null ? '-' : Math.round(x * 100) + ' %';
-}
-
-function carte(valeur, label, style) {
-  return `<div class="kpi ${style}"><div class="valeur">${valeur}</div><div class="label">${label}</div></div>`;
-}
-
-function graphiqueBarres(id, labels, jeux, options = {}) {
-  new Chart(document.getElementById(id), {
-    type: 'bar',
-    data: { labels, datasets: jeux },
-    options: Object.assign({
-      responsive: true, maintainAspectRatio: false,
-      plugins: { legend: { display: jeux.length > 1 } },
-    }, options),
-  });
-}
-
+// Palette categorielle validee (ordre fixe, jamais recycle) : une couleur par critere.
 const CRITERES = {
-  competences: ['Compétences', '#0d7c9e'], localisation: ['Localisation', '#2e8b46'], reputation: ['Réputation', '#6b5bd2'],
-  fraicheur: ['Fraîcheur', '#c46e0a'], domaine: ['Domaine', '#4a9bb5'], salaire: ['Salaire', '#b8860b'], teletravail: ['Télétravail', '#9aa5b1'],
+  competences: ['Compétences', '#2a78d6'], localisation: ['Localisation', '#eb6834'], reputation: ['Réputation', '#1baf7a'],
+  fraicheur: ['Fraîcheur', '#eda100'], domaine: ['Domaine', '#e87ba4'], salaire: ['Salaire', '#008300'], teletravail: ['Télétravail', '#6250d6'],
 };
+const COUL_DOMAINE = { 'IA': '#6250d6', 'data': '#2a78d6', 'développement': '#eb6834', 'DevOps': '#1baf7a' };
+const DOMAINES_REQ = { 'stage développeur': 'Développement', 'stage data': 'Data', 'stage devops': 'DevOps' };
+const NOMS_TRACKER = { developpement: 'Développement', data: 'Data', ia: 'IA', devops: 'DevOps', email: 'Email', ecole: 'École', 'site entreprise': "Site de l'entreprise" };
+const TRANCHES = ['< 30 km', '30-150 km', '150-400 km', '> 400 km', 'Lieu inconnu'];
+const GRIS = '#9aa5b1', BLEU = '#2a78d6', ORANGE_ACTION = '#b45309', VERT = '#1f8a4c';
+Chart.defaults.font.family = 'Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif';
+Chart.defaults.color = '#4b5563';
+Chart.defaults.borderColor = '#eef1f4';
+Chart.defaults.plugins.legend.labels.boxWidth = 12;
+Chart.defaults.plugins.legend.labels.boxHeight = 12;
+Chart.defaults.elements.bar.borderRadius = 4;
+
+// Petit plugin : ecrit un texte au bout de chaque barre (effectifs, taux de passage)
+const etiquettesFin = {
+  id: 'etiquettesFin',
+  afterDatasetsDraw(chart) {
+    const textes = chart.options.plugins.etiquettesFin && chart.options.plugins.etiquettesFin.textes;
+    if (!textes) return;
+    const { ctx } = chart;
+    const horizontal = chart.options.indexAxis === 'y';
+    const meta = chart.getDatasetMeta(chart.data.datasets.length - 1);
+    ctx.save();
+    ctx.font = '600 12px Inter, system-ui, sans-serif';
+    ctx.fillStyle = '#4b5563';
+    meta.data.forEach((el, i) => {
+      if (!textes[i]) return;
+      if (horizontal) { ctx.textAlign = 'left'; ctx.textBaseline = 'middle'; ctx.fillText(textes[i], el.x + 8, el.y); }
+      else { ctx.textAlign = 'center'; ctx.textBaseline = 'bottom'; ctx.fillText(textes[i], el.x, el.y - 6); }
+    });
+    ctx.restore();
+  },
+};
+Chart.register(etiquettesFin);
+
+function charger(chemin) { return fetch(chemin, { cache: 'no-store' }).then(r => (r.ok ? r.json() : null)).catch(() => null); }
+function echapper(t) { const d = document.createElement('div'); d.textContent = t == null ? '' : String(t); return d.innerHTML; }
+function pct(x) { return x == null ? '-' : Math.round(x * 100) + ' %'; }
+function carte(etiquette, valeur, detail, style, lien) {
+  return `<div class="kpi ${style}"><div class="etiquette">${etiquette}</div><div class="valeur">${valeur}</div>` +
+    `<div class="detail">${detail}</div>${lien ? `<a class="action" href="${lien[0]}">${lien[1]} →</a>` : ''}</div>`;
+}
+function vide(id, message) {
+  const canvas = document.getElementById(id);
+  canvas.parentElement.innerHTML = `<div class="vide">${message}</div>`;
+}
+function semaineIso(d) {
+  const t = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+  const jour = t.getUTCDay() || 7;
+  t.setUTCDate(t.getUTCDate() + 4 - jour);
+  const debut = new Date(Date.UTC(t.getUTCFullYear(), 0, 1));
+  return `${t.getUTCFullYear()}-S${String(Math.ceil(((t - debut) / 86400000 + 1) / 7)).padStart(2, '0')}`;
+}
+function trancheDistance(o) {
+  if (o.distance_km == null) return 4;
+  return o.distance_km < 30 ? 0 : o.distance_km < 150 ? 1 : o.distance_km < 400 ? 2 : 3;
+}
+function domainePrincipal(o) {
+  for (const d of ['IA', 'data', 'développement', 'DevOps']) if ((o.domains || []).includes(d)) return d;
+  return 'développement';
+}
+
+// Navigation : surligne l'etape visible
+function suivreNavigation() {
+  const liens = [...document.querySelectorAll('.nav a')];
+  const obs = new IntersectionObserver(entrees => {
+    entrees.forEach(e => {
+      if (e.isIntersecting) liens.forEach(a => a.classList.toggle('actif', a.getAttribute('href') === '#' + e.target.id));
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  document.querySelectorAll('main section').forEach(s => obs.observe(s));
+}
+
+// ---------- Etape 2 : choisir ----------
+const etat = { domaines: new Set(), distance: '', texte: '', connues: false, ouverte: null };
 let graphClassement = null;
 
-function afficherClassement(data) {
+function afficherChoix(data) {
   const poids = Object.assign({}, data.weights);
-  const zone = document.getElementById('poids');
-  zone.innerHTML = Object.keys(CRITERES).map(c => `
-    <div><label for="p_${c}"><span>${CRITERES[c][0]}</span><strong id="v_${c}"></strong></label>
-    <input type="range" id="p_${c}" min="0" max="100" step="5" value="${Math.round(100 * (poids[c] || 0))}"></div>`).join('') +
-    '<button type="button" id="reinit">Revenir à mes poids par défaut</button>';
+  document.getElementById('poids').innerHTML = Object.keys(CRITERES).map(c => `
+    <div><label for="p_${c}"><span><i style="background:${CRITERES[c][1]}"></i>${CRITERES[c][0]}</span><span id="v_${c}"></span></label>
+    <input type="range" id="p_${c}" min="0" max="100" step="5" value="${Math.round(100 * (poids[c] || 0))}"></div>`).join('');
+  const domaines = ['développement', 'data', 'IA', 'DevOps'];
+  document.getElementById('filtreDomaines').innerHTML = domaines.map(d =>
+    `<button type="button" class="puce-filtre" data-domaine="${d}">${d.charAt(0).toUpperCase() + d.slice(1)}</button>`).join(' ');
   document.getElementById('noteCriteres').textContent =
-    `Compétences : mon score de matching ramené sur 1 (offre sans compétence détectée : ${data.skill_unknown_value}). ` +
-    `Localisation : 1 jusqu'à 30 km de ${data.cities.join(' ou de ')}, puis baisse jusqu'à 0 à 400 km. ` +
-    `Réputation : ma propre liste d'entreprises, sinon un indicateur automatique (nombre de stages publiés). ` +
-    `Fraîcheur : 1 pour une offre de moins de 7 jours, 0 au-delà de 45 jours. Domaine : mes préférences (DevOps un peu en dessous). ` +
-    `Salaire : seulement ${data.n_with_salary} offres l'indiquent, sans montant on suppose la gratification minimale. ` +
-    `Télétravail : ${data.n_with_remote} offre(s) le mentionnent dans leur extrait, ce critère ne départage donc rien pour l'instant. ` +
-    `${data.excluded.alternance + data.excluded['trop ancienne']} offre(s) exclue(s) avant notation (alternance ou plus de 60 jours).`;
+    `Compétences : mon score de matching ramené sur 1 ; une offre sans compétence détectée reçoit ${data.skill_unknown_value} (moitié de la médiane, par prudence). ` +
+    `Localisation : 1 jusqu'à 30 km de ${data.cities.join(' ou de ')}, puis 0 à 400 km. ` +
+    `Réputation : ma liste d'entreprises notées de 1 à 3, sinon un indicateur automatique (nombre de stages publiés, plafonné). ` +
+    `Fraîcheur : 1 si l'offre a moins de 7 jours, 0 après 45 jours. Domaine : mes préférences (DevOps un peu en dessous). ` +
+    `Salaire : seules ${data.n_with_salary} offres l'indiquent ; sans montant, on suppose la gratification minimale. ` +
+    `Télétravail : ${data.n_with_remote} offre(s) le mentionnent dans leur extrait. ` +
+    `Avant toute note, ${data.excluded.alternance + data.excluded['trop ancienne']} offre(s) exclue(s) (alternance ou publiée il y a plus de 60 jours).`;
 
-  function recalculer() {
-    Object.keys(CRITERES).forEach(c => {
-      poids[c] = Number(document.getElementById('p_' + c).value) / 100;
-    });
+  function lirePoids() {
+    Object.keys(CRITERES).forEach(c => { poids[c] = Number(document.getElementById('p_' + c).value) / 100; });
     const total = Object.values(poids).reduce((a, b) => a + b, 0) || 1;
     Object.keys(CRITERES).forEach(c => { document.getElementById('v_' + c).textContent = Math.round(100 * poids[c] / total) + ' %'; });
-    const notes = data.offers.map(o => {
+    return total;
+  }
+
+  function recalculer() {
+    const total = lirePoids();
+    const texte = etat.texte.toLowerCase();
+    const notees = data.offers.filter(o =>
+      (!etat.domaines.size || (o.domains || []).some(d => etat.domaines.has(d))) &&
+      (etat.distance === '' || trancheDistance(o) === Number(etat.distance)) &&
+      (!etat.connues || !o.skills_unknown) &&
+      (!texte || `${o.title} ${o.company} ${o.location}`.toLowerCase().includes(texte))
+    ).map(o => {
       const contrib = {};
       Object.keys(CRITERES).forEach(c => { contrib[c] = (poids[c] / total) * (o.criteria[c] || 0); });
       return { o, contrib, note: Object.values(contrib).reduce((a, b) => a + b, 0) };
-    }).sort((a, b) => b.note - a.note).slice(0, 12);
+    }).sort((a, b) => b.note - a.note);
+    const top = notees.slice(0, 12);
+    document.getElementById('compteur').textContent =
+      `${notees.length} offre(s) correspondent aux filtres sur ${data.offers.length} ; les 12 premières sont affichées ci-dessous.`;
 
-    const labels = notes.map(n => `${(n.o.company || '?').slice(0, 18)} · ${n.o.title.replace(/^stage\s*[:\-–]\s*/i, '').slice(0, 38)}`);
+    const labels = top.map(n => [`${(n.o.company || '?').slice(0, 22)}`, n.o.title.replace(/^(stage\s*[:\-–]\s*)+/i, '').slice(0, 40)]);
     const datasets = Object.keys(CRITERES).map(c => ({
-      label: CRITERES[c][0], data: notes.map(n => +n.contrib[c].toFixed(3)), backgroundColor: CRITERES[c][1],
+      label: CRITERES[c][0], data: top.map(n => +n.contrib[c].toFixed(3)), backgroundColor: CRITERES[c][1],
+      borderColor: '#ffffff', borderWidth: { right: 2 }, borderSkipped: false, borderRadius: 0,
     }));
     if (graphClassement) { graphClassement.data.labels = labels; graphClassement.data.datasets = datasets; graphClassement.update(); }
     else {
       graphClassement = new Chart(document.getElementById('gClassement'), {
         type: 'bar', data: { labels, datasets },
-        options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false,
-          scales: { x: { stacked: true, min: 0, max: 1, title: { display: true, text: 'note globale (sur 1)' } }, y: { stacked: true, ticks: { font: { size: 11 } } } },
-          plugins: { tooltip: { callbacks: { label: c => `${c.dataset.label} : ${c.raw.toFixed(3)}` } } } },
+        options: {
+          indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+          scales: { x: { stacked: true, min: 0, max: 1, title: { display: true, text: 'note globale (sur 1)' } },
+            y: { stacked: true, grid: { display: false }, ticks: { font: { size: 11 } } } },
+          plugins: { legend: { position: 'top', align: 'start' },
+            tooltip: { callbacks: { label: c => `${c.dataset.label} : +${c.raw.toFixed(3)}`,
+              footer: items => `Note globale : ${items.reduce((a, i) => a + i.raw, 0).toFixed(2)}` } } },
+        },
       });
     }
-    document.getElementById('offres').innerHTML = notes.map((n, i) => {
+
+    document.getElementById('offres').innerHTML = top.map((n, i) => {
       const o = n.o;
-      const lieu = o.distance_km != null ? `${echapper(o.location || '')}<br><small>${o.distance_km} km de ${echapper(o.nearest_city)}</small>` : echapper(o.location || '-');
-      return `<tr>
-        <td>${i + 1}</td>
-        <td class="score">${n.note.toFixed(2)}<div class="barre"><span style="width:${Math.round(100 * n.note)}%"></span></div></td>
+      const lieu = o.distance_km != null ? `${echapper(o.location || '')}<br><small>${o.distance_km} km de ${echapper(o.nearest_city)}</small>` : `${echapper(o.location || '-')}<br><small>distance inconnue</small>`;
+      const comp = o.skills_unknown ? '<span class="chip neutre">compétences inconnues</span>'
+        : (o.matched.map(s => `<span class="chip ok">${echapper(s)}</span>`).join('') || '-');
+      const ligne = `<tr class="offre" data-id="${echapper(o.id)}">
+        <td class="rang">${i + 1}</td>
+        <td class="note">${n.note.toFixed(2)}<div class="barre"><span style="width:${Math.round(100 * n.note)}%"></span></div></td>
         <td>${o.url ? `<a href="${echapper(o.url)}" target="_blank" rel="noopener">${echapper(o.title)}</a>` : echapper(o.title)}</td>
-        <td>${echapper(o.company || '-')}</td>
-        <td>${lieu}</td>
-        <td>${o.skills_unknown ? '<span class="inconnu">compétences inconnues</span>' : (o.matched.map(s => `<span class="puce ok">${echapper(s)}</span>`).join('') || '-')}</td>
-        <td>${o.gaps.map(s => `<span class="puce manque">${echapper(s)}</span>`).join('') || '-'}</td>
-      </tr>`;
-    }).join('');
+        <td>${echapper(o.company || '-')}<br><small>réputation : ${echapper(o.reputation_source)}</small></td>
+        <td>${lieu}</td><td>${comp}</td>
+        <td>${o.gaps.map(s => `<span class="chip manque">${echapper(s)}</span>`).join('') || '-'}</td></tr>`;
+      if (etat.ouverte !== o.id) return ligne;
+      const criteres = Object.keys(CRITERES).map(c => `<div class="critere"><span>${CRITERES[c][0]}</span>
+        <div class="piste"><span style="width:${Math.round(100 * (o.criteria[c] || 0))}%;background:${CRITERES[c][1]}"></span></div>
+        <strong>${(o.criteria[c] || 0).toFixed(2)}</strong></div>`).join('');
+      return ligne + `<tr class="detail"><td colspan="7"><div class="detail-grille">
+        <div><strong>Note de chaque critère (sur 1)</strong><div style="margin-top:8px">${criteres}</div></div>
+        <div><strong>Informations</strong><p style="margin:8px 0 0">
+          Publiée il y a ${o.age_days ?? '?'} jour(s) · domaine(s) : ${echapper((o.domains || []).join(', ') || '-')}<br>
+          Gratification : ${o.salary_monthly ? o.salary_monthly + ' € par mois' : 'non indiquée'}<br>
+          Source : ${echapper(o.source)} · score de compétences brut : ${o.skill_score.toFixed(2)}<br>
+          Identifiant à noter dans le tracker : <code>${echapper(o.id)}</code></p></div>
+      </div></td></tr>`;
+    }).join('') || '<tr><td colspan="7">Aucune offre ne correspond à ces filtres.</td></tr>';
   }
-  zone.querySelectorAll('input').forEach(el => el.addEventListener('input', recalculer));
+
+  document.getElementById('poids').addEventListener('input', recalculer);
   document.getElementById('reinit').addEventListener('click', () => {
     Object.keys(CRITERES).forEach(c => { document.getElementById('p_' + c).value = Math.round(100 * (data.weights[c] || 0)); });
     recalculer();
   });
+  document.getElementById('filtreDomaines').addEventListener('click', e => {
+    const b = e.target.closest('button'); if (!b) return;
+    const d = b.dataset.domaine;
+    etat.domaines.has(d) ? etat.domaines.delete(d) : etat.domaines.add(d);
+    b.classList.toggle('on', etat.domaines.has(d));
+    recalculer();
+  });
+  document.getElementById('filtreDistance').addEventListener('change', e => { etat.distance = e.target.value; recalculer(); });
+  document.getElementById('filtreTexte').addEventListener('input', e => { etat.texte = e.target.value; recalculer(); });
+  document.getElementById('filtreConnues').addEventListener('change', e => { etat.connues = e.target.checked; recalculer(); });
+  document.getElementById('offres').addEventListener('click', e => {
+    if (e.target.closest('a')) return;
+    const tr = e.target.closest('tr.offre'); if (!tr) return;
+    etat.ouverte = etat.ouverte === tr.dataset.id ? null : tr.dataset.id;
+    recalculer();
+  });
   recalculer();
+  return recalculer;
 }
 
+// ---------- Chargement ----------
 Promise.all([
-  charger('data/matches.json'),
-  charger('data/ranking.json'),
-  charger('data/monitoring.json'),
-  charger('data/tracking_summary.json'),
-  charger('data/pipeline_health.json'),
-]).then(([matches, classement, monitoring, suivi, sante]) => {
-  if (!matches) {
-    document.getElementById('maj').textContent = 'Données introuvables : lancer les scripts puis publier docs/data/.';
-    return;
-  }
-  const dernier = monitoring && monitoring.runs.length ? monitoring.runs[monitoring.runs.length - 1] : null;
+  charger('data/ranking.json'), charger('data/matches.json'), charger('data/monitoring.json'),
+  charger('data/tracking_summary.json'), charger('data/pipeline_health.json'),
+]).then(([classement, matches, monitoring, suivi, sante]) => {
+  suivreNavigation();
+  const runs = monitoring ? monitoring.runs : [];
+  const dernier = runs.length ? runs[runs.length - 1] : null;
   document.getElementById('maj').textContent =
-    `Matching calculé le ${matches.generated_at.slice(0, 10)}` +
-    (dernier ? ` · dernier monitoring le ${dernier.run_date}` : '');
+    (classement ? `Classement calculé le ${classement.generated_at.slice(0, 10)}` : 'Classement introuvable') +
+    (dernier ? ` · dernier monitoring le ${dernier.run_date} (exécution n°${runs.length})` : '');
 
-  // 1. Cette semaine
-  document.getElementById('kpis').innerHTML =
-    carte(dernier ? dernier.n_follow_ups_due : '-', 'candidatures à relancer (sans réponse depuis plus de 10 jours)', 'alerte') +
-    carte(dernier ? dernier.n_high_match_not_applied : '-', 'offres bien notées (score ≥ 0,3) auxquelles je n\'ai pas postulé', 'info') +
-    carte(suivi ? pourcent(suivi.response_rate) : '-', `taux de réponse à mes candidatures (${suivi ? suivi.n_responses + ' sur ' + suivi.n_applications : '-'})`, 'bon');
+  // ---------- Etape 1 : agir ----------
+  const semaine = semaineIso(new Date());
+  const cetteSemaine = suivi && suivi.by_week && suivi.by_week[semaine] ? suivi.by_week[semaine].envoyees : 0;
+  const objectif = suivi ? suivi.weekly_target : 5;
+  document.getElementById('kpisAgir').innerHTML =
+    carte('À relancer', dernier ? dernier.n_follow_ups_due : '-', 'candidatures sans nouvelles depuis plus de 10 jours (depuis l\'envoi ou la dernière relance)', dernier && dernier.n_follow_ups_due ? 'alerte' : 'bon', ['#suivre', 'Voir le suivi']) +
+    carte('À postuler', dernier ? dernier.n_high_match_not_applied : '-', 'offres en tête de mon classement auxquelles je n\'ai pas encore postulé', 'info', ['#choisir', 'Voir les offres']) +
+    carte('Rythme', `${cetteSemaine} / ${objectif}`, 'candidatures envoyées cette semaine, par rapport à mon objectif hebdomadaire', cetteSemaine >= objectif ? 'bon' : 'alerte', ['#suivre', 'Voir mon rythme']) +
+    carte('Taux de réponse', suivi ? pct(suivi.response_rate) : '-', suivi ? `${suivi.n_responses} réponse(s) sur ${suivi.n_applications} candidatures` : '', 'info');
+  document.getElementById('alertes').innerHTML = dernier && dernier.alerts.length
+    ? dernier.alerts.map(a => `<span>${echapper(a)}</span>`).join('') : '<span class="ok">Aucune alerte au dernier monitoring</span>';
 
-  // 2. Ou postuler : decision multicritere
-  if (classement) afficherClassement(classement);
+  // ---------- Etape 2 : choisir ----------
+  let recalculerChoix = null;
+  if (classement) recalculerChoix = afficherChoix(classement);
 
-  // 3a. Repartition des scores
-  const classes = { 'Inconnue': 0, '< 0,15': 0, '0,15 - 0,29': 0, '0,30 - 0,39': 0, '≥ 0,40': 0 };
-  matches.offers.forEach(o => {
-    if (o.insufficient_data) classes['Inconnue']++;
-    else if (o.score < 0.15) classes['< 0,15']++;
-    else if (o.score < 0.3) classes['0,15 - 0,29']++;
-    else if (o.score < 0.4) classes['0,30 - 0,39']++;
-    else classes['≥ 0,40']++;
-  });
-  graphiqueBarres('gScores', Object.keys(classes), [{
-    label: 'Nombre d\'offres', data: Object.values(classes),
-    backgroundColor: [COULEURS.gris, COULEURS.bleu, COULEURS.bleu, COULEURS.vert, COULEURS.vert],
-  }], { scales: { y: { title: { display: true, text: 'offres' } } } });
-
-  // 3b. Score moyen par domaine
-  const requetes = Object.keys(matches.avg_score_by_query || {});
-  graphiqueBarres('gDomaines', requetes.map(q => DOMAINES[q] || q), [
-    { label: 'Toutes les offres', data: requetes.map(q => matches.avg_score_by_query[q]), backgroundColor: COULEURS.gris },
-    { label: 'Offres avec compétences détectées', data: requetes.map(q => (matches.avg_score_by_query_known || {})[q]), backgroundColor: COULEURS.bleu },
-  ], { scales: { y: { beginAtZero: true, title: { display: true, text: 'score moyen' } } } });
-
-  // 3c. Forces et lacunes (barres divergentes)
-  const forces = (matches.top_matched_skills || []).slice(0, 8);
-  const lacunes = (matches.top_skill_gaps || []).slice(0, 8);
-  const lignes = forces.map(s => ({ nom: `${s.skill} (niv. ${s.level})`, force: s.count, lacune: 0, niveau: s.level }))
-    .concat(lacunes.map(s => ({ nom: s.skill, force: 0, lacune: -s.count, niveau: 0 })));
-  graphiqueBarres('gForcesLacunes', lignes.map(l => l.nom), [
-    { label: 'Je l\'ai : offres qui la demandent', data: lignes.map(l => l.force),
-      backgroundColor: lignes.map(l => (l.niveau >= 4 ? COULEURS.vert : l.niveau >= 3 ? COULEURS.bleu : COULEURS.gris)) },
-    { label: 'Il me manque : offres qui la demandent', data: lignes.map(l => l.lacune), backgroundColor: COULEURS.orange },
-  ], {
-    indexAxis: 'y',
-    scales: {
-      x: { stacked: true, ticks: { precision: 0, callback: v => Math.abs(v) }, title: { display: true, text: '← me manque      nombre d\'offres      j\'ai →' } },
-      y: { stacked: true },
-    },
-    plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => `${c.dataset.label} : ${Math.abs(c.raw)}` } } },
-  });
-
-  // 4. Resultats
+  // ---------- Etape 3 : suivre ----------
   if (suivi) {
-    document.getElementById('kpisResultats').innerHTML =
-      carte(suivi.n_applications, 'candidatures envoyées', 'info') +
-      carte(suivi.n_responses, 'réponses reçues', 'info') +
-      carte(suivi.n_interviews, 'entretiens obtenus', 'bon') +
-      carte(suivi.median_response_days == null ? '-' : suivi.median_response_days + ' j', 'délai médian de réponse', 'info');
-    const canaux = Object.keys(suivi.by_channel || {});
-    graphiqueBarres('gCanaux', canaux, [
-      { label: 'Envoyées', data: canaux.map(c => suivi.by_channel[c].envoyees), backgroundColor: COULEURS.gris },
-      { label: 'Réponses', data: canaux.map(c => suivi.by_channel[c].reponses), backgroundColor: COULEURS.bleu },
-    ], { scales: { y: { beginAtZero: true, ticks: { precision: 0 } } } });
+    const f = suivi.funnel || { envoyees: suivi.n_applications, reponses: suivi.n_responses, entretiens: suivi.n_interviews, acceptees: 0 };
+    document.getElementById('kpisSuivi').innerHTML =
+      carte('Envoyées', f.envoyees, 'candidatures au total', 'info') +
+      carte('Relances faites', suivi.n_follow_ups_done ?? 0, 'candidatures relancées au moins une fois', 'info') +
+      carte('Entretiens', f.entretiens, 'entretiens obtenus', f.entretiens ? 'bon' : 'alerte') +
+      carte('Délai de réponse', suivi.median_response_days == null ? '-' : suivi.median_response_days + ' j', 'délai médian entre l\'envoi et la réponse', 'info');
 
-    const STATUTS = {
-      envoyee: ['Envoyée, sans réponse', COULEURS.gris], relancee: ['Relancée', COULEURS.bleu],
-      entretien: ['Entretien', COULEURS.vert], refus: ['Refus', COULEURS.orange],
-    };
-    const statuts = Object.keys(suivi.by_status || {});
-    new Chart(document.getElementById('gStatuts'), {
-      type: 'doughnut',
-      data: {
-        labels: statuts.map(s => (STATUTS[s] ? STATUTS[s][0] : s)),
-        datasets: [{ data: statuts.map(s => suivi.by_status[s]),
-          backgroundColor: statuts.map((s, i) => (STATUTS[s] ? STATUTS[s][1] : ['#6b5bd2', '#b8860b', '#4a6fa5'][i % 3])) }],
-      },
-      options: { responsive: true, maintainAspectRatio: false, cutout: '55%', plugins: { legend: { position: 'bottom' } } },
+    const etapes = [['Envoyées', f.envoyees], ['Réponse reçue', f.reponses], ['Entretien', f.entretiens], ['Offre acceptée', f.acceptees]];
+    const passages = etapes.map((e, i) => (i === 0 ? `${e[1]}` : `${e[1]} · ${etapes[i - 1][1] ? Math.round(100 * e[1] / etapes[i - 1][1]) : 0} % de l'étape précédente`));
+    new Chart(document.getElementById('gEntonnoirCandidatures'), {
+      type: 'bar',
+      data: { labels: etapes.map(e => e[0]), datasets: [{ data: etapes.map(e => e[1]), backgroundColor: ['#86b6ef', '#3987e5', '#256abf', '#104281'], barThickness: 26 }] },
+      options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false, layout: { padding: { right: 170 } },
+        scales: { x: { beginAtZero: true, ticks: { precision: 0 } }, y: { grid: { display: false } } },
+        plugins: { legend: { display: false }, etiquettesFin: { textes: passages } } },
     });
+
+    const semaines = Object.keys(suivi.by_week || {});
+    if (semaines.length) {
+      // On complete les semaines sans candidature jusqu'a la semaine en cours
+      const toutes = [];
+      const [a0, s0] = semaines[0].split('-S').map(Number);
+      let d = new Date(Date.UTC(a0, 0, 4 + (s0 - 1) * 7));
+      while (semaineIso(d) <= semaine && toutes.length < 30) { toutes.push(semaineIso(d)); d = new Date(d.getTime() + 7 * 86400000); }
+      new Chart(document.getElementById('gRythme'), {
+        data: { labels: toutes.map(s => s.replace('-S', ' · S')), datasets: [
+          { type: 'bar', label: 'Candidatures envoyées', data: toutes.map(s => (suivi.by_week[s] || {}).envoyees || 0), backgroundColor: BLEU },
+          { type: 'bar', label: 'Relances faites', data: toutes.map(s => (suivi.by_week[s] || {}).relances || 0), backgroundColor: '#eb6834' },
+          { type: 'line', label: `Objectif (${objectif} par semaine)`, data: toutes.map(() => objectif), borderColor: '#14181d', borderDash: [6, 4], borderWidth: 2, pointRadius: 0 },
+        ] },
+        options: { responsive: true, maintainAspectRatio: false, scales: { y: { beginAtZero: true, ticks: { precision: 0 } }, x: { grid: { display: false } } },
+          plugins: { legend: { position: 'top', align: 'start' } } },
+      });
+    } else vide('gRythme', 'Pas encore de dates de candidature dans le tracker.');
   }
-  if (monitoring) {
+  if (runs.length) {
     new Chart(document.getElementById('gHistorique'), {
       type: 'line',
-      data: {
-        labels: monitoring.runs.map(r => r.run_date),
-        datasets: [
-          { label: 'Candidatures envoyées', data: monitoring.runs.map(r => r.n_applications), borderColor: COULEURS.bleu, backgroundColor: COULEURS.bleu },
-          { label: 'Relances dues', data: monitoring.runs.map(r => r.n_follow_ups_due), borderColor: COULEURS.orange, backgroundColor: COULEURS.orange },
-          { label: 'Offres bien notées non postulées', data: monitoring.runs.map(r => r.n_high_match_not_applied), borderColor: COULEURS.vert, backgroundColor: COULEURS.vert },
-        ],
-      },
-      options: { responsive: true, maintainAspectRatio: false, elements: { point: { radius: 5 } },
-        scales: { y: { beginAtZero: true, ticks: { precision: 0 } } } },
+      data: { labels: runs.map(r => r.run_date), datasets: [
+        { label: 'Candidatures envoyées', data: runs.map(r => r.n_applications), borderColor: BLEU, backgroundColor: BLEU },
+        { label: 'Relances dues', data: runs.map(r => r.n_follow_ups_due), borderColor: '#eb6834', backgroundColor: '#eb6834' },
+        { label: 'Offres en tête non postulées', data: runs.map(r => r.n_high_match_not_applied), borderColor: '#1baf7a', backgroundColor: '#1baf7a' },
+      ] },
+      options: { responsive: true, maintainAspectRatio: false, elements: { point: { radius: 5, hoverRadius: 7 }, line: { borderWidth: 2 } },
+        interaction: { mode: 'index', intersect: false }, scales: { y: { beginAtZero: true, ticks: { precision: 0 } } },
+        plugins: { legend: { position: 'top', align: 'start' } } },
     });
-    document.getElementById('monitoring').innerHTML = monitoring.runs.map(r => `
-      <tr><td>${echapper(r.run_date)}</td><td>${r.n_applications}</td><td>${r.n_follow_ups_due}</td>
-      <td>${r.n_high_match_not_applied}</td><td>${echapper(r.alerts.join(' · ') || 'aucune')}</td></tr>`).join('');
+    document.getElementById('monitoring').innerHTML = runs.slice().reverse().map(r => `<tr><td>${echapper(r.run_date)}</td><td>${r.n_applications}</td>
+      <td>${r.n_follow_ups_due}</td><td>${r.n_high_match_not_applied}<br><small>${echapper(r.high_match_rule || 'compétences ≥ 0,3')}</small></td>
+      <td>${echapper(r.alerts.join(' · ') || 'aucune')}</td></tr>`).join('');
   }
 
-  // 5. Sante du pipeline
+  // ---------- Etape 4 : ajuster ----------
+  if (classement) {
+    const ordre = ['IA', 'data', 'développement', 'DevOps'];
+    const compte = ordre.map(dom => TRANCHES.map((_, t) => classement.offers.filter(o => trancheDistance(o) === t && domainePrincipal(o) === dom).length));
+    new Chart(document.getElementById('gZones'), {
+      type: 'bar',
+      data: { labels: TRANCHES, datasets: ordre.map((dom, i) => ({ label: dom.charAt(0).toUpperCase() + dom.slice(1), data: compte[i], backgroundColor: COUL_DOMAINE[dom],
+        borderColor: '#ffffff', borderWidth: { top: 2 }, borderSkipped: false, borderRadius: 0 })) },
+      options: { responsive: true, maintainAspectRatio: false,
+        scales: { x: { stacked: true, grid: { display: false }, title: { display: true, text: 'distance à Le Mans ou Paris (la plus proche)' } }, y: { stacked: true, ticks: { precision: 0 }, title: { display: true, text: 'offres' } } },
+        plugins: { legend: { position: 'top', align: 'start' }, tooltip: { callbacks: { footer: items => 'Cliquer pour filtrer la liste' } } },
+        onHover: (e, el) => { e.native.target.style.cursor = el.length ? 'pointer' : 'default'; },
+        onClick: (e, el) => {
+          if (!el.length || !recalculerChoix) return;
+          etat.distance = String(el[0].index);
+          document.getElementById('filtreDistance').value = etat.distance;
+          recalculerChoix();
+          document.getElementById('choisir').scrollIntoView();
+        } },
+    });
+  }
+
+  if (suivi && suivi.by_score_band && suivi.n_linked_to_pipeline) {
+    const bandes = Object.keys(suivi.by_score_band);
+    const v = bandes.map(b => suivi.by_score_band[b]);
+    new Chart(document.getElementById('gValidation'), {
+      type: 'bar',
+      data: { labels: bandes, datasets: [{ label: 'Taux de réponse', data: v.map(x => (x.envoyees ? Math.round(100 * x.reponses / x.envoyees) : 0)), backgroundColor: ['#1c5cab', '#3987e5', '#9ec5f4'], maxBarThickness: 70 }] },
+      options: { responsive: true, maintainAspectRatio: false, layout: { padding: { top: 24 } },
+        scales: { y: { beginAtZero: true, max: 100, title: { display: true, text: '% de réponses' } }, x: { grid: { display: false } } },
+        plugins: { legend: { display: false }, etiquettesFin: { textes: v.map(x => `${x.reponses} / ${x.envoyees}`) },
+          tooltip: { callbacks: { label: c => `${c.raw} % (${v[c.dataIndex].reponses} réponse(s) sur ${v[c.dataIndex].envoyees})` } } } },
+    });
+  } else {
+    vide('gValidation', `Pas encore de candidature liée à une offre du pipeline. Pour activer ce contrôle, je note l'identifiant de l'offre (visible en cliquant sur une ligne de l'étape 2) dans la colonne id_offre du tracker.`);
+  }
+
+  if (suivi) {
+    let graphReponses = null;
+    const dessinerReponses = vue => {
+      const table = suivi[vue] || {};
+      const cles = Object.keys(table).sort((a, b) => table[b].envoyees - table[a].envoyees);
+      const config = {
+        type: 'bar',
+        data: { labels: cles.map(k => NOMS_TRACKER[k] || k), datasets: [{ label: 'Taux de réponse', data: cles.map(k => Math.round(100 * table[k].reponses / table[k].envoyees)), backgroundColor: BLEU, barThickness: 22 }] },
+        options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false, layout: { padding: { right: 70 } },
+          scales: { x: { beginAtZero: true, max: 100, title: { display: true, text: '% de réponses' } }, y: { grid: { display: false } } },
+          plugins: { legend: { display: false }, etiquettesFin: { textes: cles.map(k => `${table[k].reponses} / ${table[k].envoyees}`) },
+            tooltip: { callbacks: { label: c => `${c.raw} % (${table[cles[c.dataIndex]].reponses} réponse(s) sur ${table[cles[c.dataIndex]].envoyees})` } } } },
+      };
+      if (graphReponses) graphReponses.destroy();
+      graphReponses = new Chart(document.getElementById('gReponses'), config);
+    };
+    dessinerReponses('by_domain');
+    document.getElementById('segmentReponse').addEventListener('click', e => {
+      const b = e.target.closest('button'); if (!b) return;
+      document.querySelectorAll('#segmentReponse button').forEach(x => x.classList.toggle('on', x === b));
+      dessinerReponses(b.dataset.vue);
+    });
+  }
+
+  if (matches) {
+    const req = Object.keys(matches.avg_score_by_query || {});
+    new Chart(document.getElementById('gDomaines'), {
+      type: 'bar',
+      data: { labels: req.map(q => DOMAINES_REQ[q] || q), datasets: [
+        { label: 'Toutes les offres', data: req.map(q => matches.avg_score_by_query[q]), backgroundColor: GRIS },
+        { label: 'Offres avec compétences détectées', data: req.map(q => (matches.avg_score_by_query_known || {})[q]), backgroundColor: BLEU },
+      ] },
+      options: { responsive: true, maintainAspectRatio: false, scales: { y: { beginAtZero: true, title: { display: true, text: 'score moyen' } }, x: { grid: { display: false } } },
+        plugins: { legend: { position: 'top', align: 'start' } } },
+    });
+
+    const forces = (matches.top_matched_skills || []).slice(0, 8);
+    const lacunes = (matches.top_skill_gaps || []).slice(0, 8);
+    const lignes = forces.map(s => ({ nom: `${s.skill} (niv. ${s.level})`, force: s.count, lacune: 0, niveau: s.level }))
+      .concat(lacunes.map(s => ({ nom: s.skill, force: 0, lacune: -s.count, niveau: 0 })));
+    new Chart(document.getElementById('gForcesLacunes'), {
+      type: 'bar',
+      data: { labels: lignes.map(l => l.nom), datasets: [
+        { label: "Je l'ai", data: lignes.map(l => l.force), backgroundColor: lignes.map(l => (l.niveau >= 4 ? '#104281' : l.niveau >= 3 ? '#3987e5' : '#9ec5f4')) },
+        { label: 'Il me manque', data: lignes.map(l => l.lacune), backgroundColor: '#eb6834' },
+      ] },
+      options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+        scales: { x: { stacked: true, ticks: { precision: 0, callback: v => Math.abs(v) }, title: { display: true, text: "← me manque      nombre d'offres qui la demandent      j'ai →" } }, y: { stacked: true, grid: { display: false }, ticks: { autoSkip: false } } },
+        plugins: { legend: { position: 'top', align: 'start' }, tooltip: { callbacks: { label: c => `${c.dataset.label} : ${Math.abs(c.raw)} offre(s)` } } } },
+    });
+  }
+
+  // ---------- Etape 5 : confiance ----------
   if (sante) {
     const sources = sante.sources || {};
     const brutes = Object.values(sources).reduce((s, x) => s + (x.n_raw || 0), 0);
     const parSource = Object.values(sources).reduce((s, x) => s + (x.n_offers || 0), 0);
     const exploitables = (sante.matching.n_offers || 0) - (sante.matching.n_insufficient_data || 0);
-    graphiqueBarres('gEntonnoir',
-      ['Collectées', 'Sans doublon interne', 'Uniques (2 sources)', 'Vrais stages', 'Avec compétences détectées', 'Score ≥ 0,3'],
-      [{ label: 'offres', data: [brutes, parSource, sante.merge.n_unique_offers, sante.merge.n_internships, exploitables, sante.matching.n_score_at_least_0_3],
-         backgroundColor: [COULEURS.gris, COULEURS.gris, COULEURS.bleu, COULEURS.bleu, COULEURS.vert, COULEURS.vert] }],
-      { indexAxis: 'y' });
-
-    const noms = Object.keys(sources);
-    const partStages = noms.map(n => (sources[n].n_offers ? Math.round(100 * sources[n].n_internship / sources[n].n_offers) : 0));
-    graphiqueBarres('gSources', noms.map(n => `${n.charAt(0).toUpperCase() + n.slice(1)} (${sources[n].n_offers} offres)`), [
-      { label: 'Vrais stages', data: partStages, backgroundColor: COULEURS.vert },
-      { label: 'Hors sujet (CDI, alternance...)', data: partStages.map(p => 100 - p), backgroundColor: COULEURS.gris },
-    ], {
-      indexAxis: 'y',
-      scales: { x: { stacked: true, min: 0, max: 100, title: { display: true, text: '% des offres collectées' } }, y: { stacked: true } },
-      plugins: { tooltip: { callbacks: { label: c => `${c.dataset.label} : ${c.raw} %` } } },
+    const etapes = [['Collectées', brutes], ['Sans doublon interne', parSource], ['Uniques (2 sources)', sante.merge.n_unique_offers],
+      ['Vrais stages', sante.merge.n_internships], ['Avec compétences détectées', exploitables]];
+    new Chart(document.getElementById('gPipeline'), {
+      type: 'bar',
+      data: { labels: etapes.map(e => e[0]), datasets: [{ data: etapes.map(e => e[1]), backgroundColor: ['#cde2fb', '#9ec5f4', '#6da7ec', '#3987e5', '#1c5cab'], barThickness: 24 }] },
+      options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false, layout: { padding: { right: 50 } },
+        scales: { x: { beginAtZero: true }, y: { grid: { display: false } } },
+        plugins: { legend: { display: false }, etiquettesFin: { textes: etapes.map(e => String(e[1])) } } },
     });
-
+    const noms = Object.keys(sources);
+    const part = noms.map(n => (sources[n].n_offers ? Math.round(100 * sources[n].n_internship / sources[n].n_offers) : 0));
+    new Chart(document.getElementById('gSources'), {
+      type: 'bar',
+      data: { labels: noms.map(n => `${n.charAt(0).toUpperCase() + n.slice(1)} (${sources[n].n_offers} offres)`), datasets: [
+        { label: 'Vrais stages', data: part, backgroundColor: BLEU, borderColor: '#fff', borderWidth: { right: 2 }, borderSkipped: false, borderRadius: 0 },
+        { label: 'Hors sujet (CDI, alternance...)', data: part.map(p => 100 - p), backgroundColor: GRIS, borderRadius: 0 },
+      ] },
+      options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+        scales: { x: { stacked: true, max: 100, title: { display: true, text: '% des offres collectées' } }, y: { stacked: true, grid: { display: false } } },
+        plugins: { legend: { position: 'top', align: 'start' }, tooltip: { callbacks: { label: c => `${c.dataset.label} : ${c.raw} %` } } } },
+    });
     const ex = sante.extraction;
     document.getElementById('kpisSante').innerHTML =
-      carte(ex.n_offers ? pourcent(ex.n_with_at_least_one_skill / ex.n_offers) : '-', 'offres où l\'IA a extrait au moins une compétence', 'alerte') +
-      carte(pourcent(sante.matching.share_matches_found_only_by_text), 'correspondances trouvées uniquement par la recherche dans le texte', 'info') +
-      carte(ex.n_errors == null ? '-' : ex.n_errors, `erreurs d'extraction (${ex.avg_seconds_per_offer || '-'} s par offre)`, 'bon') +
-      carte(sante.merge.n_same_source_duplicates + sante.merge.n_cross_source_duplicates, 'republications et doublons retirés à la fusion', 'info') +
-      carte(noms.map(n => `${sources[n].api_calls_last_run ?? '-'}`).join(' + '), 'appels API lors de la dernière collecte (Adzuna + Jooble)', 'info');
+      carte('Extraction IA', ex.n_offers ? pct(ex.n_with_at_least_one_skill / ex.n_offers) : '-', 'des offres où l\'IA a trouvé au moins une compétence', 'alerte') +
+      carte('Détection par texte', pct(sante.matching.share_matches_found_only_by_text), 'des correspondances trouvées seulement par la recherche dans le texte', 'info') +
+      carte('Erreurs', ex.n_errors ?? '-', `erreurs d'extraction (${ex.avg_seconds_per_offer || '-'} s par offre)`, 'bon') +
+      carte('Doublons', sante.merge.n_same_source_duplicates + sante.merge.n_cross_source_duplicates, 'republications et doublons retirés à la fusion', 'info') +
+      carte('Quota API', noms.map(n => sources[n].api_calls_last_run ?? '-').join(' + '), 'appels lors de la dernière collecte (Adzuna + Jooble)', 'info');
   }
 });
 </script>

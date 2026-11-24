@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T13:33:17Z",
+  "generated_at": "2026-11-24T14:35:16Z",
   "n_applications": 11,
   "n_responses": 3,
   "response_rate": 0.273,
@@ -8,6 +8,43 @@
   "by_status": {
     "refus": 3,
     "envoyee": 8
+  },
+  "funnel": {
+    "envoyees": 11,
+    "reponses": 3,
+    "entretiens": 0,
+    "acceptees": 0
+  },
+  "n_follow_ups_done": 4,
+  "weekly_target": 5,
+  "by_week": {
+    "2026-S45": {
+      "envoyees": 11,
+      "relances": 1
+    },
+    "2026-S46": {
+      "envoyees": 0,
+      "relances": 1
+    },
+    "2026-S47": {
+      "envoyees": 0,
+      "relances": 2
+    }
+  },
+  "n_linked_to_pipeline": 0,
+  "by_score_band": {
+    "Bien notée (≥ 0,60)": {
+      "envoyees": 0,
+      "reponses": 0
+    },
+    "Moyenne (0,45 à 0,60)": {
+      "envoyees": 0,
+      "reponses": 0
+    },
+    "Faible (< 0,45)": {
+      "envoyees": 0,
+      "reponses": 0
+    }
   },
   "by_channel": {
     "email": {

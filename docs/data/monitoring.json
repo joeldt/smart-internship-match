@@ -12,6 +12,20 @@
       "alerts": [
         "8 relance(s) a faire"
       ]
+    },
+    {
+      "run_date": "2026-11-24",
+      "n_applications": 11,
+      "n_follow_ups_due": 5,
+      "data_age_days": {
+        "adzuna": 7,
+        "jooble": 7
+      },
+      "n_high_match_not_applied": 12,
+      "high_match_rule": "top 12 multicritere",
+      "alerts": [
+        "5 relance(s) a faire"
+      ]
     }
   ]
 }
