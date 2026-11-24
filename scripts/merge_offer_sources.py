@@ -62,7 +62,11 @@ def normalize_adzuna(raw_offers):
             "description": description,
             "url": clean_url(o.get("redirect_url")),
             "date_posted": o.get("created"),
-            "matched_queries": o.get("matched_queries", []),
+            # La collecte Adzuna pouvait ajouter plusieurs fois la meme recherche : on dedoublonne.
+            "matched_queries": list(dict.fromkeys(o.get("matched_queries", []))),
+            # Coordonnees GPS fournies par Adzuna : servent au critere de localisation.
+            "latitude": o.get("latitude"),
+            "longitude": o.get("longitude"),
             **flags(title, description),
             # Un salaire estime par Adzuna n'est pas un salaire annonce : on l'ignore.
             "salary_text": f"{salary} EUR/an" if salary and not predicted else None,
@@ -84,7 +88,9 @@ def normalize_jooble(raw_offers):
             "description": description,
             "url": o.get("link"),
             "date_posted": (o.get("updated") or "")[:19] or None,
-            "matched_queries": o.get("matched_queries", []),
+            "matched_queries": list(dict.fromkeys(o.get("matched_queries", []))),
+            "latitude": None,   # Jooble ne fournit pas de coordonnees
+            "longitude": None,
             **flags(title, description),
             "salary_text": clean_text(o.get("salary")) or None,
             "publishable": True,  # l'API Jooble est faite pour publier les resultats sur son site

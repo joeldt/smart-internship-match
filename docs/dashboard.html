@@ -31,6 +31,12 @@
   .graph { position: relative; height: 260px; }
   .graph.haut { height: 380px; }
   .large { grid-column: 1 / -1; }
+  .graph.haut { height: 420px; }
+  .poids { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 10px 20px; }
+  .poids label { display: flex; justify-content: space-between; font-size: .85rem; }
+  .poids input { width: 100%; }
+  .poids button { justify-self: start; padding: 4px 10px; border: 1px solid var(--bord); border-radius: 6px; background: var(--fond); cursor: pointer; }
+  .inconnu { font-size: .75rem; color: var(--doux); font-style: italic; }
   .barre { width: 80px; height: 6px; margin-top: 6px; background: var(--bord); border-radius: 3px; }
   .barre span { display: block; height: 100%; background: var(--bleu); border-radius: 3px; }
   .table-scroll { overflow-x: auto; }
@@ -60,18 +66,28 @@
   <p class="question">Les trois actions à faire maintenant, issues du monitoring.</p>
   <div class="kpis" id="kpis"></div>
 
-  <!-- 2. Ou postuler -->
+  <!-- 2. Ou postuler : decision multicritere -->
   <h2>Où postuler en priorité</h2>
-  <p class="question">Les offres de stage qui correspondent le mieux à mon profil, d'après mon KPI de matching.</p>
+  <p class="question">Une décision multicritère : les compétences ne suffisent pas, le lieu, l'entreprise, la fraîcheur de l'offre, le domaine et le salaire comptent aussi.</p>
   <div class="panneau">
+    <h3>Mes priorités (poids de chaque critère)</h3>
+    <div class="poids" id="poids"></div>
+    <p class="pourquoi" id="noteCriteres"></p>
+  </div>
+  <div class="panneau" style="margin-top:16px">
+    <h3>Les 12 offres les mieux classées, et ce qui fait leur note</h3>
+    <div class="graph haut"><canvas id="gClassement"></canvas></div>
+    <p class="pourquoi">Barres empilées : chaque couleur est la contribution d'un critère (poids × note du critère), la longueur totale est la note globale sur 1. On voit d'un coup d'œil pourquoi une offre est en haut : par ses compétences, par son lieu ou par son entreprise. Bouger un curseur au-dessus recalcule le classement : c'est la preuve que le classement dépend de mes priorités, pas seulement des données.</p>
+  </div>
+  <div class="panneau" style="margin-top:16px">
     <div class="table-scroll">
       <table>
-        <thead><tr><th>Score</th><th>Offre</th><th>Entreprise</th><th>Domaine</th><th>Mes compétences demandées</th><th>Compétences qui me manquent</th></tr></thead>
+        <thead><tr><th>Rang</th><th>Note</th><th>Offre</th><th>Entreprise</th><th>Lieu</th><th>Mes compétences demandées</th><th>Compétences qui me manquent</th></tr></thead>
         <tbody id="offres"></tbody>
       </table>
     </div>
     <p class="attribution"><a href="https://www.adzuna.fr" target="_blank" rel="noopener">Jobs</a> by <a href="https://www.adzuna.fr" target="_blank" rel="noopener">Adzuna</a> · offres également issues de <a href="https://fr.jooble.org" target="_blank" rel="noopener">Jooble</a>. Les liens mènent à l'annonce d'origine.</p>
-    <p class="pourquoi">Pourquoi un tableau plutôt qu'un graphique : pour postuler, j'ai besoin du lien, du nom de l'entreprise et du détail des compétences de chaque offre, ce qu'un graphique ne peut pas afficher lisiblement. La petite barre sous chaque score garde l'avantage visuel : on voit d'un coup d'œil l'écart entre les offres. Score = somme des (niveau / 5) de mes compétences trouvées, divisée par (compétences détectées + 1), le « + 1 » représentant ce que l'extrait tronqué ne montre pas.</p>
+    <p class="pourquoi">Le tableau donne ce qu'il faut pour agir : le lien, l'entreprise, le lieu et les compétences. « Compétences inconnues » signale une offre dont l'extrait ne cite aucune compétence : elle reçoit une note prudente sur ce critère.</p>
   </div>
 
   <!-- 3. Efficacite de la recherche -->
@@ -184,12 +200,82 @@ function graphiqueBarres(id, labels, jeux, options = {}) {
   });
 }
 
+const CRITERES = {
+  competences: ['Compétences', '#0d7c9e'], localisation: ['Localisation', '#2e8b46'], reputation: ['Réputation', '#6b5bd2'],
+  fraicheur: ['Fraîcheur', '#c46e0a'], domaine: ['Domaine', '#4a9bb5'], salaire: ['Salaire', '#b8860b'], teletravail: ['Télétravail', '#9aa5b1'],
+};
+let graphClassement = null;
+
+function afficherClassement(data) {
+  const poids = Object.assign({}, data.weights);
+  const zone = document.getElementById('poids');
+  zone.innerHTML = Object.keys(CRITERES).map(c => `
+    <div><label for="p_${c}"><span>${CRITERES[c][0]}</span><strong id="v_${c}"></strong></label>
+    <input type="range" id="p_${c}" min="0" max="100" step="5" value="${Math.round(100 * (poids[c] || 0))}"></div>`).join('') +
+    '<button type="button" id="reinit">Revenir à mes poids par défaut</button>';
+  document.getElementById('noteCriteres').textContent =
+    `Compétences : mon score de matching ramené sur 1 (offre sans compétence détectée : ${data.skill_unknown_value}). ` +
+    `Localisation : 1 jusqu'à 30 km de ${data.cities.join(' ou de ')}, puis baisse jusqu'à 0 à 400 km. ` +
+    `Réputation : ma propre liste d'entreprises, sinon un indicateur automatique (nombre de stages publiés). ` +
+    `Fraîcheur : 1 pour une offre de moins de 7 jours, 0 au-delà de 45 jours. Domaine : mes préférences (DevOps un peu en dessous). ` +
+    `Salaire : seulement ${data.n_with_salary} offres l'indiquent, sans montant on suppose la gratification minimale. ` +
+    `Télétravail : ${data.n_with_remote} offre(s) le mentionnent dans leur extrait, ce critère ne départage donc rien pour l'instant. ` +
+    `${data.excluded.alternance + data.excluded['trop ancienne']} offre(s) exclue(s) avant notation (alternance ou plus de 60 jours).`;
+
+  function recalculer() {
+    Object.keys(CRITERES).forEach(c => {
+      poids[c] = Number(document.getElementById('p_' + c).value) / 100;
+    });
+    const total = Object.values(poids).reduce((a, b) => a + b, 0) || 1;
+    Object.keys(CRITERES).forEach(c => { document.getElementById('v_' + c).textContent = Math.round(100 * poids[c] / total) + ' %'; });
+    const notes = data.offers.map(o => {
+      const contrib = {};
+      Object.keys(CRITERES).forEach(c => { contrib[c] = (poids[c] / total) * (o.criteria[c] || 0); });
+      return { o, contrib, note: Object.values(contrib).reduce((a, b) => a + b, 0) };
+    }).sort((a, b) => b.note - a.note).slice(0, 12);
+
+    const labels = notes.map(n => `${(n.o.company || '?').slice(0, 18)} · ${n.o.title.replace(/^stage\s*[:\-–]\s*/i, '').slice(0, 38)}`);
+    const datasets = Object.keys(CRITERES).map(c => ({
+      label: CRITERES[c][0], data: notes.map(n => +n.contrib[c].toFixed(3)), backgroundColor: CRITERES[c][1],
+    }));
+    if (graphClassement) { graphClassement.data.labels = labels; graphClassement.data.datasets = datasets; graphClassement.update(); }
+    else {
+      graphClassement = new Chart(document.getElementById('gClassement'), {
+        type: 'bar', data: { labels, datasets },
+        options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+          scales: { x: { stacked: true, min: 0, max: 1, title: { display: true, text: 'note globale (sur 1)' } }, y: { stacked: true, ticks: { font: { size: 11 } } } },
+          plugins: { tooltip: { callbacks: { label: c => `${c.dataset.label} : ${c.raw.toFixed(3)}` } } } },
+      });
+    }
+    document.getElementById('offres').innerHTML = notes.map((n, i) => {
+      const o = n.o;
+      const lieu = o.distance_km != null ? `${echapper(o.location || '')}<br><small>${o.distance_km} km de ${echapper(o.nearest_city)}</small>` : echapper(o.location || '-');
+      return `<tr>
+        <td>${i + 1}</td>
+        <td class="score">${n.note.toFixed(2)}<div class="barre"><span style="width:${Math.round(100 * n.note)}%"></span></div></td>
+        <td>${o.url ? `<a href="${echapper(o.url)}" target="_blank" rel="noopener">${echapper(o.title)}</a>` : echapper(o.title)}</td>
+        <td>${echapper(o.company || '-')}</td>
+        <td>${lieu}</td>
+        <td>${o.skills_unknown ? '<span class="inconnu">compétences inconnues</span>' : (o.matched.map(s => `<span class="puce ok">${echapper(s)}</span>`).join('') || '-')}</td>
+        <td>${o.gaps.map(s => `<span class="puce manque">${echapper(s)}</span>`).join('') || '-'}</td>
+      </tr>`;
+    }).join('');
+  }
+  zone.querySelectorAll('input').forEach(el => el.addEventListener('input', recalculer));
+  document.getElementById('reinit').addEventListener('click', () => {
+    Object.keys(CRITERES).forEach(c => { document.getElementById('p_' + c).value = Math.round(100 * (data.weights[c] || 0)); });
+    recalculer();
+  });
+  recalculer();
+}
+
 Promise.all([
   charger('data/matches.json'),
+  charger('data/ranking.json'),
   charger('data/monitoring.json'),
   charger('data/tracking_summary.json'),
   charger('data/pipeline_health.json'),
-]).then(([matches, monitoring, suivi, sante]) => {
+]).then(([matches, classement, monitoring, suivi, sante]) => {
   if (!matches) {
     document.getElementById('maj').textContent = 'Données introuvables : lancer les scripts puis publier docs/data/.';
     return;
@@ -205,18 +291,8 @@ Promise.all([
     carte(dernier ? dernier.n_high_match_not_applied : '-', 'offres bien notées (score ≥ 0,3) auxquelles je n\'ai pas postulé', 'info') +
     carte(suivi ? pourcent(suivi.response_rate) : '-', `taux de réponse à mes candidatures (${suivi ? suivi.n_responses + ' sur ' + suivi.n_applications : '-'})`, 'bon');
 
-  // 2. Ou postuler
-  const meilleures = matches.offers.filter(o => !o.insufficient_data).slice(0, 12);
-  const scoreMax = Math.max(...meilleures.map(o => o.score), 0.01);
-  document.getElementById('offres').innerHTML = meilleures.map(o => `
-    <tr>
-      <td class="score">${o.score.toFixed(2)}<div class="barre"><span style="width:${Math.round(100 * o.score / scoreMax)}%"></span></div></td>
-      <td>${o.url ? `<a href="${echapper(o.url)}" target="_blank" rel="noopener">${echapper(o.title)}</a>` : echapper(o.title)}</td>
-      <td>${echapper(o.company || '-')}</td>
-      <td>${echapper([...new Set((o.matched_queries || []).map(q => DOMAINES[q] || q))].join(', '))}</td>
-      <td>${o.matched.map(s => `<span class="puce ok">${echapper(s)}</span>`).join('') || '-'}</td>
-      <td>${o.gaps.map(s => `<span class="puce manque">${echapper(s)}</span>`).join('') || '-'}</td>
-    </tr>`).join('');
+  // 2. Ou postuler : decision multicritere
+  if (classement) afficherClassement(classement);
 
   // 3a. Repartition des scores
   const classes = { 'Inconnue': 0, '< 0,15': 0, '0,15 - 0,29': 0, '0,30 - 0,39': 0, '≥ 0,40': 0 };

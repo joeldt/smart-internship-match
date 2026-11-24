@@ -1,0 +1,28 @@
+{
+  "weights": {
+    "competences": 0.35,
+    "localisation": 0.20,
+    "reputation": 0.15,
+    "fraicheur": 0.10,
+    "domaine": 0.10,
+    "salaire": 0.05,
+    "teletravail": 0.05
+  },
+  "cities": {
+    "Le Mans": [48.0061, 0.1996],
+    "Paris": [48.8566, 2.3522]
+  },
+  "distance_full_score_km": 30,
+  "distance_zero_score_km": 400,
+  "domains": {
+    "développement": 1.0,
+    "data": 1.0,
+    "IA": 1.0,
+    "DevOps": 0.6
+  },
+  "fresh_full_score_days": 7,
+  "fresh_zero_score_days": 45,
+  "exclude_older_than_days": 60,
+  "minimum_monthly_gratification": 650,
+  "salary_full_score_monthly": 1500
+}

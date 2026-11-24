@@ -1,0 +1,4044 @@
+{
+  "generated_at": "2026-11-24T13:57:51Z",
+  "weights": {
+    "competences": 0.35,
+    "localisation": 0.2,
+    "reputation": 0.15,
+    "fraicheur": 0.1,
+    "domaine": 0.1,
+    "salaire": 0.05,
+    "teletravail": 0.05
+  },
+  "cities": [
+    "Le Mans",
+    "Paris"
+  ],
+  "domains": {
+    "développement": 1.0,
+    "data": 1.0,
+    "IA": 1.0,
+    "DevOps": 0.6
+  },
+  "skill_unknown_value": 0.2,
+  "n_evaluated": 125,
+  "excluded": {
+    "alternance": 1,
+    "trop ancienne": 0
+  },
+  "n_with_remote": 0,
+  "n_with_salary": 9,
+  "n_top12_also_top12_by_skill": 8,
+  "offers": [
+    {
+      "id": "adz_5968885904",
+      "source": "adzuna",
+      "title": "Stage : Stage - Data Analyste Projet RH - diversité & inclusion F/H",
+      "company": "Orange",
+      "url": "https://www.adzuna.fr/details/5968885904",
+      "location": "Issy-les-Moulineaux, Boulogne-Billancourt",
+      "distance_km": 7,
+      "nearest_city": "Paris",
+      "age_days": 7,
+      "salary_monthly": null,
+      "domains": [
+        "data"
+      ],
+      "skill_score": 0.3,
+      "skills_unknown": false,
+      "matched": [
+        "Data visualisation"
+      ],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.6,
+        "localisation": 1.0,
+        "reputation": 1.0,
+        "fraicheur": 1.0,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.76,
+      "publishable": true
+    },
+    {
+      "id": "adz_5968885488",
+      "source": "adzuna",
+      "title": "Stage : STAGE - Business Data Analyst H/F",
+      "company": "AXA",
+      "url": "https://www.adzuna.fr/details/5968885488",
+      "location": "Malakoff, Antony",
+      "distance_km": 7,
+      "nearest_city": "Paris",
+      "age_days": 7,
+      "salary_monthly": null,
+      "domains": [
+        "data"
+      ],
+      "skill_score": 0.3,
+      "skills_unknown": false,
+      "matched": [
+        "SQL"
+      ],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.6,
+        "localisation": 1.0,
+        "reputation": 1.0,
+        "fraicheur": 1.0,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.76,
+      "publishable": true
+    },
+    {
+      "id": "adz_5968328419",
+      "source": "adzuna",
+      "title": "STAGE - Data Engineer Power BI – H/F",
+      "company": "THALES",
+      "url": "https://www.adzuna.fr/land/ad/5968328419",
+      "location": "Vélizy-Villacoublay, Versailles",
+      "distance_km": 14,
+      "nearest_city": "Paris",
+      "age_days": 7,
+      "salary_monthly": null,
+      "domains": [
+        "data"
+      ],
+      "skill_score": 0.3,
+      "skills_unknown": false,
+      "matched": [
+        "Power BI"
+      ],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.6,
+        "localisation": 1.0,
+        "reputation": 1.0,
+        "fraicheur": 1.0,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.76,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965468168",
+      "source": "adzuna",
+      "title": "STAGE - Ingénieur DevOPS & IA - Migration de chaines CI/CD - F/H",
+      "company": "THALES",
+      "url": "https://www.adzuna.fr/land/ad/5965468168",
+      "location": "Gennevilliers, Nanterre",
+      "distance_km": 9,
+      "nearest_city": "Paris",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps",
+        "IA"
+      ],
+      "skill_score": 0.3,
+      "skills_unknown": false,
+      "matched": [
+        "GitHub Actions"
+      ],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.6,
+        "localisation": 1.0,
+        "reputation": 1.0,
+        "fraicheur": 0.921,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.752,
+      "publishable": true
+    },
+    {
+      "id": "adz_5968741188",
+      "source": "adzuna",
+      "title": "STAGE - DATA ANALYST PAIEMENT FRACTIONNE F/H",
+      "company": "CDISCOUNT",
+      "url": "https://www.adzuna.fr/details/5968741188",
+      "location": "Gironde, Nouvelle-Aquitaine",
+      "distance_km": 351,
+      "nearest_city": "Le Mans",
+      "age_days": 7,
+      "salary_monthly": null,
+      "domains": [
+        "data"
+      ],
+      "skill_score": 0.467,
+      "skills_unknown": false,
+      "matched": [
+        "Python",
+        "SQL"
+      ],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.934,
+        "localisation": 0.134,
+        "reputation": 1.0,
+        "fraicheur": 1.0,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.704,
+      "publishable": true
+    },
+    {
+      "id": "adz_5968872136",
+      "source": "adzuna",
+      "title": "STAGE - Assistant Performance Data Achats (H/F)",
+      "company": "Hermes",
+      "url": "https://www.adzuna.fr/details/5968872136",
+      "location": "Pantin, Bobigny",
+      "distance_km": 6,
+      "nearest_city": "Paris",
+      "age_days": 7,
+      "salary_monthly": null,
+      "domains": [
+        "data"
+      ],
+      "skill_score": 0.2,
+      "skills_unknown": false,
+      "matched": [
+        "Power BI"
+      ],
+      "gaps": [
+        "Excel"
+      ],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.4,
+        "localisation": 1.0,
+        "reputation": 1.0,
+        "fraicheur": 1.0,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.69,
+      "publishable": true
+    },
+    {
+      "id": "adz_5966030380",
+      "source": "adzuna",
+      "title": "AI Engineer / Data & Agentic Systems - Stage H/F (Stage)",
+      "company": "CAPGEMINI FRANCE",
+      "url": "https://www.adzuna.fr/land/ad/5966030380",
+      "location": "Issy-les-Moulineaux, Boulogne-Billancourt",
+      "distance_km": 7,
+      "nearest_city": "Paris",
+      "age_days": 9,
+      "salary_monthly": null,
+      "domains": [
+        "IA",
+        "data"
+      ],
+      "skill_score": 0.2,
+      "skills_unknown": false,
+      "matched": [
+        "LLM"
+      ],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.4,
+        "localisation": 1.0,
+        "reputation": 1.0,
+        "fraicheur": 0.947,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.685,
+      "publishable": true
+    },
+    {
+      "id": "adz_5964208357",
+      "source": "adzuna",
+      "title": "Stage de fin d'études - Développeur back-end F/H",
+      "company": "TEAM Y",
+      "url": "https://www.adzuna.fr/details/5964208357",
+      "location": "Talmont-Saint-Hilaire, Les Sables-d'Olonne",
+      "distance_km": 224,
+      "nearest_city": "Le Mans",
+      "age_days": 11,
+      "salary_monthly": 1867,
+      "domains": [
+        "développement"
+      ],
+      "skill_score": 0.4,
+      "skills_unknown": false,
+      "matched": [
+        "Python"
+      ],
+      "gaps": [],
+      "reputation_source": "automatique",
+      "criteria": {
+        "competences": 0.8,
+        "localisation": 0.475,
+        "reputation": 0.4,
+        "fraicheur": 0.895,
+        "domaine": 1.0,
+        "salaire": 1.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.674,
+      "publishable": true
+    },
+    {
+      "id": "adz_5968885487",
+      "source": "adzuna",
+      "title": "Stage : Développeur java (F/H) - stage",
+      "company": "AXA",
+      "url": "https://www.adzuna.fr/details/5968885487",
+      "location": "Roubaix-Ouest, Lille",
+      "distance_km": 209,
+      "nearest_city": "Paris",
+      "age_days": 7,
+      "salary_monthly": null,
+      "domains": [
+        "développement"
+      ],
+      "skill_score": 0.3,
+      "skills_unknown": false,
+      "matched": [
+        "Java"
+      ],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.6,
+        "localisation": 0.516,
+        "reputation": 1.0,
+        "fraicheur": 1.0,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.663,
+      "publishable": true
+    },
+    {
+      "id": "adz_5968534557",
+      "source": "adzuna",
+      "title": "Stage - Développeur(se) Full Stack Java - Aeroline - Toulouse",
+      "company": "Sopra Steria",
+      "url": "https://www.adzuna.fr/land/ad/5968534557",
+      "location": "Blagnac, Toulouse",
+      "distance_km": null,
+      "nearest_city": null,
+      "age_days": 7,
+      "salary_monthly": null,
+      "domains": [
+        "développement"
+      ],
+      "skill_score": 0.3,
+      "skills_unknown": false,
+      "matched": [
+        "Java"
+      ],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.6,
+        "localisation": 0.5,
+        "reputation": 1.0,
+        "fraicheur": 1.0,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.66,
+      "publishable": true
+    },
+    {
+      "id": "adz_5968885907",
+      "source": "adzuna",
+      "title": "Stage : Stage - Data et IA : Deviens Ambassadeur - Ambassadrice des cas d'usage d'IA Générative et Agentique F/H",
+      "company": "Orange",
+      "url": "https://www.adzuna.fr/details/5968885907",
+      "location": "Saint-Aubin-du-Cormier, Fougères",
+      "distance_km": 111,
+      "nearest_city": "Le Mans",
+      "age_days": 7,
+      "salary_monthly": null,
+      "domains": [
+        "IA",
+        "data"
+      ],
+      "skill_score": 0.2,
+      "skills_unknown": false,
+      "matched": [
+        "LLM"
+      ],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.4,
+        "localisation": 0.78,
+        "reputation": 1.0,
+        "fraicheur": 1.0,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.646,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965481883",
+      "source": "adzuna",
+      "title": "STAGE DevOps Chaîne CI/CD – F/H",
+      "company": "THALES",
+      "url": "https://www.adzuna.fr/land/ad/5965481883",
+      "location": "Vélizy-Villacoublay, Versailles",
+      "distance_km": 14,
+      "nearest_city": "Paris",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps"
+      ],
+      "skill_score": 0.2,
+      "skills_unknown": false,
+      "matched": [
+        "GitHub Actions"
+      ],
+      "gaps": [
+        "DevOps"
+      ],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.4,
+        "localisation": 1.0,
+        "reputation": 1.0,
+        "fraicheur": 0.921,
+        "domaine": 0.6,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.642,
+      "publishable": true
+    },
+    {
+      "id": "adz_5964773787",
+      "source": "adzuna",
+      "title": "STAGE - DevOps : Modernisation d’un environnement CI/CD - F/H",
+      "company": "Thales",
+      "url": "https://www.adzuna.fr/details/5964773787",
+      "location": "Gennevilliers, Nanterre",
+      "distance_km": 9,
+      "nearest_city": "Paris",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps"
+      ],
+      "skill_score": 0.2,
+      "skills_unknown": false,
+      "matched": [
+        "GitHub Actions"
+      ],
+      "gaps": [
+        "DevOps"
+      ],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.4,
+        "localisation": 1.0,
+        "reputation": 1.0,
+        "fraicheur": 0.921,
+        "domaine": 0.6,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.642,
+      "publishable": true
+    },
+    {
+      "id": "adz_5968549352",
+      "source": "adzuna",
+      "title": "Stage data engineer : extration automatisée de données appliquée à l'écologie industrielle F/H",
+      "company": "EDF",
+      "url": "https://www.adzuna.fr/details/5968549352",
+      "location": "Moret-sur-Loing, Fontainebleau",
+      "distance_km": 71,
+      "nearest_city": "Paris",
+      "age_days": 7,
+      "salary_monthly": 1230,
+      "domains": [
+        "data"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.89,
+        "reputation": 1.0,
+        "fraicheur": 1.0,
+        "domaine": 1.0,
+        "salaire": 0.682,
+        "teletravail": 0.0
+      },
+      "global_score": 0.632,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965601491",
+      "source": "adzuna",
+      "title": "Stage : Stage - Développeur(se) portail Web full stack Java / Angular - Energie & Telecom – Toulouse",
+      "company": "Sopra-Steria",
+      "url": "https://www.adzuna.fr/details/5965601491",
+      "location": "Toulouse 13e Canton, Toulouse",
+      "distance_km": 496,
+      "nearest_city": "Le Mans",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "développement"
+      ],
+      "skill_score": 0.4,
+      "skills_unknown": false,
+      "matched": [
+        "Java",
+        "Angular"
+      ],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.8,
+        "localisation": 0.0,
+        "reputation": 1.0,
+        "fraicheur": 0.921,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.622,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965481742",
+      "source": "adzuna",
+      "title": "STAGE - Ingénieur Cloud DevOps & IA Agentique F/H",
+      "company": "THALES",
+      "url": "https://www.adzuna.fr/land/ad/5965481742",
+      "location": "Carquefou, Nantes",
+      "distance_km": 148,
+      "nearest_city": "Le Mans",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps",
+        "IA"
+      ],
+      "skill_score": 0.2,
+      "skills_unknown": false,
+      "matched": [
+        "LLM"
+      ],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.4,
+        "localisation": 0.682,
+        "reputation": 1.0,
+        "fraicheur": 0.921,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.619,
+      "publishable": true
+    },
+    {
+      "id": "adz_5967021926",
+      "source": "adzuna",
+      "title": "STAGE 2027- Stage Développeur Logiciel & IA (H/F)",
+      "company": "Airbus",
+      "url": "https://www.adzuna.fr/details/5967021926",
+      "location": "Paris, Ile-de-France",
+      "distance_km": 1,
+      "nearest_city": "Paris",
+      "age_days": 8,
+      "salary_monthly": null,
+      "domains": [
+        "IA",
+        "développement"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 1.0,
+        "reputation": 1.0,
+        "fraicheur": 0.974,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.617,
+      "publishable": true
+    },
+    {
+      "id": "adz_5966092351",
+      "source": "adzuna",
+      "title": "STAGE – Ingénieur Data Management & Gouvernance des données – F/H",
+      "company": "Thales",
+      "url": "https://www.adzuna.fr/details/5966092351",
+      "location": "Limours, Palaiseau",
+      "distance_km": 33,
+      "nearest_city": "Paris",
+      "age_days": 9,
+      "salary_monthly": null,
+      "domains": [
+        "data"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.992,
+        "reputation": 1.0,
+        "fraicheur": 0.947,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.613,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965600503",
+      "source": "adzuna",
+      "title": "Stage : Développeur Outils et Data (F/H) - stage",
+      "company": "AXA",
+      "url": "https://www.adzuna.fr/details/5965600503",
+      "location": "Hauts-de-Seine, Ile-de-France",
+      "distance_km": 9,
+      "nearest_city": "Paris",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "data",
+        "développement"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 1.0,
+        "reputation": 1.0,
+        "fraicheur": 0.921,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.612,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965467172",
+      "source": "adzuna",
+      "title": "STAGE - Développeur Automatisation Robotique des Processus – H/F",
+      "company": "Thales",
+      "url": "https://www.adzuna.fr/land/ad/5965467172",
+      "location": "Meudon, Boulogne-Billancourt",
+      "distance_km": 12,
+      "nearest_city": "Paris",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "développement"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 1.0,
+        "reputation": 1.0,
+        "fraicheur": 0.921,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.612,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965458241",
+      "source": "adzuna",
+      "title": "STAGE – Développeur solution Web / IA (Solution offres et projets) – F/H",
+      "company": "Thales",
+      "url": "https://www.adzuna.fr/land/ad/5965458241",
+      "location": "Massy, Palaiseau",
+      "distance_km": 15,
+      "nearest_city": "Paris",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "IA",
+        "développement"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 1.0,
+        "reputation": 1.0,
+        "fraicheur": 0.921,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.612,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965458197",
+      "source": "adzuna",
+      "title": "STAGE - Ingénieur IVVQ Tests Automatisés (F/H)",
+      "company": "Thales",
+      "url": "https://www.adzuna.fr/land/ad/5965458197",
+      "location": "Vélizy-Villacoublay, Versailles",
+      "distance_km": 14,
+      "nearest_city": "Paris",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "développement"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 1.0,
+        "reputation": 1.0,
+        "fraicheur": 0.921,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.612,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965483384",
+      "source": "adzuna",
+      "title": "STAGE - Ingénieur Data Analytics et déploiement - F/H",
+      "company": "THALES",
+      "url": "https://www.adzuna.fr/land/ad/5965483384",
+      "location": "Gennevilliers, Nanterre",
+      "distance_km": 9,
+      "nearest_city": "Paris",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "data"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 1.0,
+        "reputation": 1.0,
+        "fraicheur": 0.921,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.612,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965458684",
+      "source": "adzuna",
+      "title": "STAGE - IA et DevOps : automatisation de l'intégration logicielle - F/H",
+      "company": "Thales",
+      "url": "https://www.adzuna.fr/land/ad/5965458684",
+      "location": "Gennevilliers, Nanterre",
+      "distance_km": 9,
+      "nearest_city": "Paris",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps",
+        "IA"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 1.0,
+        "reputation": 1.0,
+        "fraicheur": 0.921,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.612,
+      "publishable": true
+    },
+    {
+      "id": "adz_5968533080",
+      "source": "adzuna",
+      "title": "Stage - Concepteur développeur Projet informatique F/H",
+      "company": "EDF",
+      "url": "https://www.adzuna.fr/details/5968533080",
+      "location": "Indre-et-Loire, Centre",
+      "distance_km": 95,
+      "nearest_city": "Le Mans",
+      "age_days": 7,
+      "salary_monthly": null,
+      "domains": [
+        "développement"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.825,
+        "reputation": 1.0,
+        "fraicheur": 1.0,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.585,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965458711",
+      "source": "adzuna",
+      "title": "STAGE - Ingénieur DevOps - Conteneurisation, automatisation des tests Docker et CI-CD - F/H",
+      "company": "Thales",
+      "url": "https://www.adzuna.fr/land/ad/5965458711",
+      "location": "Cholet, Maine-et-Loire",
+      "distance_km": 139,
+      "nearest_city": "Le Mans",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps"
+      ],
+      "skill_score": 0.2,
+      "skills_unknown": false,
+      "matched": [
+        "GitHub Actions"
+      ],
+      "gaps": [
+        "Docker"
+      ],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.4,
+        "localisation": 0.705,
+        "reputation": 1.0,
+        "fraicheur": 0.921,
+        "domaine": 0.6,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.583,
+      "publishable": true
+    },
+    {
+      "id": "adz_5967984175",
+      "source": "adzuna",
+      "title": "STAGE – Ingénieur DevOps Réseaux d’infrastructure - F/H",
+      "company": "Thales",
+      "url": "https://www.adzuna.fr/details/5967984175",
+      "location": "Gennevilliers, Nanterre",
+      "distance_km": 9,
+      "nearest_city": "Paris",
+      "age_days": 7,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 1.0,
+        "reputation": 1.0,
+        "fraicheur": 1.0,
+        "domaine": 0.6,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.58,
+      "publishable": true
+    },
+    {
+      "id": "adz_5966948367",
+      "source": "adzuna",
+      "title": "Ingénieure DevOps / Ingénieur DevOps - Stage H/F (Stage)",
+      "company": "CAPGEMINI FRANCE",
+      "url": "https://www.adzuna.fr/land/ad/5966948367",
+      "location": "1er Arrondissement, Paris",
+      "distance_km": 1,
+      "nearest_city": "Paris",
+      "age_days": 8,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 1.0,
+        "reputation": 1.0,
+        "fraicheur": 0.974,
+        "domaine": 0.6,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.577,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965471369",
+      "source": "adzuna",
+      "title": "STAGE - S3NS - Ingénieur DEVOPS - Parcours d'onboarding sur SI Administration (H/F)",
+      "company": "THALES",
+      "url": "https://www.adzuna.fr/land/ad/5965471369",
+      "location": "Paris, Ile-de-France",
+      "distance_km": 1,
+      "nearest_city": "Paris",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 1.0,
+        "reputation": 1.0,
+        "fraicheur": 0.921,
+        "domaine": 0.6,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.572,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965469065",
+      "source": "adzuna",
+      "title": "STAGE - Ingénieur DEVOPS Infrastructure et Système - F/H",
+      "company": "THALES",
+      "url": "https://www.adzuna.fr/land/ad/5965469065",
+      "location": "Gennevilliers, Nanterre",
+      "distance_km": 9,
+      "nearest_city": "Paris",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 1.0,
+        "reputation": 1.0,
+        "fraicheur": 0.921,
+        "domaine": 0.6,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.572,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965887112",
+      "source": "adzuna",
+      "title": "Chargé de Mission Supply Approvisionnements (F/H) en Stage",
+      "company": "Carrefour France",
+      "url": "https://www.adzuna.fr/details/5965887112",
+      "location": "Essonne, Ile-de-France",
+      "distance_km": 31,
+      "nearest_city": "Paris",
+      "age_days": 9,
+      "salary_monthly": 1100,
+      "domains": [
+        "data"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": false,
+      "matched": [],
+      "gaps": [
+        "outils de visualisation"
+      ],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.0,
+        "localisation": 0.998,
+        "reputation": 1.0,
+        "fraicheur": 0.947,
+        "domaine": 1.0,
+        "salaire": 0.529,
+        "teletravail": 0.0
+      },
+      "global_score": 0.571,
+      "publishable": true
+    },
+    {
+      "id": "adz_5964348325",
+      "source": "adzuna",
+      "title": "Stage : Stage - Adaptation d'une infrastructure DevOps/MLOps pour une infrastructure Edge low-SWAP F/H",
+      "company": "Safran",
+      "url": "https://www.adzuna.fr/details/5964348325",
+      "location": "Massy, Palaiseau",
+      "distance_km": 15,
+      "nearest_city": "Paris",
+      "age_days": 11,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 1.0,
+        "reputation": 1.0,
+        "fraicheur": 0.895,
+        "domaine": 0.6,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.57,
+      "publishable": true
+    },
+    {
+      "id": "adz_5963448234",
+      "source": "adzuna",
+      "title": "STAGE - Ingénieur DevOps & Conteneurisation de Systèmes de Communications - F/H",
+      "company": "Thales",
+      "url": "https://www.adzuna.fr/details/5963448234",
+      "location": "Gennevilliers, Nanterre",
+      "distance_km": 9,
+      "nearest_city": "Paris",
+      "age_days": 11,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 1.0,
+        "reputation": 1.0,
+        "fraicheur": 0.895,
+        "domaine": 0.6,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.57,
+      "publishable": true
+    },
+    {
+      "id": "adz_5960905985",
+      "source": "adzuna",
+      "title": "Stage - s3ns - ingénieur devops - parcours d' h/f (Stage)",
+      "company": "THALES SA",
+      "url": "https://www.adzuna.fr/land/ad/5960905985",
+      "location": "9ème Arrondissement, Paris",
+      "distance_km": 2,
+      "nearest_city": "Paris",
+      "age_days": 13,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 1.0,
+        "reputation": 1.0,
+        "fraicheur": 0.842,
+        "domaine": 0.6,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.564,
+      "publishable": true
+    },
+    {
+      "id": "adz_5960906006",
+      "source": "adzuna",
+      "title": "Stage - s3ns - ingenieur devops (h/f) (Stage)",
+      "company": "THALES SA",
+      "url": "https://www.adzuna.fr/land/ad/5960906006",
+      "location": "9ème Arrondissement, Paris",
+      "distance_km": 2,
+      "nearest_city": "Paris",
+      "age_days": 13,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 1.0,
+        "reputation": 1.0,
+        "fraicheur": 0.842,
+        "domaine": 0.6,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.564,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965601502",
+      "source": "adzuna",
+      "title": "Stage : Stage - Développeur/euse Java - Services Publics - Grenoble",
+      "company": "Sopra-Steria",
+      "url": "https://www.adzuna.fr/details/5965601502",
+      "location": "Isère, Auvergne-Rhône-Alpes",
+      "distance_km": 441,
+      "nearest_city": "Paris",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "développement"
+      ],
+      "skill_score": 0.3,
+      "skills_unknown": false,
+      "matched": [
+        "Java"
+      ],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.6,
+        "localisation": 0.0,
+        "reputation": 1.0,
+        "fraicheur": 0.921,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.552,
+      "publishable": true
+    },
+    {
+      "id": "adz_5968885429",
+      "source": "adzuna",
+      "title": "Stage : Stage 2027 Développeur Cybersécurité - Étude et mise en œuvre sécurisée de Wayland sous FreeBSD (h/f)",
+      "company": "Airbus",
+      "url": "https://www.adzuna.fr/details/5968885429",
+      "location": "Paris, Ile-de-France",
+      "distance_km": 1,
+      "nearest_city": "Paris",
+      "age_days": 7,
+      "salary_monthly": null,
+      "domains": [
+        "développement"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": false,
+      "matched": [],
+      "gaps": [
+        "Wayland",
+        "FreeBSD",
+        "Cybersécurité"
+      ],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.0,
+        "localisation": 1.0,
+        "reputation": 1.0,
+        "fraicheur": 1.0,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.55,
+      "publishable": true
+    },
+    {
+      "id": "adz_5968885493",
+      "source": "adzuna",
+      "title": "Stage : Stage - Finance Data Analyst H/F",
+      "company": "BNP PARIBAS",
+      "url": "https://www.adzuna.fr/details/5968885493",
+      "location": "Rueil-Malmaison, Nanterre",
+      "distance_km": 13,
+      "nearest_city": "Paris",
+      "age_days": 7,
+      "salary_monthly": null,
+      "domains": [
+        "data"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": false,
+      "matched": [],
+      "gaps": [
+        "modèles de prévision"
+      ],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.0,
+        "localisation": 1.0,
+        "reputation": 1.0,
+        "fraicheur": 1.0,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.55,
+      "publishable": true
+    },
+    {
+      "id": "adz_5968533076",
+      "source": "adzuna",
+      "title": "INGENIEUR(E) ETUDES D'OUVRAGES ELEC F/H",
+      "company": "EDF",
+      "url": "https://www.adzuna.fr/details/5968533076",
+      "location": "Noisy-le-Grand, Le Raincy",
+      "distance_km": 15,
+      "nearest_city": "Paris",
+      "age_days": 7,
+      "salary_monthly": null,
+      "domains": [
+        "data"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": false,
+      "matched": [],
+      "gaps": [
+        "HTA"
+      ],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.0,
+        "localisation": 1.0,
+        "reputation": 1.0,
+        "fraicheur": 1.0,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.55,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965469680",
+      "source": "adzuna",
+      "title": "STAGE - Développeur Front-End - F/H",
+      "company": "THALES",
+      "url": "https://www.adzuna.fr/land/ad/5965469680",
+      "location": "Pont-Audemer, Bernay",
+      "distance_km": 149,
+      "nearest_city": "Le Mans",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "développement"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.678,
+        "reputation": 1.0,
+        "fraicheur": 0.921,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.548,
+      "publishable": true
+    },
+    {
+      "id": "adz_5967020695",
+      "source": "adzuna",
+      "title": "Stage Chargé(e) de Marketing Data Analyst & Performance Digitale (F/H) – Vincennes (F/H)",
+      "company": "Nepsen",
+      "url": "https://www.adzuna.fr/details/5967020695",
+      "location": "Vincennes, Nogent-sur-Marne",
+      "distance_km": 6,
+      "nearest_city": "Paris",
+      "age_days": 8,
+      "salary_monthly": 650,
+      "domains": [
+        "data"
+      ],
+      "skill_score": 0.15,
+      "skills_unknown": false,
+      "matched": [
+        "Data visualisation"
+      ],
+      "gaps": [
+        "Google Analytics",
+        "HubSpot"
+      ],
+      "reputation_source": "automatique",
+      "criteria": {
+        "competences": 0.3,
+        "localisation": 1.0,
+        "reputation": 0.3,
+        "fraicheur": 0.974,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.547,
+      "publishable": true
+    },
+    {
+      "id": "adz_5967508308",
+      "source": "adzuna",
+      "title": "Développeuse / Développeur logiciel PLM - Stage H/F (Stage)",
+      "company": "CAPGEMINI FRANCE",
+      "url": "https://www.adzuna.fr/land/ad/5967508308",
+      "location": "Issy-les-Moulineaux, Boulogne-Billancourt",
+      "distance_km": 7,
+      "nearest_city": "Paris",
+      "age_days": 8,
+      "salary_monthly": null,
+      "domains": [
+        "développement"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": false,
+      "matched": [],
+      "gaps": [
+        "3DEXPERIENCE",
+        "Teamcenter",
+        "Windchill"
+      ],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.0,
+        "localisation": 1.0,
+        "reputation": 1.0,
+        "fraicheur": 0.974,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.547,
+      "publishable": true
+    },
+    {
+      "id": "adz_5964770236",
+      "source": "adzuna",
+      "title": "Stage - Développeur RPA UI Path H/F",
+      "company": "Amundi",
+      "url": "https://www.adzuna.fr/details/5964770236",
+      "location": "15ème Arrondissement, Paris",
+      "distance_km": 4,
+      "nearest_city": "Paris",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "développement"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": false,
+      "matched": [],
+      "gaps": [
+        "RPA",
+        "UI Path"
+      ],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.0,
+        "localisation": 1.0,
+        "reputation": 1.0,
+        "fraicheur": 0.921,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.542,
+      "publishable": true
+    },
+    {
+      "id": "adz_5947079140",
+      "source": "adzuna",
+      "title": "Stage - S3Ns - Ingenieur Devops (H/F)",
+      "company": "Thales",
+      "url": "https://www.adzuna.fr/details/5947079140",
+      "location": "9ème Arrondissement, Paris",
+      "distance_km": 2,
+      "nearest_city": "Paris",
+      "age_days": 24,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 1.0,
+        "reputation": 1.0,
+        "fraicheur": 0.553,
+        "domaine": 0.6,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.535,
+      "publishable": true
+    },
+    {
+      "id": "adz_5944685414",
+      "source": "adzuna",
+      "title": "STAGE - Ingénieur DevOps Réseaux d’infrastructure MTBA - F/H",
+      "company": "Thales",
+      "url": "https://www.adzuna.fr/details/5944685414",
+      "location": "Gennevilliers, Nanterre",
+      "distance_km": 9,
+      "nearest_city": "Paris",
+      "age_days": 26,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 1.0,
+        "reputation": 1.0,
+        "fraicheur": 0.5,
+        "domaine": 0.6,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.53,
+      "publishable": true
+    },
+    {
+      "id": "adz_5966108227",
+      "source": "adzuna",
+      "title": "Data Analyst - Bac5- Stage (H/F)",
+      "company": "Renault Group",
+      "url": "https://www.adzuna.fr/details/5966108227",
+      "location": "France",
+      "distance_km": null,
+      "nearest_city": null,
+      "age_days": 9,
+      "salary_monthly": 850,
+      "domains": [
+        "data"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.5,
+        "reputation": 1.0,
+        "fraicheur": 0.947,
+        "domaine": 1.0,
+        "salaire": 0.235,
+        "teletravail": 0.0
+      },
+      "global_score": 0.526,
+      "publishable": true
+    },
+    {
+      "id": "adz_5968729606",
+      "source": "adzuna",
+      "title": "Stage : Développeuse / Développeur IA - Stage H/F (Stage)",
+      "company": "Stage",
+      "url": "https://www.adzuna.fr/details/5968729606",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "distance_km": 146,
+      "nearest_city": "Le Mans",
+      "age_days": 7,
+      "salary_monthly": null,
+      "domains": [
+        "IA",
+        "développement"
+      ],
+      "skill_score": 0.2,
+      "skills_unknown": false,
+      "matched": [
+        "LLM"
+      ],
+      "gaps": [],
+      "reputation_source": "inconnue",
+      "criteria": {
+        "competences": 0.4,
+        "localisation": 0.686,
+        "reputation": 0.3,
+        "fraicheur": 1.0,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.522,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965484111",
+      "source": "adzuna",
+      "title": "STAGE - Développeur VBA F/H",
+      "company": "THALES",
+      "url": "https://www.adzuna.fr/land/ad/5965484111",
+      "location": "Laval, Mayenne",
+      "distance_km": 73,
+      "nearest_city": "Le Mans",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "développement"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": false,
+      "matched": [],
+      "gaps": [
+        "VBA"
+      ],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.0,
+        "localisation": 0.885,
+        "reputation": 1.0,
+        "fraicheur": 0.921,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.519,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965458195",
+      "source": "adzuna",
+      "title": "STAGE - Développeur Fullstack H/F",
+      "company": "Thales",
+      "url": "https://www.adzuna.fr/land/ad/5965458195",
+      "location": "Lambersart, Lille",
+      "distance_km": 205,
+      "nearest_city": "Paris",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "développement"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.527,
+        "reputation": 1.0,
+        "fraicheur": 0.921,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.518,
+      "publishable": true
+    },
+    {
+      "id": "adz_5966437499",
+      "source": "adzuna",
+      "title": "Consultant.e.s - Stage de fin d'études - Nantes - CIO - Intelligence artificielle : comment choisir son architecture RAG ?",
+      "company": "Forums Talents Handicap",
+      "url": "https://www.adzuna.fr/details/5966437499",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "distance_km": 146,
+      "nearest_city": "Le Mans",
+      "age_days": 9,
+      "salary_monthly": null,
+      "domains": [
+        "IA",
+        "data"
+      ],
+      "skill_score": 0.2,
+      "skills_unknown": false,
+      "matched": [
+        "LLM"
+      ],
+      "gaps": [],
+      "reputation_source": "inconnue",
+      "criteria": {
+        "competences": 0.4,
+        "localisation": 0.686,
+        "reputation": 0.3,
+        "fraicheur": 0.947,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.517,
+      "publishable": true
+    },
+    {
+      "id": "adz_5966437474",
+      "source": "adzuna",
+      "title": "Consultant·e - Stage de fin d'études - Nantes – CYB – Comment augmenter le pentest et le red teaming à l'ère de l'IA générative ? Infrastructure, usages et doctrine offensive assistée par IA",
+      "company": "Forums Talents Handicap",
+      "url": "https://www.adzuna.fr/details/5966437474",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "distance_km": 146,
+      "nearest_city": "Le Mans",
+      "age_days": 9,
+      "salary_monthly": null,
+      "domains": [
+        "IA",
+        "data"
+      ],
+      "skill_score": 0.2,
+      "skills_unknown": false,
+      "matched": [
+        "LLM"
+      ],
+      "gaps": [],
+      "reputation_source": "inconnue",
+      "criteria": {
+        "competences": 0.4,
+        "localisation": 0.686,
+        "reputation": 0.3,
+        "fraicheur": 0.947,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.517,
+      "publishable": true
+    },
+    {
+      "id": "jbl_7296431052900840831",
+      "source": "jooble",
+      "title": "Integrated Insights & Strategy (IIS) France - Stage 6 mois",
+      "company": "Pfizer",
+      "url": "https://jooble.org/jdp/7296431052900840831",
+      "location": "France",
+      "distance_km": null,
+      "nearest_city": null,
+      "age_days": 8,
+      "salary_monthly": null,
+      "domains": [
+        "data",
+        "développement"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.5,
+        "reputation": 1.0,
+        "fraicheur": 0.974,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.517,
+      "publishable": true
+    },
+    {
+      "id": "adz_5967979486",
+      "source": "adzuna",
+      "title": "Stage - transformation numérique et innovation pour la direction des investissements F/H",
+      "company": "Dgafp",
+      "url": "https://www.adzuna.fr/details/5967979486",
+      "location": "Paris, Ile-de-France",
+      "distance_km": 1,
+      "nearest_city": "Paris",
+      "age_days": 7,
+      "salary_monthly": null,
+      "domains": [
+        "développement"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "automatique",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 1.0,
+        "reputation": 0.3,
+        "fraicheur": 1.0,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.515,
+      "publishable": true
+    },
+    {
+      "id": "adz_5968476085",
+      "source": "adzuna",
+      "title": "Stage de fin d’études — Data Platform : construire, comprendre et gouverner la plateforme data & IA moderne (H/F)",
+      "company": "Forums Talents Handicap",
+      "url": "https://www.adzuna.fr/details/5968476085",
+      "location": "Hauts-de-Seine, Ile-de-France",
+      "distance_km": 9,
+      "nearest_city": "Paris",
+      "age_days": 7,
+      "salary_monthly": null,
+      "domains": [
+        "IA",
+        "data"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "inconnue",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 1.0,
+        "reputation": 0.3,
+        "fraicheur": 1.0,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.515,
+      "publishable": true
+    },
+    {
+      "id": "adz_5966112424",
+      "source": "adzuna",
+      "title": "Stage : Ethics & Compliance Data & AI Analyst",
+      "company": "Stellantis",
+      "url": "https://www.adzuna.fr/details/5966112424",
+      "location": "France",
+      "distance_km": null,
+      "nearest_city": null,
+      "age_days": 9,
+      "salary_monthly": null,
+      "domains": [
+        "IA",
+        "data"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.5,
+        "reputation": 1.0,
+        "fraicheur": 0.947,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.515,
+      "publishable": true
+    },
+    {
+      "id": "adz_5966095055",
+      "source": "adzuna",
+      "title": "Stage PPI – Juriste Data H/F",
+      "company": "Crédit Agricole",
+      "url": "https://www.adzuna.fr/details/5966095055",
+      "location": "France",
+      "distance_km": null,
+      "nearest_city": null,
+      "age_days": 9,
+      "salary_monthly": null,
+      "domains": [
+        "data"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.5,
+        "reputation": 1.0,
+        "fraicheur": 0.947,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.515,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965600811",
+      "source": "adzuna",
+      "title": "Stage : Stage - R&I Développeur Produits First Diet - Mars 2027 - (H/F)",
+      "company": "Danone",
+      "url": "https://www.adzuna.fr/details/5965600811",
+      "location": "France",
+      "distance_km": null,
+      "nearest_city": null,
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "développement"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.5,
+        "reputation": 1.0,
+        "fraicheur": 0.921,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.512,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965468300",
+      "source": "adzuna",
+      "title": "STAGE - Ingénieur Cloud DevOps & Résilience des Systèmes F/H",
+      "company": "THALES",
+      "url": "https://www.adzuna.fr/land/ad/5965468300",
+      "location": "Rennes, Ille-et-Vilaine",
+      "distance_km": 140,
+      "nearest_city": "Le Mans",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.702,
+        "reputation": 1.0,
+        "fraicheur": 0.921,
+        "domaine": 0.6,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.512,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965458795",
+      "source": "adzuna",
+      "title": "STAGE – Ingénieur Cloud DevOps F/H",
+      "company": "Thales",
+      "url": "https://www.adzuna.fr/land/ad/5965458795",
+      "location": "Rennes, Ille-et-Vilaine",
+      "distance_km": 140,
+      "nearest_city": "Le Mans",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.702,
+        "reputation": 1.0,
+        "fraicheur": 0.921,
+        "domaine": 0.6,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.512,
+      "publishable": true
+    },
+    {
+      "id": "adz_5946321094",
+      "source": "adzuna",
+      "title": "Stage - Software Crafter 3.0 (DevOps AI)",
+      "company": "MaiaSpace",
+      "url": "https://www.adzuna.fr/details/5946321094",
+      "location": "Aubigny-sur-Nère, Vierzon",
+      "distance_km": 152,
+      "nearest_city": "Paris",
+      "age_days": 25,
+      "salary_monthly": 3750,
+      "domains": [
+        "DevOps",
+        "IA"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.67,
+        "reputation": 0.7,
+        "fraicheur": 0.526,
+        "domaine": 1.0,
+        "salaire": 1.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.512,
+      "publishable": true
+    },
+    {
+      "id": "adz_5966437449",
+      "source": "adzuna",
+      "title": "Stage de fin d'études - Consultant·e Artificial Intelligence for Business Transformation (H/F)",
+      "company": "Forums Talents Handicap",
+      "url": "https://www.adzuna.fr/details/5966437449",
+      "location": "Hauts-de-Seine, Ile-de-France",
+      "distance_km": 9,
+      "nearest_city": "Paris",
+      "age_days": 9,
+      "salary_monthly": null,
+      "domains": [
+        "data"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "inconnue",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 1.0,
+        "reputation": 0.3,
+        "fraicheur": 0.947,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.51,
+      "publishable": true
+    },
+    {
+      "id": "adz_5960906105",
+      "source": "adzuna",
+      "title": "STAGE - Ingénieur DevOps - Conteneurisation, autom H/F (Intérim)",
+      "company": "THALES SA",
+      "url": "https://www.adzuna.fr/land/ad/5960906105",
+      "location": "Cholet 1er Canton, Cholet",
+      "distance_km": 133,
+      "nearest_city": "Le Mans",
+      "age_days": 13,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.722,
+        "reputation": 1.0,
+        "fraicheur": 0.842,
+        "domaine": 0.6,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.509,
+      "publishable": true
+    },
+    {
+      "id": "adz_5966082976",
+      "source": "adzuna",
+      "title": "Stage de fin d'étude développeur fullstack F/H",
+      "company": "Onepoint",
+      "url": "https://www.adzuna.fr/details/5966082976",
+      "location": "Nantes, Loire-Atlantique",
+      "distance_km": 158,
+      "nearest_city": "Le Mans",
+      "age_days": 9,
+      "salary_monthly": null,
+      "domains": [
+        "développement"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.653,
+        "reputation": 0.7,
+        "fraicheur": 0.947,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.5,
+      "publishable": true
+    },
+    {
+      "id": "adz_5936839153",
+      "source": "adzuna",
+      "title": "STAGE – Ingénieur DevOps : mise à hauteur chaine CI/CD Logiciel Radar F/H",
+      "company": "Thales",
+      "url": "https://www.adzuna.fr/details/5936839153",
+      "location": "France",
+      "distance_km": null,
+      "nearest_city": null,
+      "age_days": 33,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps"
+      ],
+      "skill_score": 0.2,
+      "skills_unknown": false,
+      "matched": [
+        "GitHub Actions"
+      ],
+      "gaps": [
+        "Logiciel Radar"
+      ],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.4,
+        "localisation": 0.5,
+        "reputation": 1.0,
+        "fraicheur": 0.316,
+        "domaine": 0.6,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.482,
+      "publishable": true
+    },
+    {
+      "id": "adz_5967960675",
+      "source": "adzuna",
+      "title": "Stage de fin d'études - Data Engineer H/F",
+      "company": "Sagemcom",
+      "url": "https://www.adzuna.fr/details/5967960675",
+      "location": "France",
+      "distance_km": null,
+      "nearest_city": null,
+      "age_days": 7,
+      "salary_monthly": null,
+      "domains": [
+        "data"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.5,
+        "reputation": 0.7,
+        "fraicheur": 1.0,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.475,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965469660",
+      "source": "adzuna",
+      "title": "Stage - Ingénieur DevOps/Cloud - F/H",
+      "company": "THALES",
+      "url": "https://www.adzuna.fr/land/ad/5965469660",
+      "location": "Grasse, Alpes-Maritimes",
+      "distance_km": null,
+      "nearest_city": null,
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.5,
+        "reputation": 1.0,
+        "fraicheur": 0.921,
+        "domaine": 0.6,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.472,
+      "publishable": true
+    },
+    {
+      "id": "adz_5964789181",
+      "source": "adzuna",
+      "title": "STAGE - Assistant(e) Practice Leader – Transformation DevOps & Qualité H/F",
+      "company": "Naval Group",
+      "url": "https://www.adzuna.fr/details/5964789181",
+      "location": "France",
+      "distance_km": null,
+      "nearest_city": null,
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.5,
+        "reputation": 1.0,
+        "fraicheur": 0.921,
+        "domaine": 0.6,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.472,
+      "publishable": true
+    },
+    {
+      "id": "adz_5964791472",
+      "source": "adzuna",
+      "title": "Stage de fin d'études DevOps / DevSecOps H/F",
+      "company": "Onepoint",
+      "url": "https://www.adzuna.fr/details/5964791472",
+      "location": "Nantes, Loire-Atlantique",
+      "distance_km": 158,
+      "nearest_city": "Le Mans",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.653,
+        "reputation": 0.7,
+        "fraicheur": 0.921,
+        "domaine": 0.6,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.458,
+      "publishable": true
+    },
+    {
+      "id": "adz_5953950290",
+      "source": "adzuna",
+      "title": "Stage : Stage Développeur / euse DevOps d'un agent d'IA pour la configuration de solution de réseau optiques F/H",
+      "company": "Orange",
+      "url": "https://www.adzuna.fr/details/5953950290",
+      "location": "Tréguier, Lannion",
+      "distance_km": 274,
+      "nearest_city": "Le Mans",
+      "age_days": 19,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps",
+        "IA"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.341,
+        "reputation": 1.0,
+        "fraicheur": 0.684,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.457,
+      "publishable": true
+    },
+    {
+      "id": "adz_5967389525",
+      "source": "adzuna",
+      "title": "Stage - Développeur/se java augmenté/e par l'IA - Energy & Telecom - Lyon",
+      "company": "Direct Emploi",
+      "url": "https://www.adzuna.fr/land/ad/5967389525",
+      "location": "Collonges, Gex",
+      "distance_km": 394,
+      "nearest_city": "Paris",
+      "age_days": 8,
+      "salary_monthly": null,
+      "domains": [
+        "IA",
+        "développement"
+      ],
+      "skill_score": 0.3,
+      "skills_unknown": false,
+      "matched": [
+        "Java"
+      ],
+      "gaps": [],
+      "reputation_source": "inconnue",
+      "criteria": {
+        "competences": 0.6,
+        "localisation": 0.016,
+        "reputation": 0.3,
+        "fraicheur": 0.974,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.456,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965160197",
+      "source": "adzuna",
+      "title": "Stage - Développeur(se) Java R&D pour un Centre de Mission - Spatial - Toulouse",
+      "company": "Forums Talents Handicap",
+      "url": "https://www.adzuna.fr/details/5965160197",
+      "location": "Haute-Garonne, Occitanie",
+      "distance_km": 516,
+      "nearest_city": "Le Mans",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "développement"
+      ],
+      "skill_score": 0.3,
+      "skills_unknown": false,
+      "matched": [
+        "Java"
+      ],
+      "gaps": [],
+      "reputation_source": "inconnue",
+      "criteria": {
+        "competences": 0.6,
+        "localisation": 0.0,
+        "reputation": 0.3,
+        "fraicheur": 0.921,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.447,
+      "publishable": true
+    },
+    {
+      "id": "adz_5966437453",
+      "source": "adzuna",
+      "title": "Consultant.e – Stage de fin d’études – Nantes – CYB – Détection et Réaction par l’IA",
+      "company": "Forums Talents Handicap",
+      "url": "https://www.adzuna.fr/details/5966437453",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "distance_km": 146,
+      "nearest_city": "Le Mans",
+      "age_days": 9,
+      "salary_monthly": null,
+      "domains": [
+        "IA",
+        "data"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "inconnue",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.686,
+        "reputation": 0.3,
+        "fraicheur": 0.947,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.447,
+      "publishable": true
+    },
+    {
+      "id": "adz_5966437517",
+      "source": "adzuna",
+      "title": "Consultant.e.s en transformation IT – Nantes - Stage de fin d'études",
+      "company": "Forums Talents Handicap",
+      "url": "https://www.adzuna.fr/details/5966437517",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "distance_km": 146,
+      "nearest_city": "Le Mans",
+      "age_days": 9,
+      "salary_monthly": null,
+      "domains": [
+        "data"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "inconnue",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.686,
+        "reputation": 0.3,
+        "fraicheur": 0.947,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.447,
+      "publishable": true
+    },
+    {
+      "id": "adz_5966437477",
+      "source": "adzuna",
+      "title": "Consultant.e.s - Stage de fin d'études - Nantes - CYB - Identity & Access Management : Role mining & Intelligence Artificielle",
+      "company": "Forums Talents Handicap",
+      "url": "https://www.adzuna.fr/details/5966437477",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "distance_km": 146,
+      "nearest_city": "Le Mans",
+      "age_days": 9,
+      "salary_monthly": null,
+      "domains": [
+        "IA",
+        "data"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "inconnue",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.686,
+        "reputation": 0.3,
+        "fraicheur": 0.947,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.447,
+      "publishable": true
+    },
+    {
+      "id": "adz_5966437456",
+      "source": "adzuna",
+      "title": "Consultant.e.s - Stage de fin d'études - Nantes - CYB - Quelles nouvelles méthodologies et modèles de gouvernance pour la sécurité ?",
+      "company": "Forums Talents Handicap",
+      "url": "https://www.adzuna.fr/details/5966437456",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "distance_km": 146,
+      "nearest_city": "Le Mans",
+      "age_days": 9,
+      "salary_monthly": null,
+      "domains": [
+        "data"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "inconnue",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.686,
+        "reputation": 0.3,
+        "fraicheur": 0.947,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.447,
+      "publishable": true
+    },
+    {
+      "id": "adz_5966437464",
+      "source": "adzuna",
+      "title": "Consultant.e.s - Stage de fin d'études - Nantes - CIO - IA responsable : quels KPI et outils pour suivre et implémenter explicabilité, biais, censure ?",
+      "company": "Forums Talents Handicap",
+      "url": "https://www.adzuna.fr/details/5966437464",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "distance_km": 146,
+      "nearest_city": "Le Mans",
+      "age_days": 9,
+      "salary_monthly": null,
+      "domains": [
+        "IA",
+        "data"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "inconnue",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.686,
+        "reputation": 0.3,
+        "fraicheur": 0.947,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.447,
+      "publishable": true
+    },
+    {
+      "id": "adz_5966437458",
+      "source": "adzuna",
+      "title": "Consultant.e – Stage de fin d’études – Nantes – CYB – Proof of concept de l'usage de l'IA pour automatiser la réalisation d'analyses de risques",
+      "company": "Forums Talents Handicap",
+      "url": "https://www.adzuna.fr/details/5966437458",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "distance_km": 146,
+      "nearest_city": "Le Mans",
+      "age_days": 9,
+      "salary_monthly": null,
+      "domains": [
+        "IA",
+        "data"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "inconnue",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.686,
+        "reputation": 0.3,
+        "fraicheur": 0.947,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.447,
+      "publishable": true
+    },
+    {
+      "id": "adz_5966437454",
+      "source": "adzuna",
+      "title": "Consultant.e – Stage de fin d’études – Nantes – CYB – Détection des menaces dans le SI Industriel",
+      "company": "Forums Talents Handicap",
+      "url": "https://www.adzuna.fr/details/5966437454",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "distance_km": 146,
+      "nearest_city": "Le Mans",
+      "age_days": 9,
+      "salary_monthly": null,
+      "domains": [
+        "data"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "inconnue",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.686,
+        "reputation": 0.3,
+        "fraicheur": 0.947,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.447,
+      "publishable": true
+    },
+    {
+      "id": "adz_5966437492",
+      "source": "adzuna",
+      "title": "Consultant.e.s - Stage de fin d'études - Nantes – CIO – Comment déployer un dispositif GenBI à l’échelle ? Architecture, gouvernance sémantique et conduite du changement",
+      "company": "Forums Talents Handicap",
+      "url": "https://www.adzuna.fr/details/5966437492",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "distance_km": 146,
+      "nearest_city": "Le Mans",
+      "age_days": 9,
+      "salary_monthly": null,
+      "domains": [
+        "data"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "inconnue",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.686,
+        "reputation": 0.3,
+        "fraicheur": 0.947,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.447,
+      "publishable": true
+    },
+    {
+      "id": "adz_5966437509",
+      "source": "adzuna",
+      "title": "Consultant.e.s - Stage de fin d'études - Nantes – CIO – Architecture IT : Quelle est la place de l'architecte aujourd'hui dans les organisations en transformation Agile et Agile@Scale ?",
+      "company": "Forums Talents Handicap",
+      "url": "https://www.adzuna.fr/details/5966437509",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "distance_km": 146,
+      "nearest_city": "Le Mans",
+      "age_days": 9,
+      "salary_monthly": null,
+      "domains": [
+        "data"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "inconnue",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.686,
+        "reputation": 0.3,
+        "fraicheur": 0.947,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.447,
+      "publishable": true
+    },
+    {
+      "id": "adz_5966437511",
+      "source": "adzuna",
+      "title": "Consultant.e.s - Stage de fin d'études - Nantes – CYB – DevSecOps et agilité",
+      "company": "Forums Talents Handicap",
+      "url": "https://www.adzuna.fr/details/5966437511",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "distance_km": 146,
+      "nearest_city": "Le Mans",
+      "age_days": 9,
+      "salary_monthly": null,
+      "domains": [
+        "data"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "inconnue",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.686,
+        "reputation": 0.3,
+        "fraicheur": 0.947,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.447,
+      "publishable": true
+    },
+    {
+      "id": "adz_5966437513",
+      "source": "adzuna",
+      "title": "Consultant.e.s en transformation IA / Data – Nantes - Stage de fin d'études",
+      "company": "Forums Talents Handicap",
+      "url": "https://www.adzuna.fr/details/5966437513",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "distance_km": 146,
+      "nearest_city": "Le Mans",
+      "age_days": 9,
+      "salary_monthly": null,
+      "domains": [
+        "IA",
+        "data"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "inconnue",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.686,
+        "reputation": 0.3,
+        "fraicheur": 0.947,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.447,
+      "publishable": true
+    },
+    {
+      "id": "adz_5966437463",
+      "source": "adzuna",
+      "title": "Consultant.e.s - Stage de fin d'études - Nantes - CYB - Cloud et sécurité : vers une association gagnante ?",
+      "company": "Forums Talents Handicap",
+      "url": "https://www.adzuna.fr/details/5966437463",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "distance_km": 146,
+      "nearest_city": "Le Mans",
+      "age_days": 9,
+      "salary_monthly": null,
+      "domains": [
+        "data"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "inconnue",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.686,
+        "reputation": 0.3,
+        "fraicheur": 0.947,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.447,
+      "publishable": true
+    },
+    {
+      "id": "adz_5966437467",
+      "source": "adzuna",
+      "title": "Consultant.e.s - Stage de fin d'études - Nantes - CIO - Comment garantir la maîtrise et la cohérence des pratiques d’architecture dans un contexte multi-cloud ?",
+      "company": "Forums Talents Handicap",
+      "url": "https://www.adzuna.fr/details/5966437467",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "distance_km": 146,
+      "nearest_city": "Le Mans",
+      "age_days": 9,
+      "salary_monthly": null,
+      "domains": [
+        "data"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "inconnue",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.686,
+        "reputation": 0.3,
+        "fraicheur": 0.947,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.447,
+      "publishable": true
+    },
+    {
+      "id": "adz_5966437484",
+      "source": "adzuna",
+      "title": "Consultant.e.s - Stage de fin d'études – Nantes – CIO / Citizen IT : quels leviers pour répondre aux besoins métiers au plus vite et au plus près des utilisateurs ?",
+      "company": "Forums Talents Handicap",
+      "url": "https://www.adzuna.fr/details/5966437484",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "distance_km": 146,
+      "nearest_city": "Le Mans",
+      "age_days": 9,
+      "salary_monthly": null,
+      "domains": [
+        "data"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "inconnue",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.686,
+        "reputation": 0.3,
+        "fraicheur": 0.947,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.447,
+      "publishable": true
+    },
+    {
+      "id": "adz_5966437486",
+      "source": "adzuna",
+      "title": "Consultant.e.s - Stage de fin d'études - Nantes – CYB – Les agents IA pour le développement informatique augmentent-ils le niveau de sécurité du code ?",
+      "company": "Forums Talents Handicap",
+      "url": "https://www.adzuna.fr/details/5966437486",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "distance_km": 146,
+      "nearest_city": "Le Mans",
+      "age_days": 9,
+      "salary_monthly": null,
+      "domains": [
+        "IA",
+        "data"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "inconnue",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.686,
+        "reputation": 0.3,
+        "fraicheur": 0.947,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.447,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965484714",
+      "source": "adzuna",
+      "title": "STAGE - Ingénieur analyste Data Science - H/F",
+      "company": "THALES",
+      "url": "https://www.adzuna.fr/land/ad/5965484714",
+      "location": "Bordeaux, Gironde",
+      "distance_km": 357,
+      "nearest_city": "Le Mans",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "data"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.115,
+        "reputation": 1.0,
+        "fraicheur": 0.921,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.435,
+      "publishable": true
+    },
+    {
+      "id": "adz_5966437498",
+      "source": "adzuna",
+      "title": "Consultant.e.s - Stage de fin d'études - Nantes – CIO – IA × RSE – Comment maîtriser coûts et empreinte environnementale d’un système d’IA générative ? FinOps & GreenOps des SIA",
+      "company": "Forums Talents Handicap",
+      "url": "https://www.adzuna.fr/details/5966437498",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "distance_km": 146,
+      "nearest_city": "Le Mans",
+      "age_days": 9,
+      "salary_monthly": null,
+      "domains": [
+        "IA",
+        "data"
+      ],
+      "skill_score": 0.08,
+      "skills_unknown": false,
+      "matched": [
+        "LLM"
+      ],
+      "gaps": [
+        "FinOps",
+        "GreenOps",
+        "SIA"
+      ],
+      "reputation_source": "inconnue",
+      "criteria": {
+        "competences": 0.16,
+        "localisation": 0.686,
+        "reputation": 0.3,
+        "fraicheur": 0.947,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.433,
+      "publishable": true
+    },
+    {
+      "id": "jbl_4594517779968944215",
+      "source": "jooble",
+      "title": "Stage - Contrôleur / Contrôleuse de Gestion (H/F)",
+      "company": "Verkor",
+      "url": "https://jooble.org/jdp/4594517779968944215",
+      "location": "France",
+      "distance_km": null,
+      "nearest_city": null,
+      "age_days": 25,
+      "salary_monthly": null,
+      "domains": [
+        "data",
+        "développement"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.5,
+        "reputation": 0.7,
+        "fraicheur": 0.526,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.428,
+      "publishable": true
+    },
+    {
+      "id": "adz_5960182404",
+      "source": "adzuna",
+      "title": "Stage: DevOps et processus CI/CD (F/H)",
+      "company": "HEMERIA",
+      "url": "https://www.adzuna.fr/details/5960182404",
+      "location": "Charente, Nouvelle-Aquitaine",
+      "distance_km": 247,
+      "nearest_city": "Le Mans",
+      "age_days": 14,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps"
+      ],
+      "skill_score": 0.2,
+      "skills_unknown": false,
+      "matched": [
+        "GitHub Actions"
+      ],
+      "gaps": [
+        "DevOps"
+      ],
+      "reputation_source": "automatique",
+      "criteria": {
+        "competences": 0.4,
+        "localisation": 0.414,
+        "reputation": 0.4,
+        "fraicheur": 0.816,
+        "domaine": 0.6,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.424,
+      "publishable": true
+    },
+    {
+      "id": "adz_5941576330",
+      "source": "adzuna",
+      "title": "STAGE – Ingénieur DevOps F/H",
+      "company": "Thales",
+      "url": "https://www.adzuna.fr/details/5941576330",
+      "location": "France",
+      "distance_km": null,
+      "nearest_city": null,
+      "age_days": 29,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.5,
+        "reputation": 1.0,
+        "fraicheur": 0.421,
+        "domaine": 0.6,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.422,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965601192",
+      "source": "adzuna",
+      "title": "Stage : Stage - Développeur assistant IA F/H",
+      "company": "Orange",
+      "url": "https://www.adzuna.fr/details/5965601192",
+      "location": "Rhône, Auvergne-Rhône-Alpes",
+      "distance_km": 385,
+      "nearest_city": "Paris",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "IA",
+        "data",
+        "développement"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.04,
+        "reputation": 1.0,
+        "fraicheur": 0.921,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.42,
+      "publishable": true
+    },
+    {
+      "id": "adz_5968885961",
+      "source": "adzuna",
+      "title": "Stage : STAGE - Data Science et UI/UX pour le diagnostic augmenté des moteurs d'hélicoptères F/H",
+      "company": "SAFRAN",
+      "url": "https://www.adzuna.fr/details/5968885961",
+      "location": "Saint-Martin-de-Seignanx, Dax",
+      "distance_km": 513,
+      "nearest_city": "Le Mans",
+      "age_days": 7,
+      "salary_monthly": null,
+      "domains": [
+        "data"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.0,
+        "reputation": 1.0,
+        "fraicheur": 1.0,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.42,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965601489",
+      "source": "adzuna",
+      "title": "Stage : Stage - Concepteur(trice) / Développeur(se) GMAO Carl - Business Line Solutions & Expertises - Toulouse",
+      "company": "Sopra-Steria",
+      "url": "https://www.adzuna.fr/details/5965601489",
+      "location": "Toulouse 13e Canton, Toulouse",
+      "distance_km": 496,
+      "nearest_city": "Le Mans",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "développement"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.0,
+        "reputation": 1.0,
+        "fraicheur": 0.921,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.412,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965503168",
+      "source": "adzuna",
+      "title": "Stage – Technicien Développeur Web – (H/F)",
+      "company": "THALES",
+      "url": "https://www.adzuna.fr/land/ad/5965503168",
+      "location": "Cannes, Grasse",
+      "distance_km": 689,
+      "nearest_city": "Paris",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "développement"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.0,
+        "reputation": 1.0,
+        "fraicheur": 0.921,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.412,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965499347",
+      "source": "adzuna",
+      "title": "Stage – Ingénieur Développeur de Solutions Numériques Web Full Stack pour la digitalisation des activités industrielles – (H/F)",
+      "company": "THALES",
+      "url": "https://www.adzuna.fr/land/ad/5965499347",
+      "location": "Cannes, Grasse",
+      "distance_km": 689,
+      "nearest_city": "Paris",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "développement"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.0,
+        "reputation": 1.0,
+        "fraicheur": 0.921,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.412,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965468262",
+      "source": "adzuna",
+      "title": "STAGE – Ingénieur IA & optimisation des processus de développement – F/H",
+      "company": "THALES",
+      "url": "https://www.adzuna.fr/land/ad/5965468262",
+      "location": "Toulouse, Haute-Garonne",
+      "distance_km": 499,
+      "nearest_city": "Le Mans",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "IA",
+        "développement"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.0,
+        "reputation": 1.0,
+        "fraicheur": 0.921,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.412,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965457912",
+      "source": "adzuna",
+      "title": "STAGE- Ingénieur DevOps/ IA - Conception d'une plateforme de gestion projets logiciels - F/H",
+      "company": "Thales",
+      "url": "https://www.adzuna.fr/land/ad/5965457912",
+      "location": "Toulouse, Haute-Garonne",
+      "distance_km": 499,
+      "nearest_city": "Le Mans",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps",
+        "IA"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.0,
+        "reputation": 1.0,
+        "fraicheur": 0.921,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.412,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965466450",
+      "source": "adzuna",
+      "title": "STAGE – Ingénieur DevOps - Architecture microservice pour l’observabilité F/H",
+      "company": "THALES",
+      "url": "https://www.adzuna.fr/land/ad/5965466450",
+      "location": "Brest, Finistère",
+      "distance_km": 350,
+      "nearest_city": "Le Mans",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.135,
+        "reputation": 1.0,
+        "fraicheur": 0.921,
+        "domaine": 0.6,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.399,
+      "publishable": true
+    },
+    {
+      "id": "adz_5964208475",
+      "source": "adzuna",
+      "title": "Stage de fin d'études - Développeur front-end F/H",
+      "company": "TEAM Y",
+      "url": "https://www.adzuna.fr/details/5964208475",
+      "location": "Talmont-Saint-Hilaire, Les Sables-d'Olonne",
+      "distance_km": 224,
+      "nearest_city": "Le Mans",
+      "age_days": 11,
+      "salary_monthly": 1867,
+      "domains": [
+        "développement"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": false,
+      "matched": [],
+      "gaps": [
+        "Flutter"
+      ],
+      "reputation_source": "automatique",
+      "criteria": {
+        "competences": 0.0,
+        "localisation": 0.475,
+        "reputation": 0.4,
+        "fraicheur": 0.895,
+        "domaine": 1.0,
+        "salaire": 1.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.395,
+      "publishable": true
+    },
+    {
+      "id": "adz_5960906094",
+      "source": "adzuna",
+      "title": "STAGE - Ingénieur DevOps : mise à hauteur chaine C H/F (Stage)",
+      "company": "THALES SA",
+      "url": "https://www.adzuna.fr/land/ad/5960906094",
+      "location": "Gironde, Nouvelle-Aquitaine",
+      "distance_km": 351,
+      "nearest_city": "Le Mans",
+      "age_days": 13,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.134,
+        "reputation": 1.0,
+        "fraicheur": 0.842,
+        "domaine": 0.6,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.391,
+      "publishable": true
+    },
+    {
+      "id": "adz_5966081906",
+      "source": "adzuna",
+      "title": "Stage - Développement de méthodes de contrôle non destructif pour renforts métalliques (F/H)",
+      "company": "Michelin",
+      "url": "https://www.adzuna.fr/details/5966081906",
+      "location": "Clermont-Ferrand, Puy-de-Dôme",
+      "distance_km": 331,
+      "nearest_city": "Le Mans",
+      "age_days": 9,
+      "salary_monthly": null,
+      "domains": [
+        "data"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": false,
+      "matched": [],
+      "gaps": [
+        "traitement du signal",
+        "systèmes embarqués"
+      ],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.0,
+        "localisation": 0.187,
+        "reputation": 1.0,
+        "fraicheur": 0.947,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.382,
+      "publishable": true
+    },
+    {
+      "id": "adz_5966437496",
+      "source": "adzuna",
+      "title": "Consultant.e.s - Stage de fin d'études - Nantes - CYB - Quel framework et socle de sécurité à l'ère des nouvelles réglementations Européennes (NIS 2, REC, CRA, DORA) ?",
+      "company": "Forums Talents Handicap",
+      "url": "https://www.adzuna.fr/details/5966437496",
+      "location": "Loire-Atlantique, Pays de la Loire",
+      "distance_km": 146,
+      "nearest_city": "Le Mans",
+      "age_days": 9,
+      "salary_monthly": null,
+      "domains": [
+        "data"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": false,
+      "matched": [],
+      "gaps": [
+        "socle de sécurité",
+        "NIS 2",
+        "REC",
+        "CRA",
+        "DORA"
+      ],
+      "reputation_source": "inconnue",
+      "criteria": {
+        "competences": 0.0,
+        "localisation": 0.686,
+        "reputation": 0.3,
+        "fraicheur": 0.947,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.377,
+      "publishable": true
+    },
+    {
+      "id": "adz_5958907969",
+      "source": "adzuna",
+      "title": "Ingénieure / Ingénieur DevOps - Stage H/F (Stage)",
+      "company": "CAPGEMINI FRANCE",
+      "url": "https://www.adzuna.fr/land/ad/5958907969",
+      "location": "Danjoutin, Belfort",
+      "distance_km": 369,
+      "nearest_city": "Paris",
+      "age_days": 15,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.084,
+        "reputation": 1.0,
+        "fraicheur": 0.789,
+        "domaine": 0.6,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.376,
+      "publishable": true
+    },
+    {
+      "id": "jbl_2581151213922723488",
+      "source": "jooble",
+      "title": "Stage Ingénieur Infrastructure & DevOps H/F",
+      "company": "Verkor",
+      "url": "https://jooble.org/jdp/2581151213922723488",
+      "location": "France",
+      "distance_km": null,
+      "nearest_city": null,
+      "age_days": 18,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps",
+        "data",
+        "développement"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": false,
+      "matched": [],
+      "gaps": [
+        "Kubernetes"
+      ],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.0,
+        "localisation": 0.5,
+        "reputation": 0.7,
+        "fraicheur": 0.711,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.376,
+      "publishable": true
+    },
+    {
+      "id": "adz_5966099011",
+      "source": "adzuna",
+      "title": "Ingénieur Travaux Bâtiment F/H - Stage PFE",
+      "company": "GSE group",
+      "url": "https://www.adzuna.fr/details/5966099011",
+      "location": "Saint-Priest, Lyon",
+      "distance_km": 402,
+      "nearest_city": "Paris",
+      "age_days": 9,
+      "salary_monthly": 1400,
+      "domains": [
+        "data"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "automatique",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.0,
+        "reputation": 0.3,
+        "fraicheur": 0.947,
+        "domaine": 1.0,
+        "salaire": 0.882,
+        "teletravail": 0.0
+      },
+      "global_score": 0.354,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965402600",
+      "source": "adzuna",
+      "title": "Stage - Ingénieur CI/DEVOPS (H/F)",
+      "company": "Bassetti",
+      "url": "https://www.adzuna.fr/details/5965402600",
+      "location": "Isère, Auvergne-Rhône-Alpes",
+      "distance_km": 441,
+      "nearest_city": "Paris",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps"
+      ],
+      "skill_score": 0.2,
+      "skills_unknown": false,
+      "matched": [
+        "GitHub Actions"
+      ],
+      "gaps": [
+        "DevOps"
+      ],
+      "reputation_source": "automatique",
+      "criteria": {
+        "competences": 0.4,
+        "localisation": 0.0,
+        "reputation": 0.4,
+        "fraicheur": 0.921,
+        "domaine": 0.6,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.352,
+      "publishable": true
+    },
+    {
+      "id": "adz_5953950264",
+      "source": "adzuna",
+      "title": "Stage : Stage Développeur / euse DevOps pour l'automatisation des tests de synchronisation des réseaux F/H",
+      "company": "Orange",
+      "url": "https://www.adzuna.fr/details/5953950264",
+      "location": "Tréguier, Lannion",
+      "distance_km": 274,
+      "nearest_city": "Le Mans",
+      "age_days": 19,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": false,
+      "matched": [],
+      "gaps": [
+        "DevOps"
+      ],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.0,
+        "localisation": 0.341,
+        "reputation": 1.0,
+        "fraicheur": 0.684,
+        "domaine": 0.6,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.347,
+      "publishable": true
+    },
+    {
+      "id": "adz_5966085669",
+      "source": "adzuna",
+      "title": "Stage - Data Scientist (F/H)",
+      "company": "Michelin",
+      "url": "https://www.adzuna.fr/details/5966085669",
+      "location": "Lyon, Rhône",
+      "distance_km": 405,
+      "nearest_city": "Paris",
+      "age_days": 9,
+      "salary_monthly": null,
+      "domains": [
+        "data"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": false,
+      "matched": [],
+      "gaps": [
+        "Machine Learning"
+      ],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.0,
+        "localisation": 0.0,
+        "reputation": 1.0,
+        "fraicheur": 0.947,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.345,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965491263",
+      "source": "adzuna",
+      "title": "Stage - Développeur de solutions numériques (App WEB & IA)- F/H",
+      "company": "THALES",
+      "url": "https://www.adzuna.fr/land/ad/5965491263",
+      "location": "Cannes, Grasse",
+      "distance_km": 689,
+      "nearest_city": "Paris",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "IA",
+        "développement"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": false,
+      "matched": [],
+      "gaps": [
+        "App WEB"
+      ],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.0,
+        "localisation": 0.0,
+        "reputation": 1.0,
+        "fraicheur": 0.921,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.342,
+      "publishable": true
+    },
+    {
+      "id": "adz_5964297989",
+      "source": "adzuna",
+      "title": "Stage: Développeur Logiciel (F/H)",
+      "company": "HEMERIA",
+      "url": "https://www.adzuna.fr/details/5964297989",
+      "location": "Charente, Nouvelle-Aquitaine",
+      "distance_km": 247,
+      "nearest_city": "Le Mans",
+      "age_days": 11,
+      "salary_monthly": null,
+      "domains": [
+        "développement"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": false,
+      "matched": [],
+      "gaps": [
+        "C++",
+        "QT"
+      ],
+      "reputation_source": "automatique",
+      "criteria": {
+        "competences": 0.0,
+        "localisation": 0.414,
+        "reputation": 0.4,
+        "fraicheur": 0.895,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.332,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965160367",
+      "source": "adzuna",
+      "title": "Stage - Développeur(se) Intégrateur(se) .NET / C# / C++ - Transport - Aix-en-Provence",
+      "company": "Forums Talents Handicap",
+      "url": "https://www.adzuna.fr/details/5965160367",
+      "location": "Bouches-du-Rhône, Provence-Alpes-Côte d'Azur",
+      "distance_km": 625,
+      "nearest_city": "Le Mans",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "développement"
+      ],
+      "skill_score": 0.133,
+      "skills_unknown": false,
+      "matched": [
+        "C#"
+      ],
+      "gaps": [
+        "C++"
+      ],
+      "reputation_source": "inconnue",
+      "criteria": {
+        "competences": 0.266,
+        "localisation": 0.0,
+        "reputation": 0.3,
+        "fraicheur": 0.921,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.33,
+      "publishable": true
+    },
+    {
+      "id": "adz_5945385821",
+      "source": "adzuna",
+      "title": "Stage : Stage Développeur / euse DevOps pour l'automatisation des tests de réseaux de transmission optique F/H",
+      "company": "Orange",
+      "url": "https://www.adzuna.fr/details/5945385821",
+      "location": "Tréguier, Lannion",
+      "distance_km": 274,
+      "nearest_city": "Le Mans",
+      "age_days": 26,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": false,
+      "matched": [],
+      "gaps": [
+        "DevOps"
+      ],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.0,
+        "localisation": 0.341,
+        "reputation": 1.0,
+        "fraicheur": 0.5,
+        "domaine": 0.6,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.328,
+      "publishable": true
+    },
+    {
+      "id": "adz_5966192423",
+      "source": "adzuna",
+      "title": "STAGE - ASSISTANT INGÉNIEUR DÉVELOPPEUR INTEGRATEUR (H/F)",
+      "company": "Bassetti",
+      "url": "https://www.adzuna.fr/details/5966192423",
+      "location": "Haute-Garonne, Occitanie",
+      "distance_km": 516,
+      "nearest_city": "Le Mans",
+      "age_days": 9,
+      "salary_monthly": null,
+      "domains": [
+        "développement"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "automatique",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.0,
+        "reputation": 0.4,
+        "fraicheur": 0.947,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.325,
+      "publishable": true
+    },
+    {
+      "id": "adz_5967020415",
+      "source": "adzuna",
+      "title": "Stage : Data Analyst - H/F",
+      "company": "Valeco",
+      "url": "https://www.adzuna.fr/details/5967020415",
+      "location": "Hérault, Occitanie",
+      "distance_km": 556,
+      "nearest_city": "Le Mans",
+      "age_days": 8,
+      "salary_monthly": 800,
+      "domains": [
+        "data"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "automatique",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.0,
+        "reputation": 0.3,
+        "fraicheur": 0.974,
+        "domaine": 1.0,
+        "salaire": 0.176,
+        "teletravail": 0.0
+      },
+      "global_score": 0.321,
+      "publishable": true
+    },
+    {
+      "id": "adz_5936318655",
+      "source": "adzuna",
+      "title": "Stage : Stage - Ingénieur(e) DevOps - Toulon",
+      "company": "Sopra-Steria",
+      "url": "https://www.adzuna.fr/details/5936318655",
+      "location": "Six-Fours-les-Plages, Toulon",
+      "distance_km": 695,
+      "nearest_city": "Paris",
+      "age_days": 34,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.0,
+        "reputation": 1.0,
+        "fraicheur": 0.289,
+        "domaine": 0.6,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.309,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965160246",
+      "source": "adzuna",
+      "title": "Stage - Ingénieur(e) d'étude développeur - Liaison de données tactiques - Logiciel de conception de Réseau L16 - Défense & Sécurité - Aix en Provence",
+      "company": "Forums Talents Handicap",
+      "url": "https://www.adzuna.fr/details/5965160246",
+      "location": "Bouches-du-Rhône, Provence-Alpes-Côte d'Azur",
+      "distance_km": 625,
+      "nearest_city": "Le Mans",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "développement"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "inconnue",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.0,
+        "reputation": 0.3,
+        "fraicheur": 0.921,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.307,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965160348",
+      "source": "adzuna",
+      "title": "Stage - Ingénieur(e) d'étude développeur - Liaison de données tactiques - Logiciel d’extraction de trames LDT - Défense & Sécurité - Aix en Provence",
+      "company": "Forums Talents Handicap",
+      "url": "https://www.adzuna.fr/details/5965160348",
+      "location": "Bouches-du-Rhône, Provence-Alpes-Côte d'Azur",
+      "distance_km": 625,
+      "nearest_city": "Le Mans",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "développement"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "inconnue",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.0,
+        "reputation": 0.3,
+        "fraicheur": 0.921,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.307,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965160187",
+      "source": "adzuna",
+      "title": "Stage - Ingénieur(e) d'étude développeur - Liaison de données tactiques - Passerelle d'interconnexion de simulateurs - Défense & Sécurité - Aix en Provence",
+      "company": "Forums Talents Handicap",
+      "url": "https://www.adzuna.fr/details/5965160187",
+      "location": "Bouches-du-Rhône, Provence-Alpes-Côte d'Azur",
+      "distance_km": 625,
+      "nearest_city": "Le Mans",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "développement"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "inconnue",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.0,
+        "reputation": 0.3,
+        "fraicheur": 0.921,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.307,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965468296",
+      "source": "adzuna",
+      "title": "Stage - Ingénieur Informatique, Conception et Développement Web des Interfaces web de contrôle de satellites – (H/F)",
+      "company": "THALES",
+      "url": "https://www.adzuna.fr/land/ad/5965468296",
+      "location": "Cannes, Grasse",
+      "distance_km": 689,
+      "nearest_city": "Paris",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": false,
+      "matched": [],
+      "gaps": [
+        "Conception et Développement Web",
+        "Interfaces web de contrôle de satellites"
+      ],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.0,
+        "localisation": 0.0,
+        "reputation": 1.0,
+        "fraicheur": 0.921,
+        "domaine": 0.6,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.302,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965457648",
+      "source": "adzuna",
+      "title": "STAGE - Ingénieur DevOps/ Cloud - Étude et intégration d’un socle d’échange de données aéronautiques SWIM - F/H",
+      "company": "Thales",
+      "url": "https://www.adzuna.fr/land/ad/5965457648",
+      "location": "Toulouse, Haute-Garonne",
+      "distance_km": 499,
+      "nearest_city": "Le Mans",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": false,
+      "matched": [],
+      "gaps": [
+        "DevOps"
+      ],
+      "reputation_source": "ma liste",
+      "criteria": {
+        "competences": 0.0,
+        "localisation": 0.0,
+        "reputation": 1.0,
+        "fraicheur": 0.921,
+        "domaine": 0.6,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.302,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965160260",
+      "source": "adzuna",
+      "title": "Stage - Développeur/ se C++ Qt - Mise en place de fonctionnalités dans le produit BOREADES - Défense & Sécurité - Toulon",
+      "company": "Forums Talents Handicap",
+      "url": "https://www.adzuna.fr/details/5965160260",
+      "location": "Var, Provence-Alpes-Côte d'Azur",
+      "distance_km": 679,
+      "nearest_city": "Paris",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "développement"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": false,
+      "matched": [],
+      "gaps": [
+        "C++ Qt"
+      ],
+      "reputation_source": "inconnue",
+      "criteria": {
+        "competences": 0.0,
+        "localisation": 0.0,
+        "reputation": 0.3,
+        "fraicheur": 0.921,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.237,
+      "publishable": true
+    },
+    {
+      "id": "adz_5965160240",
+      "source": "adzuna",
+      "title": "Stage - Développeur / se C++/QT - IA - Implémentation d'un chatbot dans le produit BOREADES - Défense & Sécurité - Toulon",
+      "company": "Forums Talents Handicap",
+      "url": "https://www.adzuna.fr/details/5965160240",
+      "location": "Var, Provence-Alpes-Côte d'Azur",
+      "distance_km": 679,
+      "nearest_city": "Paris",
+      "age_days": 10,
+      "salary_monthly": null,
+      "domains": [
+        "IA",
+        "développement"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": false,
+      "matched": [],
+      "gaps": [
+        "C++",
+        "QT"
+      ],
+      "reputation_source": "inconnue",
+      "criteria": {
+        "competences": 0.0,
+        "localisation": 0.0,
+        "reputation": 0.3,
+        "fraicheur": 0.921,
+        "domaine": 1.0,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.237,
+      "publishable": true
+    },
+    {
+      "id": "adz_5940066735",
+      "source": "adzuna",
+      "title": "Stage Ingénieur DevOps - Métriques DORA H/F",
+      "company": "Adis",
+      "url": "https://www.adzuna.fr/details/5940066735",
+      "location": "Bas-Rhin, Grand-Est",
+      "distance_km": 388,
+      "nearest_city": "Paris",
+      "age_days": 31,
+      "salary_monthly": null,
+      "domains": [
+        "DevOps"
+      ],
+      "skill_score": 0.0,
+      "skills_unknown": true,
+      "matched": [],
+      "gaps": [],
+      "reputation_source": "automatique",
+      "criteria": {
+        "competences": 0.2,
+        "localisation": 0.032,
+        "reputation": 0.3,
+        "fraicheur": 0.368,
+        "domaine": 0.6,
+        "salaire": 0.0,
+        "teletravail": 0.0
+      },
+      "global_score": 0.218,
+      "publishable": true
+    }
+  ]
+}

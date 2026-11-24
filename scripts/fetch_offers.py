@@ -53,7 +53,8 @@ def main():
             key = ((o.get("title") or "").strip().lower(),
                    ((o.get("company") or {}).get("display_name") or "").strip().lower())
             if key in offers_by_key:
-                offers_by_key[key]["matched_queries"].append(query)
+                if query not in offers_by_key[key]["matched_queries"]:
+                    offers_by_key[key]["matched_queries"].append(query)
             else:
                 o["matched_queries"] = [query]
                 offers_by_key[key] = o
